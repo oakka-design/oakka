@@ -6,7 +6,7 @@ page-title: Services -- Oakka design studios
 services:
 - title: Interior design
   text-box: Styling, themes and ideas from one room to an entire building.
-  bg-image: "/uploads/DSC_8510.jpg"
+  bg-image: "/uploads/meme.jpeg"
 - title: Purchasing
   text-box: Em help you find the perfect items and will go out her to track down one
     of kind items within your budget.
