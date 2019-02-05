@@ -10,10 +10,14 @@ slider-images:
   alt: b
 - image: "/uploads/slider-3.jpg"
   alt: c
-mission-statement: We would love to talk to you about your project whether it be a
-  small room or complete refurbishment. Oakka Design offers a friendly, down to earth
-  approach. We listen to  your ideas and add our own experience and creativity to
-  create a beautiful space for you.
+mission-statement: "At the heart of Oakka Design is a believe that every room should
+  be a reflection of your own individual style and personality. \n\nBy bringing together
+  the creative energy of an interior designer and the practical skills and precision
+  of a carpenter/project manager all within our two person team, we are able to create,
+  plan and realise your aspirations.\n\nWhy hire an interior designer, carpenter and
+  project manager separately when you can have everything from Oakka Design.\n\nWe
+  would love to talk to you about your project whether it be a small room or complete
+  refurbishment. "
 the-team:
   title: Meet The Team
   team-member-1:
