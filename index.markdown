@@ -22,18 +22,17 @@ the-team:
   title: Meet The Team
   team-member-1:
     image: "/uploads/Dayna.jpg"
-    text-box: Em has a passion for textiles and design, having studied at Chelsea
-      School of Art. She will give you her all when creating the most beautiful space,
-      combining your interests with her experience of colour, fabrics and design.
-      She has a passion for furniture, art and ornaments and will go out her way to
-      find you amazing items.
+    text-box: |-
+      Em studied at Chelsea School of Art and has a passion for design and textiles. She enjoys getting to know her clients personally, understanding their hopes and ambitions and using her creative energy to design beautiful and harmonious spaces.
+
+      She loves working with colour and textures and will search high and low to find one of a kind objects and furnishings for you.
   team-member-2:
     image: "/uploads/Brendan.jpg"
-    text-box: Matt studied graphic design and has 22 years as a carpenter and project
-      manager, refurbishing several properties in Brighton & Hove. He specialises
-      in fitted cupboards, bespoke kitchens and one off pieces of furniture. He can
-      achieve anything from a modern architectural finish to unique furniture from
-      reclaimed materials.
+    text-box: Matt has a background in graphic design and has 22 years as a carpenter
+      and project manager, refurbishing several properties in Brighton & Hove. He
+      specialises in fitted cupboards, bespoke kitchens and one off pieces of furniture.
+      He can achieve anything from a sharp architectural finish to unique furniture
+      from reclaimed materials.
 layout: index
 ---
 
