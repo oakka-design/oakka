@@ -8,13 +8,13 @@ slider-images:
   alt: 
 - image: "/uploads/Brighton_kitchen%20design.jpg"
   alt: 
-- image: "/uploads/brighton_kitchen_design.jpg"
+- image: "/uploads/brighton_kitchen_design-078acb.jpg"
   alt: 
 - image: "/uploads/retro_brighton_interiors.jpg"
   alt: 
 - image: "/uploads/brighton_kitchen.jpg"
   alt: f
-- image: "/uploads/finishing_touches_interiors.jpg"
+- image: "/uploads/finishing_touches.jpg"
   alt: 
 - image: "/uploads/brighton_interiors.jpg"
   alt: 
@@ -32,7 +32,7 @@ slider-images:
   alt: 
 - image: "/uploads/office_design_interiors.jpg"
   alt: 
-- image: "/uploads/retro_cupboards_brighton.jpg"
+- image: "/uploads/retro_fitted_cupboards.jpg"
   alt: 
 - image: "/uploads/small_garden_design.jpg"
   alt: 
