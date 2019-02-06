@@ -8,14 +8,10 @@ slider-images:
   alt: 
 - image: "/uploads/Brighton_kitchen%20design.jpg"
   alt: 
-- image: "/uploads/brighton_kitchen_design-078acb.jpg"
-  alt: 
 - image: "/uploads/retro_brighton_interiors.jpg"
   alt: 
 - image: "/uploads/brighton_kitchen.jpg"
   alt: f
-- image: "/uploads/finishing_touches.jpg"
-  alt: 
 - image: "/uploads/brighton_interiors.jpg"
   alt: 
 - image: "/uploads/Childs_room_decoration.jpg"
@@ -31,8 +27,6 @@ slider-images:
 - image: "/uploads/morrocan_inspired_interiors.jpg"
   alt: 
 - image: "/uploads/office_design_interiors.jpg"
-  alt: 
-- image: "/uploads/retro_fitted_cupboards.jpg"
   alt: 
 - image: "/uploads/small_garden_design.jpg"
   alt: 
