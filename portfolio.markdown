@@ -14,8 +14,6 @@ slider-images:
   alt: 
 - image: "/uploads/Hallway_interiors.jpg"
   alt: 
-- image: "/uploads/fitted%20storage.jpg"
-  alt: 
 - image: "/uploads/indian%20insipred%20design.jpg"
   alt: 
 - image: "/uploads/moroccan%20themed%20design%20brighton.jpg"
@@ -27,6 +25,8 @@ slider-images:
 - image: "/uploads/creative%20childs%20bedroom%20design.jpg"
   alt: 
 - image: "/uploads/brighton%20kitchen%20interiors.jpg"
+  alt: 
+- image: "/uploads/fitted%20storage-6dc695.jpg"
   alt: 
 layout: portfolio
 ---
