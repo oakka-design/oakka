@@ -6,7 +6,7 @@ page-title: Portfolio -- Oakka design studio
 slider-images:
 - image: "/uploads/brighton_kitchen_interiors-ba632b.jpg"
   alt: 
-- image: "/uploads/brighton%20design%20interiors.jpg"
+- image: "/uploads/775613c8_original.jpg"
   alt: 
 - image: "/uploads/bespoke%20cupboards%20brighton.jpg"
   alt: 
