@@ -12,7 +12,7 @@ slider-images:
   alt: 
 - image: "/uploads/brighton_interiors-f0ddf4.jpg"
   alt: 
-- image: "/uploads/kitchen%20design%20services%20sussex.jpg"
+- image: "/uploads/kitchen%20design%20services%20sussex-5e33d8.jpg"
   alt: f
 - image: "/uploads/small%20garden%20design%20brighton.jpg"
   alt: 
