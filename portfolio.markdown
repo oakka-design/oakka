@@ -4,9 +4,9 @@ date: 2018-06-05 16:21:00 Z
 position: 2
 page-title: Portfolio -- Oakka design studio
 slider-images:
-- image: "/uploads/bespoke%20kitchens.jpg"
+- image: "/uploads/interior%20design%20brighton.jpg"
   alt: 
-- image: "/uploads/775613c8_original.jpg"
+- image: "/uploads/bespoke%20kitchens.jpg"
   alt: 
 - image: "/uploads/bespoke%20cupboards%20brighton.jpg"
   alt: 
