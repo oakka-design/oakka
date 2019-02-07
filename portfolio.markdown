@@ -12,7 +12,7 @@ slider-images:
   alt: 
 - image: "/uploads/brighton_interiors-f0ddf4.jpg"
   alt: 
-- image: "/uploads/brighton_kitchen_design-e7883f.jpg"
+- image: "/uploads/kitchen%20design%20services%20sussex.jpg"
   alt: f
 - image: "/uploads/small%20garden%20design%20brighton.jpg"
   alt: 
@@ -30,13 +30,13 @@ slider-images:
   alt: 
 - image: "/uploads/small_garden_design.jpg"
   alt: 
-- image: "/uploads/finishing%20touches%20design.jpg"
+- image: "/uploads/finishing%20touches%20design-a0f368.jpg"
   alt: 
-- image: "/uploads/retro%20interios%20brighton.jpg"
+- image: "/uploads/retro%20interiors.jpg"
   alt: 
-- image: "/uploads/1950s%20design%20brighton.jpg"
+- image: "/uploads/1950s%20interiors%20brighton.jpg"
   alt: 
-- image: "/uploads/bespoke%20shutters%20brighton.jpg"
+- image: "/uploads/inspired%20interios%20brighton.jpg"
   alt: 
 layout: portfolio
 ---
