@@ -26,7 +26,7 @@ slider-images:
   alt: 
 - image: "/uploads/brighton%20kitchen%20interiors.jpg"
   alt: 
-- image: "/uploads/bespoke%20storage%20brighton.jpg"
+- image: "/uploads/bespoke%20storage%20brighton-e8e550.jpg"
   alt: 
 layout: portfolio
 ---
