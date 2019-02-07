@@ -5,13 +5,13 @@ position: 0
 page-title: Oakka design studio
 slider-images:
 - image: "/uploads/brighton%20interior%20design.jpg"
-  alt: b
+  alt: 
 - image: "/uploads/hallway%20design.jpg"
   alt: 
 - image: "/uploads/stylish%20kitchen%20brighton.jpg"
   alt: 
 - image: "/uploads/bespoke%20joinery%20brighton.jpg"
-  alt: a
+  alt: 
 - image: "/uploads/retro%20styled%20room%20brighton.jpg"
   alt: 
 - image: "/uploads/brighton%20interiors.jpg"
