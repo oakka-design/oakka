@@ -12,8 +12,6 @@ slider-images:
   alt: 
 - image: "/uploads/brighton_interiors-f0ddf4.jpg"
   alt: 
-- image: "/uploads/kitchen%20design%20services%20sussex-5e33d8.jpg"
-  alt: f
 - image: "/uploads/small%20garden%20design%20brighton.jpg"
   alt: 
 - image: "/uploads/Hallway_interiors.jpg"
@@ -29,14 +27,6 @@ slider-images:
 - image: "/uploads/office_design_interiors.jpg"
   alt: 
 - image: "/uploads/small_garden_design.jpg"
-  alt: 
-- image: "/uploads/finishing%20touches%20design-a0f368.jpg"
-  alt: 
-- image: "/uploads/retro%20interiors.jpg"
-  alt: 
-- image: "/uploads/1950s%20interiors%20brighton.jpg"
-  alt: 
-- image: "/uploads/inspired%20interios%20brighton.jpg"
   alt: 
 layout: portfolio
 ---
