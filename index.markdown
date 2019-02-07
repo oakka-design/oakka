@@ -4,12 +4,20 @@ date: 2018-06-04 22:59:00 Z
 position: 0
 page-title: Oakka design studio
 slider-images:
-- image: "/uploads/slider-1.jpg"
-  alt: a
-- image: "/uploads/slider-2.jpg"
+- image: "/uploads/brighton%20interior%20design.jpg"
   alt: b
-- image: "/uploads/slider-3.jpg"
+- image: "/uploads/hallway%20design.jpg"
+  alt: 
+- image: "/uploads/stylish%20kitchen%20brighton.jpg"
+  alt: 
+- image: "/uploads/bespoke%20joinery%20brighton.jpg"
+  alt: a
+- image: "/uploads/retro%20styled%20room%20brighton.jpg"
+  alt: 
+- image: "/uploads/brighton%20interiors.jpg"
   alt: c
+- image: "/uploads/office%20styling.jpg"
+  alt: 
 mission-statement: "At the heart of Oakka Design is a believe that every room should
   be a reflection of your own individual style and personality. \n\nBy bringing together
   the creative energy of an interior designer and the practical skills and precision
