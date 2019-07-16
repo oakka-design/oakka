@@ -24,10 +24,6 @@ services:
 - title: Commercial Design
   text-box: Creative design for shops, restaurants and cafe’s
   bg-image: "/uploads/fb9e2c12b301055adccbf4141594e25f.jpg"
-- title: Project Management
-  text-box: Matt has 22 years experience as a carpenter & joiner. He is an experienced
-    project manager with network of skilled and dependable tradesman.
-  bg-image: "/uploads/1024px-Joy_Oil_gas_station_blueprints.jpg"
 layout: services
 ---
 
