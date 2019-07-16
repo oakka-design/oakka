@@ -29,13 +29,13 @@ mission-statement: "At the heart of Oakka Design is a believe that every room sh
 the-team:
   title: Meet The Team
   team-member-1:
-    image: "/uploads/Dayna.jpg"
+    image: "/uploads/em.jpg"
     text-box: |-
       Em studied at Chelsea School of Art and has a passion for design and textiles. She enjoys getting to know her clients personally, understanding their hopes and ambitions and using her creative energy to design beautiful and harmonious spaces.
 
       She loves working with colour and textures and will search high and low to find one of a kind objects and furnishings for you.
   team-member-2:
-    image: "/uploads/Brendan.jpg"
+    image: "/uploads/matt.jpg"
     text-box: Matt has a background in graphic design and has 22 years as a carpenter
       and project manager, refurbishing several properties in Brighton & Hove. He
       specialises in fitted cupboards, bespoke kitchens and one off pieces of furniture.
