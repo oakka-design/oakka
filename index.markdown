@@ -18,14 +18,13 @@ slider-images:
   alt: c
 - image: "/uploads/office%20styling.jpg"
   alt: 
-mission-statement: "At the heart of Oakka Design is a believe that every room should
-  be a reflection of your own individual style and personality. \n\nBy bringing together
-  the creative energy of an interior designer and the practical skills and precision
-  of a carpenter/project manager all within our two person team, we are able to create,
-  plan and realise your aspirations.\n\nWhy hire an interior designer, carpenter and
-  project manager separately when you can have everything from Oakka Design.\n\nWe
-  would love to talk to you about your project whether it be a small room or complete
-  refurbishment. "
+mission-statement: At the heart of Oakka Design is a belief that every room should
+  be a reflection of your own individual style and personality. Why hire an interior
+  designer, carpenter and project manager separately when you can have everything
+  from Oakka Design? By bringing together the creative energy of an interior designer
+  and the practical skills and precision of a carpenter/project manager, we are able
+  to plan and create your perfect space. We would love to hear from you to discuss
+  your project, whether it be a small room or complete refurbishment.
 the-team:
   title: Meet The Team
   team-member-1:
