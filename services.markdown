@@ -8,8 +8,8 @@ services:
   text-box: Styling, themes and ideas from one room to an entire building.
   bg-image: "/uploads/meme.jpeg"
 - title: Purchasing
-  text-box: Em help you find the perfect items and will go out her to track down one
-    of kind items within your budget.
+  text-box: Em will help you find the perfect items and go out her way to track down
+    one of a kind items within your budget.
   bg-image: "/uploads/451a7619_original.jpg"
 - title: Furniture Design
   text-box: A single bespoke piece of furniture can make a big big impact and can
