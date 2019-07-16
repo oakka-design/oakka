@@ -8,11 +8,12 @@ services:
   text-box: Styling, themes and ideas from one room to an entire building.
   bg-image: "/uploads/meme.jpeg"
 - title: Purchasing
-  text-box: Em will help you find the perfect items and go out her way to track down
-    one of a kind items within your budget.
+  text-box: "Em has a love for finding treasures and a keen eye for beautiful things
+    that can fit perfectly in your space.\n\n"
   bg-image: "/uploads/451a7619_original.jpg"
 - title: Bespoke Furniture
-  text-box: We can create beautiful unique furniture to really make a design yours.
+  text-box: We design and create beautiful unique furniture to really make a design
+    yours.
   bg-image: "/uploads/DSC_4099.jpg"
 - title: Garden Design
   text-box: We love getting the most out of small gardens and courtyard spaces.
