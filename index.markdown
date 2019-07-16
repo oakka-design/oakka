@@ -34,11 +34,11 @@ the-team:
       a design that is uniquely yours.
   team-member-2:
     image: "/uploads/matt.jpg"
-    text-box: Matt has a background in graphic design and has 22 years as a carpenter
-      and project manager, refurbishing several properties in Brighton & Hove. He
-      specialises in fitted cupboards, bespoke kitchens and one off pieces of furniture.
-      He can achieve anything from a sharp architectural finish to unique furniture
-      from reclaimed materials.
+    text-box: I have a background in graphic design and has 22 years as a carpenter
+      and project manager, refurbishing several properties in Brighton & Hove. I specialise  in
+      fitted cupboards, bespoke kitchens and one off pieces of furniture. I can achieve
+      anything from a sharp architectural finish to unique furniture from reclaimed
+      materials.
 layout: index
 ---
 
