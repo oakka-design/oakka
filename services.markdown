@@ -11,9 +11,8 @@ services:
   text-box: Em will help you find the perfect items and go out her way to track down
     one of a kind items within your budget.
   bg-image: "/uploads/451a7619_original.jpg"
-- title: Furniture Design
-  text-box: A single bespoke piece of furniture can make a big big impact and can
-    be designed and made by Matt to suit your design.
+- title: Bespoke Furniture
+  text-box: We can create beautiful unique furniture to really make a design yours.
   bg-image: "/uploads/DSC_4099.jpg"
 - title: Garden Design
   text-box: We love getting the most out of small gardens and courtyard spaces.
