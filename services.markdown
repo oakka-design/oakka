@@ -22,7 +22,7 @@ services:
   text-box: Fun and practical designs that reflect the things children love.
   bg-image: "/uploads/ea186139_original.jpg"
 - title: Commercial Design
-  text-box: Creative design for shops, restaurants and cafe’s
+  text-box: 'Creative design for shops, restaurants and cafés '
   bg-image: "/uploads/fb9e2c12b301055adccbf4141594e25f.jpg"
 layout: services
 ---
