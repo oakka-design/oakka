@@ -18,27 +18,31 @@ slider-images:
   alt: c
 - image: "/uploads/office%20styling.jpg"
   alt: 
-mission-statement: At the heart of Oakka Design is a belief that every room should
-  be a reflection of your own individual style and personality. Why hire an interior
-  designer, carpenter and project manager separately when you can have everything
-  from Oakka Design? By bringing together the creative energy of an interior designer
-  and the practical skills and precision of a carpenter/project manager, we are able
-  to plan and create your perfect space. We would love to hear from you to discuss
-  your project, whether it be a small room or complete refurbishment.
+mission-statement: "At the heart of OAKKA lies an unwavering belief in transformation.\nFrom
+  imagination to reality, a house to a home, a room to so much more. We have the ability
+  to create cohesive spaces that evolve with you, allowing your house to not only
+  be a home, but a projection of your imagination, dreams, and personality. \n\nWe
+  bring together the creative enterprise and eye for detail of an interior designer,
+  balanced with the practical skills and precision of a project manager, and the immaculate
+  handiwork of a carpenter, to deliver a uniquely qualified team of professionals
+  to plan, design, and bring to life your perfect space.\n\nFrom small rooms, commercial
+  designs, to complete home refurbishments, OAKKA embraces a singular, synchronised
+  experience for all of your design needs.\n"
 the-team:
   title: Meet The Team
   team-member-1:
     image: "/uploads/em.jpg"
-    text-box: My passion is to design and deliver beautiful, comfortable and stylish
-      spaces for all my clients. It is my job to translate your vision, and create
-      a design that is uniquely yours.
+    text-box: "Em:\nEm has a passion and eye for design. She works collaboratively
+      with clients to gain a deep understanding of their wants and needs, finding
+      a way to keep creativity and style at the forefront, without sacrificing practicality
+      and comfort, to achieve the seamless marriage of form and function. In short,
+      Em is a translator, patiently seeking out your vision, and creating a unique
+      reality based solely on you. "
   team-member-2:
     image: "/uploads/matt.jpg"
-    text-box: I have a background in graphic design and have 22 years as a carpenter
-      and project manager, refurbishing several properties in Brighton & Hove. I specialise
-      in fitted cupboards, bespoke kitchens and one off pieces of furniture. I can
-      achieve anything from a sharp architectural finish to unique furniture from
-      reclaimed materials.
+    text-box: |
+      Matt:
+      With a background in graphic design and 22 years’ experience in project management and carpentry supporting his craftsmanship, Matt brings an enduring innovation to OAKKA. Specialising in fitted cupboards, bespoke kitchens, and customised items of furniture, Matt’s finely tuned skills turn your vision into your reality. Matt provides the professionalism and know-how to find the equilibrium between creativity, practicality, and technicality.
 layout: index
 ---
 
