@@ -32,17 +32,22 @@ the-team:
   title: Meet The Team
   team-member-1:
     image: "/uploads/em.jpg"
-    text-box: "Em:\nEm has a passion and eye for design. She works collaboratively
-      with clients to gain a deep understanding of their wants and needs, finding
-      a way to keep creativity and style at the forefront, without sacrificing practicality
+    text-box: 'Em has a passion and eye for design. She works collaboratively with
+      clients to gain a deep understanding of their wants and needs, finding a way
+      to keep creativity and style at the forefront, without sacrificing practicality
       and comfort, to achieve the seamless marriage of form and function. In short,
       Em is a translator, patiently seeking out your vision, and creating a unique
-      reality based solely on you. "
+      reality based solely on you. '
   team-member-2:
     image: "/uploads/matt.jpg"
-    text-box: |
-      Matt:
-      With a background in graphic design and 22 years’ experience in project management and carpentry supporting his craftsmanship, Matt brings an enduring innovation to OAKKA. Specialising in fitted cupboards, bespoke kitchens, and customised items of furniture, Matt’s finely tuned skills turn your vision into your reality. Matt provides the professionalism and know-how to find the equilibrium between creativity, practicality, and technicality.
+    text-box: 'With a background in graphic design and 22 years’ experience in project
+      management and carpentry supporting his craftsmanship, Matt brings an enduring
+      innovation to OAKKA. Specialising in fitted cupboards, bespoke kitchens, and
+      customised items of furniture, Matt’s finely tuned skills turn your vision into
+      your reality. Matt provides the professionalism and know-how to find the equilibrium
+      between creativity, practicality, and technicality.
+
+'
 layout: index
 ---
 
