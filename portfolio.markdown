@@ -20,11 +20,7 @@ slider-images:
   alt: 
 - image: "/uploads/indian%20insipred%20design.jpg"
   alt: 
-- image: "/uploads/moroccan%20themed%20interiors.jpg"
-  alt: 
 - image: "/uploads/brighton%20kitchen%20interiors.jpg"
-  alt: 
-- image: "/uploads/moroccan%20inspired%20design.jpg"
   alt: 
 - image: "/uploads/small_garden_design.jpg"
   alt: 
