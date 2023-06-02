@@ -31,7 +31,7 @@ mission-statement: "At the heart of OAKKA lies an unwavering belief in transform
 the-team:
   title: Meet The Team
   team-member-1:
-    image: "/uploads/em.jpg"
+    image: "/uploads/em-a7153d.jpg"
     text-box: 'Em has a passion and eye for design. She works collaboratively with
       clients to gain a deep understanding of their wants and needs, finding a way
       to keep creativity and style at the forefront, without sacrificing practicality
