@@ -2,7 +2,7 @@
 title: Portfolio
 date: 2018-06-05 16:21:00 Z
 position: 2
-page-title: Portfolio -- Oakka design studio
+page-title: Portfolio
 slider-images:
 - image: "/uploads/interior%20design%20brighton.jpg"
   alt: 
