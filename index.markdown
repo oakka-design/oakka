@@ -2,7 +2,7 @@
 title: Home
 date: 2018-06-04 22:59:00 Z
 position: 0
-page-title: Oakka design studio
+page-title: Oakka Design
 slider-images:
 - image: "/uploads/brighton%20interior%20design.jpg"
   alt: 
@@ -23,9 +23,9 @@ mission-statement: |+
 
   Our drive revolves around making your dreams a reality.  We specialise in crafting environments that evolve harmoniously with you, ensuring your home mirrors not only your taste but also your individual character. It's a place that you'll eagerly return to and a space you'll happily share with your loved ones.
 
-  We unite the artistic vision and meticulous attention of an interior designer with the practical wisdom of a project manager and the skilled craftsmanship of a carpenter. This forms a committed team of professionals who are ready to strategize, design, and breathe life into your ideal space.
+  We unite the artistic vision and meticulous attention of an interior designer with the practical wisdom of a project manager and the refined craftsmanship of a carpenter. This forms a committed team of professionals who are ready to design and breathe life into your ideal space.
 
-  Whether it's the coziness of a small corner, the sophistication of commercial designs, or a complete home transformation, OAKKA delivers a smooth, grounded experience for all your design requirements.
+  Whether it's the coziness of a small corner, the sophistication of commercial designs, or a complete home transformation, Oakka delivers a smooth, grounded experience for all your design requirements..
 
 
 
