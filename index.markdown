@@ -35,7 +35,7 @@ mission-statement: |+
 the-team:
   title: Meet The Team
   team-member-1:
-    image: "/uploads/em-a7153d.jpg"
+    image: "/uploads/Em%20Oakka.jpeg"
     text-box: 'Em has a passion and eye for design. She works collaboratively with
       clients to gain a deep understanding of their wants and needs, finding a way
       to keep creativity and style at the forefront, without sacrificing practicality
