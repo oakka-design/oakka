@@ -5,7 +5,8 @@ position: 1
 page-title: Oakka Design
 services:
 - title: Interior design
-  text-box: Styling, themes and ideas from one room to an entire building.
+  text-box: We shape captivating indoor spaces by weaving together layout, furnishings,
+    decor, colours, and lighting.
   bg-image: "/uploads/meme.jpeg"
 - title: Purchasing
   text-box: Em has a love for finding treasures and a keen eye for beautiful things
