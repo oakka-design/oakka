@@ -19,13 +19,13 @@ slider-images:
 - image: "/uploads/office%20styling.jpg"
   alt: 
 mission-statement: |+
-  At OAKKA, we're firm believers in the art of transformation.
+  At Oakka Design, we're firm believers in the art of transformation.
 
   Our drive revolves around making your dreams a reality.  We specialise in crafting environments that evolve harmoniously with you, ensuring your home mirrors not only your taste but also your individual character. It's a place that you'll eagerly return to and a space you'll happily share with your loved ones.
 
   We unite the artistic vision and meticulous attention of an interior designer with the practical wisdom of a project manager and the refined craftsmanship of a carpenter. This forms a committed team of professionals who are ready to design and breathe life into your ideal space.
 
-  Whether it's the coziness of a small corner, the sophistication of commercial designs, or a complete home transformation, Oakka delivers a smooth, grounded experience for all your design requirements..
+  Whether it's the coziness of a small corner, the sophistication of commercial designs, or a complete home transformation, Oakka delivers a smooth, grounded experience for all your design requirements.
 
 
 
@@ -36,11 +36,11 @@ the-team:
   title: Meet The Team
   team-member-1:
     image: "/uploads/Em%20Oakka.jpeg"
-    text-box: 'Em has a passion and eye for design. She works collaboratively with
+    text-box: "Em has a passion and eye for design. She works collaboratively with
       clients to gain a deep understanding of their wants and needs, finding a way
       to keep creativity and style at the forefront, without sacrificing practicality
-      and comfort.  Em is a translator, patiently seeking out your vision and creating
-      a beautiful space that reflects who you are. '
+      and comfort.  \nEm is a translator, patiently seeking out your vision and creating
+      a beautiful space that reflects who you are. "
   team-member-2:
     image: "/uploads/matt.jpg"
     text-box: 'With a background in graphic design and 25 years’ experience in project
