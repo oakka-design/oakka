@@ -236,7 +236,9 @@ textarea.input-field__text-input {
 .profile-image {
   max-width: 20rem;
   width: 100%;
-  border-radius: 100%; }
+  border-radius: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; }
   @media (max-width: 41.875rem) {
     .profile-image {
       width: 65%; } }
