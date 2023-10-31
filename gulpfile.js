@@ -13,7 +13,8 @@ var messages = {
 const cleanCss = require("gulp-clean-css");
 const buffer = require("vinyl-buffer");
 const minify = require("gulp-babel-minify");
-const deploy = require("gulp-gh-pages");
+//const deploy = require("gulp-gh-pages");
+const ghpages = require("gh-pages");
 const paths = {
   js: "_js/main.js",
 };
@@ -139,5 +140,9 @@ gulp.task("default", ["browser-sync", "watch"]);
 gulp.task("prod", ["css-prod", "js-prod"]);
 
 gulp.task("deploy", ["prod"], function () {
-  return gulp.src("./_site/**/*").pipe(deploy());
+  ghpages.publish("_site", function (err) {
+    if (err) {
+      console.log("gh-pages error: ", err);
+    }
+  });
 });

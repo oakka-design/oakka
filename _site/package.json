@@ -4,6 +4,7 @@
   "description": "Oakka website",
   "main": "gulpfile.js",
   "dependencies": {
+    "gift": "^0.10.2",
     "tiny-slider": "^2.7.0"
   },
   "devDependencies": {
@@ -23,6 +24,9 @@
     "gulp-sass": "^2.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "resolutions": {
+    "gift": "^0.10.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
