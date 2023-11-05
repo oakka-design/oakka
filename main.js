@@ -122,8 +122,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-console.log("test");
-
 },{"../node_modules/tiny-slider/src/tiny-slider.module":44,"./Fetch.js":1}],3:[function(require,module,exports){
 'use strict';
 

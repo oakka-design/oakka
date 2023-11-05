@@ -34,4 +34,5 @@
 
 .title {
 	@extend .text-center;
+	margin: calculate-rem(48px) 0;
 }

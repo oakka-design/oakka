@@ -87,7 +87,11 @@ svg:hover path {
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
-.flex--center, .the-team-grid__item {
+.flex--space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.flex--center {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -129,6 +133,9 @@ svg:hover path {
     .mission-statement {
       font-size: 16px;
       font-size: 1rem; } }
+
+.title {
+  margin: 3rem 0; }
 
 .btn {
   color: #D6A94A;
@@ -255,26 +262,25 @@ textarea.input-field__text-input {
 
 .the-team-grid {
   display: grid;
-  grid-row-gap: 4.5rem; }
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 6rem;
+  grid-row-gap: 3rem; }
   @media (max-width: 41.875rem) {
     .the-team-grid {
-      grid-row-gap: 2rem; } }
+      grid-template-columns: 1fr; } }
 
-.the-team-grid__row {
-  display: grid;
-  grid-template-columns: repeat(2, 41.67%);
-  -ms-flex-pack: center;
-      justify-content: center;
-  grid-column-gap: 2.25rem; }
-  @media (max-width: 41.875rem) {
-    .the-team-grid__row {
-      grid-template-columns: repeat(1, 1fr); }
-      .the-team-grid__row:nth-child(1) .the-team-grid__item:nth-child(2) {
-        grid-row: 1; } }
+.the-team-grid__item {
+  row-gap: 2rem;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; }
   @media (max-width: 56.25rem) {
     .services-grid {
       grid-template-columns: repeat(2, 1fr); } }

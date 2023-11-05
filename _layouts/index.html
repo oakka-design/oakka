@@ -22,21 +22,13 @@ layout: default
 	<div class="wrapper">
 		<h2 class="title">{{ page.the-team.title }}</h2>
 		<div class="the-team-grid">
-			<div class="the-team-grid__row">
-				<div class="the-team-grid__item">
-					<p>{{ page.the-team.team-member-1.text-box }}</p>
-				</div>
-				<div class="the-team-grid__item">
-					<image class="profile-image" src="{{ page.the-team.team-member-1.image }}">
-				</div>
+			<div class="the-team-grid__item">
+				<image class="profile-image" src="{{ page.the-team.team-member-1.image }}">
+				<p>{{ page.the-team.team-member-1.text-box }}</p>
 			</div>
-			<div class="the-team-grid__row">
-				<div class="the-team-grid__item">
+			<div class="the-team-grid__item">
 					<image src="{{ page.the-team.team-member-2.image }}" class="profile-image">
-				</div>
-				<div class="the-team-grid__item">
 					<p>{{ page.the-team.team-member-2.text-box }}</p>
-				</div>
 			</div>
 		</div>
 	</div>
