@@ -1,38 +1,42 @@
+@use 'abstracts/variables';
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
+
 .logo {
-	$letter-spacing: 0.48em;
-	font-family: 'PT Sans', sans-serif;
-	color: $light-gray;
-	text-transform: uppercase;
-	@include font-size(84px)
-	font-weight: normal;
-	margin: calculate-rem(18px) 0;
-	@include centered-letter-spaced-text($letter-spacing)
-	line-height: 100%;
-	@media (max-width: $medium) {
-		@include font-size(48px)
-	}
+  $letter-spacing: 0.48em;
+  font-family: 'PT Sans', sans-serif;
+  color: variables.$light-gray;
+  text-transform: uppercase;
+  @include mixins.font-size(84px);
+  font-weight: normal;
+  margin: functions.calculate-rem(18px) 0;
+  @include mixins.centered-letter-spaced-text($letter-spacing);
+  line-height: 100%;
+  @media (max-width: variables.$medium) {
+    @include mixins.font-size(48px);
+  }
 }
 
 .contact-detail {
-	color: $main-theme-color;
-	text-decoration: underline;
-	font-family: 'Raleway', sans-serif;
-	@include font-size(16px)
-	@media (max-width: $small) {
-		@include font-size(15px);
-	}
+  color: variables.$main-theme-color;
+  text-decoration: underline;
+  font-family: 'Raleway', sans-serif;
+  @include mixins.font-size(16px);
+  @media (max-width: variables.$small) {
+    @include mixins.font-size(15px);
+  }
 }
 
 .mission-statement {
-	max-width: calculate-rem(994px);
-	margin: 0 auto;
-	@include font-size(20px);
-	@media (max-width: $small) {
-		@include font-size(16px);
-	}
+  max-width: functions.calculate-rem(994px);
+  margin: 0 auto;
+  @include mixins.font-size(20px);
+  @media (max-width: variables.$small) {
+    @include mixins.font-size(16px);
+  }
 }
 
 .title {
-	@extend .text-center;
-	margin: calculate-rem(48px) 0;
+  text-align: center;
+  margin: functions.calculate-rem(48px) 0;
 }

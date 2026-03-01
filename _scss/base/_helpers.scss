@@ -1,6 +1,8 @@
+@use 'abstracts/functions';
+
 .wrapper {
   width: 80%;
-  max-width: calculate-rem(1200px);
+  max-width: functions.calculate-rem(1200px);
   margin: 0 auto;
   position: relative;
 }
@@ -18,11 +20,11 @@
 }
 
 .bottom-spacer {
-  margin: 0 0 calculate-rem(30px) 0;
+  margin: 0 0 functions.calculate-rem(30px) 0;
 }
 
 .clearfix:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -38,7 +40,6 @@
 .flex--space-around {
   justify-content: space-around;
 }
-
 
 .flex--center {
   justify-content: center;
