@@ -2,7 +2,7 @@
 title: Home
 date: 2018-06-04 22:59:00 Z
 position: 0
-page-title: "- Oakka Design"
+page-title: Oakka Design
 slider-images:
 - image: "/uploads/brighton%20interior%20design.jpg"
   alt: 
