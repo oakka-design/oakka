@@ -2,7 +2,7 @@
 title: Home
 date: 2018-06-04 22:59:00 Z
 position: 0
-page-title: Oakka Design
+page-title: "- Oakka Design"
 slider-images:
 - image: "/uploads/brighton%20interior%20design.jpg"
   alt: 
@@ -54,3 +54,16 @@ the-team:
 layout: index
 ---
 
+We are a Sussex based interior design studio working across homes, Airbnb properties and wellbeing spaces such as yoga studios, therapy rooms and retreat environments.
+
+The studio grew from a belief that the spaces we spend time in shape how we feel day to day. When an environment feels calm, personal and thoughtfully put together, it allows people to settle more comfortably into the rhythms of everyday life.
+
+I work closely with each client to understand how they want their space to feel, not just how it should look. The process is collaborative and often begins with conversations about daily life, routines and what matters most to them within their space. Taking the time to properly listen, helps reveal what will genuinely make the environment feel right for the people who use it. From there the design gradually takes shape, bringing together layout, materials, colour and texture in a way that feels natural and lasting.
+
+I’m particularly drawn to mixing old and new. Simple cabinetry and timeless forms often sit alongside vintage pieces, natural materials and layered textiles. Earth based neutrals tend to form the foundation, sometimes lifted with colour or texture. I enjoy sourcing pieces with history, whether from local antique markets, trusted makers or travels further afield. Often it’s these small, carefully chosen objects that bring warmth and individuality to a space, allowing it to feel collected and personal rather than overly styled.
+
+Alongside the design work, we operate a workshop in Poynings where bespoke kitchens, cabinetry and furniture are built and professionally spray finished. This allows us to create tailored pieces when needed and ensures that design and craftsmanship work closely together throughout a project.
+
+We also support a small number of community and charity projects where thoughtful changes to an environment can positively influence wellbeing, including spaces connected to mental health, hospice care and community support.
+
+Above all, our work is collaborative. The aim is always to create spaces that feel calm, personal and genuinely aligned with the people who use them.
