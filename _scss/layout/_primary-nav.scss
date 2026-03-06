@@ -1,19 +1,23 @@
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'abstracts/functions';
+
 .primary-nav__link {
-	color: $mid-gray;
-	font-family: 'Raleway', sans-serif;
-	text-decoration: none;
-	&:hover {
-		color: $main-theme-color;
-	}
-	@include font-size(16px)
-	@media (max-width: $small) {
-		@include font-size(15px);
-	}
+  color: variables.$mid-gray;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  &:hover {
+    color: variables.$main-theme-color;
+  }
+  @include mixins.font-size(16px);
+  @media (max-width: variables.$small) {
+    @include mixins.font-size(15px);
+  }
 }
 
 .primary-nav__link--margin {
-	margin: 0 calculate-rem(22px);
-	@media (max-width: $small) {
-		margin: 0 calculate-rem(9px);
-	}
+  margin: 0 functions.calculate-rem(22px);
+  @media (max-width: variables.$small) {
+    margin: 0 functions.calculate-rem(9px);
+  }
 }

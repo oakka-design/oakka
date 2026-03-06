@@ -3,3 +3,4 @@
 /_site
 /build
 .publish
+.jekyll-cache

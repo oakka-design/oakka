@@ -1,8 +1,10 @@
+@use 'abstracts/functions';
+@use 'abstracts/placeholders';
+
 .primary-footer {
-	display: grid;
-	grid-gap: calculate-rem(32px);
-	max-width: calculate-rem(393px);
-	width: 80%;
-	@extend %spacer-large
-	
+  display: grid;
+  grid-gap: functions.calculate-rem(32px);
+  max-width: functions.calculate-rem(393px);
+  width: 80%;
+  @extend %spacer-large;
 }
