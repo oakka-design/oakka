@@ -5,7 +5,6 @@ layout: default
 <section class="primary-section">
   <div class="wrapper">
     <h2 class="title">{{ page.services-section.title }}</h2>
-    <p class="mb-16">{{ page.services-section.intro-text | newline_to_br }}</p>
     <div class="services-grid">
       {% for service in page.services-section.services %}
       <div
@@ -19,6 +18,7 @@ layout: default
       </div>
       {% endfor %}
     </div>
+    <p class="my-8">{{ page.services-section.intro-text | newline_to_br }}</p>
   </div>
 </section>
 
