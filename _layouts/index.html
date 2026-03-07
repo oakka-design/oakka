@@ -26,21 +26,6 @@ layout: default
 
 <section class="primary-section">
   <div class="wrapper">
-    <h2 class="title">{{ page.services-section.title }}</h2>
-    <p class="mb-16">{{ page.services-section.intro-text | newline_to_br }}</p>
-    <div class="columns-1 sm:columns-2 md:columns-3 gap-8">
-      {% for service in page.services-section.services %}
-      <div class="break-inside-avoid mb-8">
-        <h3 class="text-lg mb-2">{{ service.title }}</h3>
-        <p>{{ service.text-box }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="primary-section">
-  <div class="wrapper">
     <h2 class="title">{{ page.testimonials-section.title }}</h2>
     <div class="columns-1 sm:columns-2 md:columns-3 gap-8">
       {% for testimonial in page.testimonials-section.testimonials %}

@@ -23,24 +23,6 @@ mission-statement: |+
 
   Our work focuses on creating interiors that feel calm, personal and considered, combining thoughtful design with bespoke craftsmanship from our workshop in Pyecombe.
 
-services-section:
-  title: Services
-  intro-text: |+
-    Every project begins with a conversation about how you want a space to feel and function in everyday life. Some clients are looking for a full redesign, while others simply need guidance to help shape a clear direction.
-
-    Our work ranges from complete interior projects to more focused design support.
-  services:
-    - title: Interior Design
-      text-box: Thoughtful interior design for homes and living spaces that feel calm, personal and easy to live within.
-    - title: Airbnb and Hospitality
-      text-box: Designing welcoming and distinctive interiors for guest spaces, including Airbnb properties, cafés and small restaurants. The aim is always to create an environment that feels memorable, comfortable and thoughtfully put together for the people who spend time there.
-    - title: Wellbeing Spaces
-      text-box: Designing yoga studios, therapy rooms and retreat environments where atmosphere supports calm and focus.
-    - title: Bespoke Kitchens and Joinery
-      text-box: Custom kitchens, cabinetry and furniture designed with the project and built in our Poynings workshop with professional spray finishing.
-    - title: Design Consultation
-      text-box: Focused guidance on layout, materials, colour and atmosphere to help you shape a clear direction for your space.
-
 testimonials-section:
   title: Testimonials
   testimonials:
