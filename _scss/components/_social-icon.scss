@@ -1,9 +1,0 @@
-@use 'abstracts/functions';
-@use 'abstracts/mixins';
-
-.social-icon {
-  margin: 0 functions.calculate-rem(28px);
-  svg {
-    @include mixins.square(functions.calculate-rem(30px));
-  }
-}

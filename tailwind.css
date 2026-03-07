@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@layer base {
+  p {
+    font-weight: lighter;
+    line-height: 1.5em;
+    font-size: 16px;
+    @media (max-width: 510px) {
+      font-size: 15px;
+    }
+  }
+}
