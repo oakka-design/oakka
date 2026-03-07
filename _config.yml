@@ -9,24 +9,24 @@ collections:
     title: Uploads
     output: true
 defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-    permalink: "/posts/:title/"
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: default
-    page-title: ''
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      permalink: '/posts/:title/'
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: default
+      page-title: ''
 exclude:
-- notes
-- node_modules
+  - notes
+  - node_modules
 permalink: date
 contact:
   email: hello@oakkadesign.co.uk
   tel: '07738590748'
 gems:
-- jekyll-sitemap
+  - jekyll-sitemap

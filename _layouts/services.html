@@ -3,16 +3,30 @@ layout: default
 ---
 
 <section class="primary-section">
-	<div class="wrapper">
-		<div class="services-grid">
-			{% for service in page.services %}
-				<div class="card card--bg-image" style="background-image: url('{{ service.bg-image }}');">
-					<div class="card__content">
-						<h2 class="card__title">{{ service.title }}</h2>
-						<p class="card__text">{{ service.text-box }}</p>
-				</div>
-				</div>
-			{% endfor %}
-		</div>
-	</div>
+  <div class="wrapper">
+    <h2 class="title">{{ page.services-section.title }}</h2>
+    <p class="mb-16">{{ page.services-section.intro-text | newline_to_br }}</p>
+    <div class="services-grid">
+      {% for service in page.services-section.services %}
+      <div
+        class="card card--bg-image"
+        style="background-image: url('{{ service.bg-image }}');"
+      >
+        <div class="card__content">
+          <h2 class="card__title">{{ service.title }}</h2>
+          <p class="card__text">{{ service.text-box }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="primary-section">
+  <div class="wrapper">
+    <h2 class="title">{{ page.pricing-section.title }}</h2>
+    <p class="mb-16 text-lg">
+      {{ page.pricing-section.text-box | newline_to_br }}
+    </p>
+  </div>
 </section>

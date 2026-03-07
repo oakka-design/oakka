@@ -33,15 +33,6 @@ h2 {
   }
 }
 
-p {
-  font-weight: lighter;
-  line-height: 1.5em;
-  @include mixins.font-size(16px);
-  @media (max-width: variables.$small) {
-    @include mixins.font-size(15px);
-  }
-}
-
 ul {
   margin: 0;
   padding: 0;

@@ -4,53 +4,61 @@ date: 2018-06-04 22:59:00 Z
 position: 0
 page-title: Oakka Design
 slider-images:
-- image: "/uploads/brighton%20interior%20design.jpg"
-  alt: 
-- image: "/uploads/hallway%20design.jpg"
-  alt: 
-- image: "/uploads/stylish%20kitchen%20brighton.jpg"
-  alt: 
-- image: "/uploads/bespoke%20joinery%20brighton.jpg"
-  alt: 
-- image: "/uploads/retro%20styled%20room%20brighton.jpg"
-  alt: 
-- image: "/uploads/brighton%20interiors.jpg"
-  alt: c
-- image: "/uploads/office%20styling.jpg"
-  alt: 
+  - image: '/uploads/brighton%20interior%20design.jpg'
+    alt:
+  - image: '/uploads/hallway%20design.jpg'
+    alt:
+  - image: '/uploads/stylish%20kitchen%20brighton.jpg'
+    alt:
+  - image: '/uploads/bespoke%20joinery%20brighton.jpg'
+    alt:
+  - image: '/uploads/retro%20styled%20room%20brighton.jpg'
+    alt:
+  - image: '/uploads/brighton%20interiors.jpg'
+    alt: c
+  - image: '/uploads/office%20styling.jpg'
+    alt:
 mission-statement: |+
-  At Oakka Design, we're firm believers in the art of transformation.
+  We are a Sussex based interior design studio working across homes, hospitality spaces and wellbeing environments such as yoga studios, therapy rooms and retreats.
 
-  Our drive revolves around making your dreams a reality.  We specialise in crafting environments that evolve harmoniously with you, ensuring your home mirrors not only your taste but also your individual character. It's a place that you'll eagerly return to and a space you'll happily share with your loved ones.
+  Our work focuses on creating interiors that feel calm, personal and considered, combining thoughtful design with bespoke craftsmanship from our workshop in Pyecombe.
 
-  We unite the artistic vision and meticulous attention of an interior designer with the practical wisdom of a project manager and the refined craftsmanship of a carpenter. This forms a committed team of professionals who are ready to design and breathe life into your ideal space.
+services-section:
+  title: Services
+  intro-text: |+
+    Every project begins with a conversation about how you want a space to feel and function in everyday life. Some clients are looking for a full redesign, while others simply need guidance to help shape a clear direction.
 
-  Whether it's the coziness of a small corner, the sophistication of commercial designs, or a complete home transformation, Oakka delivers a smooth, grounded experience for all your design requirements.
+    Our work ranges from complete interior projects to more focused design support.
+  services:
+    - title: Interior Design
+      text-box: Thoughtful interior design for homes and living spaces that feel calm, personal and easy to live within.
+    - title: Airbnb and Hospitality
+      text-box: Designing welcoming and distinctive interiors for guest spaces, including Airbnb properties, cafés and small restaurants. The aim is always to create an environment that feels memorable, comfortable and thoughtfully put together for the people who spend time there.
+    - title: Wellbeing Spaces
+      text-box: Designing yoga studios, therapy rooms and retreat environments where atmosphere supports calm and focus.
+    - title: Bespoke Kitchens and Joinery
+      text-box: Custom kitchens, cabinetry and furniture designed with the project and built in our Poynings workshop with professional spray finishing.
+    - title: Design Consultation
+      text-box: Focused guidance on layout, materials, colour and atmosphere to help you shape a clear direction for your space.
 
+testimonials-section:
+  title: Testimonials
+  testimonials:
+    - quote: |+
+        Em completely transformed my home from a run down and unloved space into something that truly reflects who I am. She really listened to how I wanted it to feel and captured that in a way I couldn’t have envisioned myself.
 
+        I use my home as my workspace and see clients there and it now feels peaceful, loved and a beautifully serene space.
+      name: Mark
+    - quote: |+
+        We asked Em to help refresh our Airbnb, which wasn’t performing as well as we’d hoped. She introduced thoughtful changes that made the space feel distinctive and considered while still being welcoming.
 
+        The difference was immediate. Bookings increased significantly once the updates were complete.
+      name: Amber
+    - quote: |+
+        My flat had been on the market for 6 months without a single offer. I was considering reducing the asking price. Instead, I invested in some thoughtful staging with Em.
 
+        The changes completely shifted how the space presented, and within 3 days of relisting we received an offer at the full asking price.
+      name: Tom
 
-
-the-team:
-  title: Meet The Team
-  team-member-1:
-    image: "/uploads/Em%20Oakka.jpeg"
-    text-box: "Em has a passion and eye for design. She works collaboratively with
-      clients to gain a deep understanding of their wants and needs, finding a way
-      to keep creativity and style at the forefront, without sacrificing practicality
-      and comfort.  \nEm is a translator, patiently seeking out your vision and creating
-      a beautiful space that reflects who you are. "
-  team-member-2:
-    image: "/uploads/matt.jpg"
-    text-box: 'With a background in graphic design and 25 years’ experience in project
-      management and carpentry supporting his craftsmanship, Matt brings a wealth
-      of experience to Oakka. Specialising in fitted cupboards and wardrobes, bespoke
-      kitchens, and customised items of furniture, Matt’s finely tuned skills turn
-      your vision into reality. Matt provides the professionalism and know-how to
-      find the equilibrium between creativity, practicality, and technicality.
-
-'
 layout: index
 ---
-
