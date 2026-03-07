@@ -4,20 +4,20 @@ date: 2018-06-04 22:59:00 Z
 position: 0
 page-title: Oakka Design
 slider-images:
-  - image: '/uploads/brighton%20interior%20design.jpg'
-    alt:
-  - image: '/uploads/hallway%20design.jpg'
-    alt:
-  - image: '/uploads/stylish%20kitchen%20brighton.jpg'
-    alt:
-  - image: '/uploads/bespoke%20joinery%20brighton.jpg'
-    alt:
-  - image: '/uploads/retro%20styled%20room%20brighton.jpg'
-    alt:
-  - image: '/uploads/brighton%20interiors.jpg'
-    alt: c
-  - image: '/uploads/office%20styling.jpg'
-    alt:
+- image: "/uploads/brighton%20interior%20design.jpg"
+  alt: 
+- image: "/uploads/hallway%20design.jpg"
+  alt: 
+- image: "/uploads/stylish%20kitchen%20brighton.jpg"
+  alt: 
+- image: "/uploads/bespoke%20joinery%20brighton.jpg"
+  alt: 
+- image: "/uploads/retro%20styled%20room%20brighton.jpg"
+  alt: 
+- image: "/uploads/brighton%20interiors.jpg"
+  alt: c
+- image: "/uploads/office%20styling.jpg"
+  alt: 
 mission-statement: |+
   We are a Sussex based interior design studio working across homes, hospitality spaces and wellbeing environments such as yoga studios, therapy rooms and retreats.
 
@@ -25,40 +25,46 @@ mission-statement: |+
 
 services-section:
   title: Services
-  intro-text: |+
+  intro-text: |
     Every project begins with a conversation about how you want a space to feel and function in everyday life. Some clients are looking for a full redesign, while others simply need guidance to help shape a clear direction.
 
     Our work ranges from complete interior projects to more focused design support.
   services:
-    - title: Interior Design
-      text-box: Thoughtful interior design for homes and living spaces that feel calm, personal and easy to live within.
-    - title: Airbnb and Hospitality
-      text-box: Designing welcoming and distinctive interiors for guest spaces, including Airbnb properties, cafés and small restaurants. The aim is always to create an environment that feels memorable, comfortable and thoughtfully put together for the people who spend time there.
-    - title: Wellbeing Spaces
-      text-box: Designing yoga studios, therapy rooms and retreat environments where atmosphere supports calm and focus.
-    - title: Bespoke Kitchens and Joinery
-      text-box: Custom kitchens, cabinetry and furniture designed with the project and built in our Poynings workshop with professional spray finishing.
-    - title: Design Consultation
-      text-box: Focused guidance on layout, materials, colour and atmosphere to help you shape a clear direction for your space.
-
+  - title: Interior Design
+    text-box: Thoughtful interior design for homes and living spaces that feel calm,
+      personal and easy to live within.
+  - title: Airbnb and Hospitality
+    text-box: Designing welcoming and distinctive interiors for guest spaces, including
+      Airbnb properties, cafés and small restaurants. The aim is always to create
+      an environment that feels memorable, comfortable and thoughtfully put together
+      for the people who spend time there.
+  - title: Wellbeing Spaces
+    text-box: Designing yoga studios, therapy rooms and retreat environments where
+      atmosphere supports calm and focus.
+  - title: Bespoke Kitchens and Joinery
+    text-box: Custom kitchens, cabinetry and furniture designed with the project and
+      built in our Poynings workshop with professional spray finishing.
+  - title: Design Consultation
+    text-box: Focused guidance on layout, materials, colour and atmosphere to help
+      you shape a clear direction for your space.
 testimonials-section:
   title: Testimonials
   testimonials:
-    - quote: |+
-        Em completely transformed my home from a run down and unloved space into something that truly reflects who I am. She really listened to how I wanted it to feel and captured that in a way I couldn’t have envisioned myself.
+  - quote: |
+      Em completely transformed my home from a run down and unloved space into something that truly reflects who I am. She really listened to how I wanted it to feel and captured that in a way I couldn’t have envisioned myself.
 
-        I use my home as my workspace and see clients there and it now feels peaceful, loved and a beautifully serene space.
-      name: Mark
-    - quote: |+
-        We asked Em to help refresh our Airbnb, which wasn’t performing as well as we’d hoped. She introduced thoughtful changes that made the space feel distinctive and considered while still being welcoming.
+      I use my home as my workspace and see clients there and it now feels peaceful, loved and a beautifully serene space.
+    name: Mark
+  - quote: |
+      We asked Em to help refresh our Airbnb, which wasn’t performing as well as we’d hoped. She introduced thoughtful changes that made the space feel distinctive and considered while still being welcoming.
 
-        The difference was immediate. Bookings increased significantly once the updates were complete.
-      name: Amber
-    - quote: |+
-        My flat had been on the market for 6 months without a single offer. I was considering reducing the asking price. Instead, I invested in some thoughtful staging with Em.
+      The difference was immediate. Bookings increased significantly once the updates were complete.
+    name: Amber
+  - quote: |
+      My flat had been on the market for 6 months without a single offer. I was considering reducing the asking price. Instead, I invested in some thoughtful staging with Em.
 
-        The changes completely shifted how the space presented, and within 3 days of relisting we received an offer at the full asking price.
-      name: Tom
-
+      The changes completely shifted how the space presented, and within 3 days of relisting we received an offer at the full asking price.
+    name: Tom
 layout: index
 ---
+
