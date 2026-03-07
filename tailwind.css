@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@source "./_js/**";
 
 @layer theme, base, components, utilities;
 @import 'tailwindcss/theme.css' layer(theme);
