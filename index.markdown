@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: Home
 date: 2018-06-04 22:59:00 Z
 position: 0
@@ -48,6 +47,4 @@ testimonials-section:
         The changes completely shifted how the space presented, and within 3 days of relisting we received an offer at the full asking price.
       name: Tom
 layout: index
-=======
->>>>>>> 7d78c81d293d313575bbbca8a0074a67672c1b2a
 ---
