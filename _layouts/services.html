@@ -18,7 +18,9 @@ layout: default
       </div>
       {% endfor %}
     </div>
-    <p class="my-8">{{ page.services-section.intro-text | newline_to_br }}</p>
+    <p class="my-8">
+      {{ page.services-section.intro-text | strip | newline_to_br }}
+    </p>
   </div>
 </section>
 
@@ -26,14 +28,16 @@ layout: default
   <div class="wrapper">
     <h2 class="title">{{ page.time-to-sell-section.title }}</h2>
     <p class="mb-16">
-      {{ page.time-to-sell-section.text-box | newline_to_br }}
+      {{ page.time-to-sell-section.text-box | strip | newline_to_br }}
     </p>
   </div>
 
   <section class="primary-section">
     <div class="wrapper">
       <h2 class="title">{{ page.pricing-section.title }}</h2>
-      <p class="mb-16">{{ page.pricing-section.text-box | newline_to_br }}</p>
+      <p class="mb-16">
+        {{ page.pricing-section.text-box | strip | newline_to_br }}
+      </p>
     </div>
   </section>
 </section>

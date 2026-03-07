@@ -18,8 +18,6 @@ slider-images:
     alt: c
   - image: '/uploads/office%20styling.jpg'
     alt:
-strap-line: |+
-  Interior design and bespoke craftsmanship
 
 mission-statement: |+
   We are a Sussex based interior design studio working across homes, hospitality spaces and wellbeing environments such as yoga studios, therapy rooms and retreats.
