@@ -1,48 +1,4 @@
 (() => {
-  var __create = Object.create;
-  var __defProp = Object.defineProperty;
-  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-  var __getOwnPropNames = Object.getOwnPropertyNames;
-  var __getProtoOf = Object.getPrototypeOf;
-  var __hasOwnProp = Object.prototype.hasOwnProperty;
-  var __commonJS = (cb, mod) => function __require() {
-    return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
-  };
-  var __copyProps = (to, from, except, desc) => {
-    if (from && typeof from === "object" || typeof from === "function") {
-      for (let key of __getOwnPropNames(from))
-        if (!__hasOwnProp.call(to, key) && key !== except)
-          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-    }
-    return to;
-  };
-  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-    // If the importer is in node compatibility mode or this is not an ESM
-    // file that has been converted to a CommonJS file using a Babel-
-    // compatible transform (i.e. "__esModule" has not been set), then set
-    // "default" to the CommonJS "module.exports" for node compatibility.
-    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
-    mod
-  ));
-
-  // _js/Fetch.js
-  var require_Fetch = __commonJS({
-    "_js/Fetch.js"(exports, module) {
-      var Fetch2 = class {
-        async get(url) {
-          return await (await fetch(url)).json();
-        }
-        async post(url, data) {
-          return await (await fetch(url, {
-            method: "POST",
-            body: data
-          })).json();
-        }
-      };
-      module.exports = new Fetch2();
-    }
-  });
-
   // node_modules/tiny-slider/src/helpers/raf.js
   var win = window;
   var raf = win.requestAnimationFrame || win.webkitRequestAnimationFrame || win.mozRequestAnimationFrame || win.msRequestAnimationFrame || function(cb) {
@@ -2680,7 +2636,14 @@
   };
 
   // _js/main.js
-  var import_Fetch = __toESM(require_Fetch());
+  var sendEmail = (body) => fetch("https://formsubmit.co/ajax/hello@oakkadesign.co.uk", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: JSON.stringify(body)
+  });
   document.addEventListener("DOMContentLoaded", async () => {
     if (window.location.pathname === "/") {
       const slider = tns({
@@ -2739,6 +2702,10 @@
         const elRequiredInputs = document.querySelectorAll(".js-required-input");
         const elEmailInput = document.querySelector('input[name="email"]');
         const elErrors = document.querySelectorAll(".js-input-error");
+        const elEmailReceivedMessage = document.querySelector(
+          "#js-email-received-message"
+        );
+        if (elEmailReceivedMessage) elEmailReceivedMessage.remove();
         elErrors.forEach((error) => error.remove());
         let errors = {};
         if (!/.+@.+/.test(elEmailInput.value)) {
@@ -2757,31 +2724,14 @@
         });
         const errorNames = Object.keys(errors);
         if (errorNames.length === 0) {
-          const queryString = new URLSearchParams(
-            new FormData(elForm)
-          ).toString();
-          const res = await import_Fetch.default.get(
-            `${elForm.getAttribute("action")}&${queryString}`
+          const formData = new FormData(elForm);
+          const res = await sendEmail(Object.fromEntries(formData.entries()));
+          elForm.insertAdjacentHTML(
+            "beforeend",
+            `
+					<p id="js-email-received-message" class="mt-16 text-xl text-center">Thank you for your email</p>
+          `
           );
-          if (res.success) {
-            document.body.insertAdjacentHTML(
-              "beforeend",
-              `
-					<div class="modal">
-						<div class="modal__inner">
-							<span>Thank you for your email :)</span>
-							<span class="modal__close">X</span>
-						</div>
-					</div>`
-            );
-          }
-          const elModal = document.querySelector(".modal");
-          const elModalInner = document.querySelector(".modal__inner");
-          const elModalClose = document.querySelector(".modal__close");
-          elModal.addEventListener("click", (e2) => {
-            if (e2.target !== elModalInner) elModal.remove();
-          });
-          elModalClose.addEventListener("click", () => elModal.remove());
         } else {
           errorNames.forEach(
             (name) => errors[name].input.insertAdjacentHTML(

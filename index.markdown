@@ -42,5 +42,20 @@ testimonials-section:
 
         The changes completely shifted how the space presented, and within 3 days of relisting we received an offer at the full asking price.
       name: Tom
+    - quote: |
+        Em completely transformed my home from a run down and unloved space into something that truly reflects who I am. She really listened to how I wanted it to feel and captured that in a way I couldn’t have envisioned myself.
+
+        I use my home as my workspace and see clients there and it now feels peaceful, loved and a beautifully serene space.
+      name: Mark
+    - quote: |
+        We asked Em to help refresh our Airbnb, which wasn’t performing as well as we’d hoped. She introduced thoughtful changes that made the space feel distinctive and considered while still being welcoming.
+
+        The difference was immediate. Bookings increased significantly once the updates were complete.
+      name: Amber
+    - quote: |
+        My flat had been on the market for 6 months without a single offer. I was considering reducing the asking price. Instead, I invested in some thoughtful staging with Em.
+
+        The changes completely shifted how the space presented, and within 3 days of relisting we received an offer at the full asking price.
+      name: Tom
 layout: index
 ---
