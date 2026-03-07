@@ -1,15 +1,2797 @@
-(()=>{var Tf=Object.create;var bn=Object.defineProperty;var Mf=Object.getOwnPropertyDescriptor;var Sf=Object.getOwnPropertyNames;var Af=Object.getPrototypeOf,Lf=Object.prototype.hasOwnProperty;var Cf=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports);var Nf=(t,n,a,s)=>{if(n&&typeof n=="object"||typeof n=="function")for(let o of Sf(n))!Lf.call(t,o)&&o!==a&&bn(t,o,{get:()=>n[o],enumerable:!(s=Mf(n,o))||s.enumerable});return t};var Of=(t,n,a)=>(a=t!=null?Tf(Af(t)):{},Nf(n||!t||!t.__esModule?bn(a,"default",{value:t,enumerable:!0}):a,t));var Wn=Cf((Lo,Hn)=>{var pr=class{async get(n){return await(await fetch(n)).json()}async post(n,a){return await(await fetch(n,{method:"POST",body:a})).json()}};Hn.exports=new pr});var Mi=window,Re=Mi.requestAnimationFrame||Mi.webkitRequestAnimationFrame||Mi.mozRequestAnimationFrame||Mi.msRequestAnimationFrame||function(t){return setTimeout(t,16)};var xn=window,Si=xn.cancelAnimationFrame||xn.mozCancelAnimationFrame||function(t){clearTimeout(t)};function Ai(){for(var t,n,a,s=arguments[0]||{},o=1,g=arguments.length;o<g;o++)if((t=arguments[o])!==null)for(n in t)a=t[n],s!==a&&a!==void 0&&(s[n]=a);return s}function pe(t){return["true","false"].indexOf(t)>=0?JSON.parse(t):t}function ge(t,n,a,s){if(s)try{t.setItem(n,a)}catch{}return a}function En(){var t=window.tnsId;return window.tnsId=t?t+1:1,"tns"+window.tnsId}function Ue(){var t=document,n=t.body;return n||(n=t.createElement("body"),n.fake=!0),n}var lt=document.documentElement;function $e(t){var n="";return t.fake&&(n=lt.style.overflow,t.style.background="",t.style.overflow=lt.style.overflow="hidden",lt.appendChild(t)),n}function Ge(t,n){t.fake&&(t.remove(),lt.style.overflow=n,lt.offsetHeight)}function Tn(){var t=document,n=Ue(),a=$e(n),s=t.createElement("div"),o=!1;n.appendChild(s);try{for(var g="(10px * 10)",q=["calc"+g,"-moz-calc"+g,"-webkit-calc"+g],A,N=0;N<3;N++)if(A=q[N],s.style.width=A,s.offsetWidth===100){o=A.replace(g,"");break}}catch{}return n.fake?Ge(n,a):s.remove(),o}function Mn(){var t=document,n=Ue(),a=$e(n),s=t.createElement("div"),o=t.createElement("div"),g="",q=70,A=3,N=!1;s.className="tns-t-subp2",o.className="tns-t-ct";for(var H=0;H<q;H++)g+="<div></div>";return o.innerHTML=g,s.appendChild(o),n.appendChild(s),N=Math.abs(s.getBoundingClientRect().left-o.children[q-A].getBoundingClientRect().left)<2,n.fake?Ge(n,a):s.remove(),N}function Sn(){if(window.matchMedia||window.msMatchMedia)return!0;var t=document,n=Ue(),a=$e(n),s=t.createElement("div"),o=t.createElement("style"),g="@media all and (min-width:1px){.tns-mq-test{position:absolute}}",q;return o.type="text/css",s.className="tns-mq-test",n.appendChild(o),n.appendChild(s),o.styleSheet?o.styleSheet.cssText=g:o.appendChild(t.createTextNode(g)),q=window.getComputedStyle?window.getComputedStyle(s).position:s.currentStyle.position,n.fake?Ge(n,a):s.remove(),q==="absolute"}function An(t,n){var a=document.createElement("style");return t&&a.setAttribute("media",t),n&&a.setAttribute("nonce",n),document.querySelector("head").appendChild(a),a.sheet?a.sheet:a.styleSheet}function Ne(t,n,a,s){"insertRule"in t?t.insertRule(n+"{"+a+"}",s):t.addRule(n,a,s)}function Ln(t,n){"deleteRule"in t?t.deleteRule(n):t.removeRule(n)}function xe(t){var n="insertRule"in t?t.cssRules:t.rules;return n.length}function Cn(t,n){return Math.atan2(t,n)*(180/Math.PI)}function Nn(t,n){var a=!1,s=Math.abs(90-Math.abs(t));return s>=90-n?a="horizontal":s<=n&&(a="vertical"),a}function ke(t,n,a){for(var s=0,o=t.length;s<o;s++)n.call(a,t[s],s)}var bt="classList"in document.createElement("_");var ze=bt?function(t,n){return t.classList.contains(n)}:function(t,n){return t.className.indexOf(n)>=0};var W=bt?function(t,n){ze(t,n)||t.classList.add(n)}:function(t,n){ze(t,n)||(t.className+=" "+n)};var te=bt?function(t,n){ze(t,n)&&t.classList.remove(n)}:function(t,n){ze(t,n)&&(t.className=t.className.replace(n,""))};function xt(t,n){return t.hasAttribute(n)}function Qt(t,n){return t.getAttribute(n)}function Li(t){return typeof t.item<"u"}function ae(t,n){if(t=Li(t)||t instanceof Array?t:[t],Object.prototype.toString.call(n)==="[object Object]")for(var a=t.length;a--;)for(var s in n)t[a].setAttribute(s,n[s])}function He(t,n){t=Li(t)||t instanceof Array?t:[t],n=n instanceof Array?n:[n];for(var a=n.length,s=t.length;s--;)for(var o=a;o--;)t[s].removeAttribute(n[o])}function hr(t){for(var n=[],a=0,s=t.length;a<s;a++)n.push(t[a]);return n}function oe(t,n){t.style.display!=="none"&&(t.style.display="none")}function le(t,n){t.style.display==="none"&&(t.style.display="")}function mr(t){return window.getComputedStyle(t).display!=="none"}function Et(t){if(typeof t=="string"){var n=[t],a=t.charAt(0).toUpperCase()+t.substr(1),s=["Webkit","Moz","ms","O"];s.forEach(function(N){(N!=="ms"||t==="transform")&&n.push(N+a)}),t=n}for(var o=document.createElement("fakeelement"),g=t.length,q=0;q<t.length;q++){var A=t[q];if(o.style[A]!==void 0)return A}return!1}function On(t){if(!t||!window.getComputedStyle)return!1;var n=document,a=Ue(),s=$e(a),o=n.createElement("p"),g,q=t.length>9?"-"+t.slice(0,-9).toLowerCase()+"-":"";return q+="transform",a.insertBefore(o,null),o.style[t]="translate3d(1px,1px,1px)",g=window.getComputedStyle(o).getPropertyValue(q),a.fake?Ge(a,s):o.remove(),g!==void 0&&g.length>0&&g!=="none"}function vr(t,n){var a=!1;return/^Webkit/.test(t)?a="webkit"+n+"End":/^O/.test(t)?a="o"+n+"End":t&&(a=n.toLowerCase()+"end"),a}var Rn=!1;try{Dn=Object.defineProperty({},"passive",{get:function(){Rn=!0}}),window.addEventListener("test",null,Dn)}catch{}var Dn,Ci=Rn?{passive:!0}:!1;function z(t,n,a){for(var s in n){var o=["touchstart","touchmove"].indexOf(s)>=0&&!a?Ci:!1;t.addEventListener(s,n[s],o)}}function Y(t,n){for(var a in n){var s=["touchstart","touchmove"].indexOf(a)>=0?Ci:!1;t.removeEventListener(a,n[a],s)}}function kn(){return{topics:{},on:function(t,n){this.topics[t]=this.topics[t]||[],this.topics[t].push(n)},off:function(t,n){if(this.topics[t]){for(var a=0;a<this.topics[t].length;a++)if(this.topics[t][a]===n){this.topics[t].splice(a,1);break}}},emit:function(t,n){n.type=t,this.topics[t]&&this.topics[t].forEach(function(a){a(n,t)})}}}function zn(t,n,a,s,H,g,q){var A=Math.min(g,10),N=H.indexOf("%")>=0?"%":"px",H=H.replace(N,""),ye=Number(t.style[n].replace(a,"").replace(s,"").replace(N,"")),we=(H-ye)/g*A,Xt;setTimeout(F,A);function F(){g-=A,ye+=we,t.style[n]=a+ye+N+s,g>0?setTimeout(F,A):q()}}Object.keys||(Object.keys=function(t){var n=[];for(var a in t)Object.prototype.hasOwnProperty.call(t,a)&&n.push(a);return n});"remove"in Element.prototype||(Element.prototype.remove=function(){this.parentNode&&this.parentNode.removeChild(this)});var Ni=function(t){t=Ai({container:".slider",mode:"carousel",axis:"horizontal",items:1,gutter:0,edgePadding:0,fixedWidth:!1,autoWidth:!1,viewportMax:!1,slideBy:1,center:!1,controls:!0,controlsPosition:"top",controlsText:["prev","next"],controlsContainer:!1,prevButton:!1,nextButton:!1,nav:!0,navPosition:"top",navContainer:!1,navAsThumbnails:!1,arrowKeys:!1,speed:300,autoplay:!1,autoplayPosition:"top",autoplayTimeout:5e3,autoplayDirection:"forward",autoplayText:["start","stop"],autoplayHoverPause:!1,autoplayButton:!1,autoplayButtonOutput:!0,autoplayResetOnVisibility:!0,animateIn:"tns-fadeIn",animateOut:"tns-fadeOut",animateNormal:"tns-normal",animateDelay:!1,loop:!0,rewind:!1,autoHeight:!1,responsive:!1,lazyload:!1,lazyloadSelector:".tns-lazy-img",touch:!0,mouseDrag:!1,swipeAngle:15,nested:!1,preventActionWhenRunning:!1,preventScrollOnTouch:!1,freezable:!0,onInit:!1,useLocalStorage:!0,nonce:!1},t||{});var n=document,a=window,s={ENTER:13,SPACE:32,LEFT:37,RIGHT:39},o={},g=t.useLocalStorage;if(g){var q=navigator.userAgent,A=new Date;try{o=a.localStorage,o?(o.setItem(A,A),g=o.getItem(A)==A,o.removeItem(A)):g=!1,g||(o={})}catch{g=!1}g&&(o.tnsApp&&o.tnsApp!==q&&["tC","tPL","tMQ","tTf","t3D","tTDu","tTDe","tADu","tADe","tTE","tAE"].forEach(function(e){o.removeItem(e)}),localStorage.tnsApp=q)}var N=o.tC?pe(o.tC):ge(o,"tC",Tn(),g),H=o.tPL?pe(o.tPL):ge(o,"tPL",Mn(),g),ye=o.tMQ?pe(o.tMQ):ge(o,"tMQ",Sn(),g),we=o.tTf?pe(o.tTf):ge(o,"tTf",Et("transform"),g),Xt=o.t3D?pe(o.t3D):ge(o,"t3D",On(we),g),F=o.tTDu?pe(o.tTDu):ge(o,"tTDu",Et("transitionDuration"),g),st=o.tTDe?pe(o.tTDe):ge(o,"tTDe",Et("transitionDelay"),g),Zt=o.tADu?pe(o.tADu):ge(o,"tADu",Et("animationDuration"),g),Oi=o.tADe?pe(o.tADe):ge(o,"tADe",Et("animationDelay"),g),Je=o.tTE?pe(o.tTE):ge(o,"tTE",vr(F,"Transition"),g),gr=o.tAE?pe(o.tAE):ge(o,"tAE",vr(Zt,"Animation"),g),yr=a.console&&typeof a.console.warn=="function",Di=["container","controlsContainer","prevButton","nextButton","navContainer","autoplayButton"],wr={};if(Di.forEach(function(e){if(typeof t[e]=="string"){var i=t[e],r=n.querySelector(i);if(wr[e]=i,r&&r.nodeName)t[e]=r;else{yr&&console.warn("Can't find",t[e]);return}}}),t.container.children.length<1){yr&&console.warn("No slides found in",t.container);return}var O=t.responsive,ut=t.nested,c=t.mode==="carousel";if(O){0 in O&&(t=Ai(t,O[0]),delete O[0]);var Ri={};for(var br in O){var Tt=O[br];Tt=typeof Tt=="number"?{items:Tt}:Tt,Ri[br]=Tt}O=Ri,Ri=null}function xr(e){for(var i in e)c||(i==="slideBy"&&(e[i]="page"),i==="edgePadding"&&(e[i]=!1),i==="autoHeight"&&(e[i]=!1)),i==="responsive"&&xr(e[i])}if(c||xr(t),!c){t.axis="horizontal",t.slideBy="page",t.edgePadding=!1;var We=t.animateIn,Ut=t.animateOut,ki=t.animateDelay,Ee=t.animateNormal}var M=t.axis==="horizontal",B=n.createElement("div"),ee=n.createElement("div"),ie,m=t.container,zi=m.parentNode,Er=m.outerHTML,E=m.children,v=E.length,Mt,$t=zr(),St=!1;O&&Qr(),c&&(m.className+=" tns-vpfix");var y=t.autoWidth,d=p("fixedWidth"),R=p("edgePadding"),x=p("gutter"),_=Wr(),X=p("center"),w=y?1:Math.floor(p("items")),ct=p("slideBy"),Hi=t.viewportMax||t.fixedWidthViewportWidth,Fe=p("arrowKeys"),de=p("speed"),At=t.rewind,Z=At?!1:t.loop,re=p("autoHeight"),Te=p("controls"),qe=p("controlsText"),Me=p("nav"),Pe=p("touch"),je=p("mouseDrag"),G=p("autoplay"),Wi=p("autoplayTimeout"),Ve=p("autoplayText"),_e=p("autoplayHoverPause"),Ke=p("autoplayResetOnVisibility"),S=An(null,p("nonce")),Lt=t.lazyload,qn=t.lazyloadSelector,P,dt=[],I=Z?In():0,T=c?v+I*2:v+I,Tr=!!((d||y)&&!Z),ht=d?tr():null,Fi=!c||!Z,Be=M?"left":"top",Ye="",mt="",Ct=function(){return d?function(){return X&&!Z?v-1:Math.ceil(-ht/(d+x))}:y?function(){for(var e=0;e<T;e++)if(P[e]>=-ht)return e}:function(){return X&&c&&!Z?v-1:Z||c?Math.max(0,T-Math.ceil(w)):T-1}}(),l=Rr(p("startIndex")),Ie=l,Df=Dr(),Se=0,se=y?null:Ct(),Pn,Gt=t.preventActionWhenRunning,Jt=t.swipeAngle,Ae=Jt?"?":!0,Qe=!1,qi=t.onInit,K=new kn,Xe=" tns-slider tns-"+t.mode,D=m.id||En(),ne=p("disable"),Nt=!1,Bt=t.freezable,he=Bt&&!y?Zi():!1,Ot=!1,Dt={click:Ze,keydown:mf},Pi={click:of,keydown:vf},Rt={mouseover:cf,mouseout:df},kt={visibilitychange:uf},zt={keydown:hf},Ht={touchstart:vn,touchmove:pn,touchend:Ti,touchcancel:Ti},Wt={mousedown:vn,mousemove:pn,mouseup:Ti,mouseleave:Ti},ei=Oe("controls"),ji=Oe("nav"),Ft=y?!0:t.navAsThumbnails,Vi=Oe("autoplay"),Mr=Oe("touch"),Sr=Oe("mouseDrag"),_i="tns-slide-active",Ar="tns-slide-cloned",ti="tns-complete",ii={load:Jn,error:Bn},Ki,Yi,qt=t.preventScrollOnTouch==="force";if(ei)var j=t.controlsContainer,Lr=t.controlsContainer?t.controlsContainer.outerHTML:"",L=t.prevButton,C=t.nextButton,jn=t.prevButton?t.prevButton.outerHTML:"",Vn=t.nextButton?t.nextButton.outerHTML:"",Pt,jt;if(ji)var U=t.navContainer,Cr=t.navContainer?t.navContainer.outerHTML:"",ue,me=y?v:yn(),et=0,tt=-1,ce=kr(),vt=ce,ri="tns-nav-active",pt="Carousel Page ",Ii=" (Current Slide)";if(Vi)var Nr=t.autoplayDirection==="forward"?1:-1,k=t.autoplayButton,Or=t.autoplayButton?t.autoplayButton.outerHTML:"",Vt=["<span class='tns-visually-hidden'>"," animation</span>"],ni,fe,fi,gt,ai;if(Mr||Sr)var it={},be={},oi,_n,Kn,rt=!1,ve,Qi=M?function(e,i){return e.x-i.x}:function(e,i){return e.y-i.y};y||li(ne||he),we&&(Be=we,Ye="translate",Xt?(Ye+=M?"3d(":"3d(0px, ",mt=M?", 0px, 0px)":", 0px)"):(Ye+=M?"X(":"Y(",mt=")")),c&&(m.className=m.className.replace("tns-vpfix","")),Xn(),Zn(),Pr();function li(e){e&&(Te=Me=Pe=je=Fe=G=_e=Ke=!1)}function Dr(){for(var e=c?l-I:l;e<0;)e+=v;return e%v+1}function Rr(e){return e=e?Math.max(0,Math.min(Z?v-1:v-w,e)):0,c?e+I:e}function si(e){for(e==null&&(e=l),c&&(e-=I);e<0;)e+=v;return Math.floor(e%v)}function kr(){var e=si(),i;return i=Ft?e:d||y?Math.ceil((e+1)*me/v-1):Math.floor(e/w),!Z&&c&&l===se&&(i=me-1),i}function Yn(){if(y||d&&!Hi)return v-1;var e=d?"fixedWidth":"items",i=[];if((d||t[e]<v)&&i.push(t[e]),O)for(var r in O){var f=O[r][e];f&&(d||f<v)&&i.push(f)}return i.length||i.push(0),Math.ceil(d?Hi/Math.min.apply(null,i):Math.max.apply(null,i))}function In(){var e=Yn(),i=c?Math.ceil((e*5-v)/2):e*4-v;return i=Math.max(e,i),Oe("edgePadding")?i+1:i}function zr(){return a.innerWidth||n.documentElement.clientWidth||n.body.clientWidth}function Xi(e){return e==="top"?"afterbegin":"beforeend"}function Hr(e){if(e!=null){var i=n.createElement("div"),r,f;return e.appendChild(i),r=i.getBoundingClientRect(),f=r.right-r.left,i.remove(),f||Hr(e.parentNode)}}function Wr(){var e=R?R*2-x:0;return Hr(zi)-e}function Oe(e){if(t[e])return!0;if(O){for(var i in O)if(O[i][e])return!0}return!1}function p(e,i){if(i==null&&(i=$t),e==="items"&&d)return Math.floor((_+x)/(d+x))||1;var r=t[e];if(O)for(var f in O)i>=parseInt(f)&&e in O[f]&&(r=O[f][e]);return e==="slideBy"&&r==="page"&&(r=p("items")),!c&&(e==="slideBy"||e==="items")&&(r=Math.floor(r)),r}function Qn(e){return N?N+"("+e*100+"% / "+T+")":e*100/T+"%"}function ui(e,i,r,f,u){var h="";if(e!==void 0){var b=e;i&&(b-=i),h=M?"margin: 0 "+b+"px 0 "+e+"px;":"margin: "+e+"px 0 "+b+"px 0;"}else if(i&&!r){var $="-"+i+"px",V=M?$+" 0 0":"0 "+$+" 0";h="margin: 0 "+V+";"}return!c&&u&&F&&f&&(h+=nt(f)),h}function ci(e,i,r){return e?(e+i)*T+"px":N?N+"("+T*100+"% / "+r+")":T*100/r+"%"}function di(e,i,r){var f;if(e)f=e+i+"px";else{c||(r=Math.floor(r));var u=c?T:r;f=N?N+"(100% / "+u+")":100/u+"%"}return f="width:"+f,ut!=="inner"?f+";":f+" !important;"}function hi(e){var i="";if(e!==!1){var r=M?"padding-":"margin-",f=M?"right":"bottom";i=r+f+": "+e+"px;"}return i}function Fr(e,i){var r=e.substring(0,e.length-i).toLowerCase();return r&&(r="-"+r+"-"),r}function nt(e){return Fr(F,18)+"transition-duration:"+e/1e3+"s;"}function qr(e){return Fr(Zt,17)+"animation-duration:"+e/1e3+"s;"}function Xn(){var e="tns-outer",i="tns-inner",r=Oe("gutter");if(B.className=e,ee.className=i,B.id=D+"-ow",ee.id=D+"-iw",m.id===""&&(m.id=D),Xe+=H||y?" tns-subpixel":" tns-no-subpixel",Xe+=N?" tns-calc":" tns-no-calc",y&&(Xe+=" tns-autowidth"),Xe+=" tns-"+t.axis,m.className+=Xe,c?(ie=n.createElement("div"),ie.id=D+"-mw",ie.className="tns-ovh",B.appendChild(ie),ie.appendChild(ee)):B.appendChild(ee),re){var f=ie||ee;f.className+=" tns-ah"}if(zi.insertBefore(B,m),ee.appendChild(m),ke(E,function(Ce,at){W(Ce,"tns-item"),Ce.id||(Ce.id=D+"-item"+at),!c&&Ee&&W(Ce,Ee),ae(Ce,{"aria-hidden":"true",tabindex:"-1"})}),I){for(var u=n.createDocumentFragment(),h=n.createDocumentFragment(),b=I;b--;){var $=b%v,V=E[$].cloneNode(!0);if(W(V,Ar),He(V,"id"),h.insertBefore(V,h.firstChild),c){var Q=E[v-1-$].cloneNode(!0);W(Q,Ar),He(Q,"id"),u.appendChild(Q)}}m.insertBefore(u,m.firstChild),m.appendChild(h),E=m.children}}function Pr(){if(Oe("autoHeight")||y||!M){var e=m.querySelectorAll("img");ke(e,function(i){var r=i.src;Lt||(r&&r.indexOf("data:image")<0?(i.src="",z(i,ii),W(i,"loading"),i.src=r):Jr(i))}),Re(function(){pi(hr(e),function(){Ki=!0})}),Oe("autoHeight")&&(e=Bi(l,Math.min(l+w-1,T-1))),Lt?jr():Re(function(){pi(hr(e),jr)})}else c&&Kt(),_r(),Kr()}function jr(){if(y&&v>1){var e=Z?l:v-1;(function i(){var r=E[e].getBoundingClientRect().left,f=E[e-1].getBoundingClientRect().right;Math.abs(r-f)<=1?Vr():setTimeout(function(){i()},16)})()}else Vr()}function Vr(){(!M||y)&&(rn(),y?(ht=tr(),Bt&&(he=Zi()),se=Ct(),li(ne||he)):nr()),c&&Kt(),_r(),Kr()}function Zn(){if(!c)for(var e=l,i=l+Math.min(v,w);e<i;e++){var r=E[e];r.style.left=(e-l)*100/w+"%",W(r,We),te(r,Ee)}if(M&&(H||y?(Ne(S,"#"+D+" > .tns-item","font-size:"+a.getComputedStyle(E[0]).fontSize+";",xe(S)),Ne(S,"#"+D,"font-size:0;",xe(S))):c&&ke(E,function(lr,sr){lr.style.marginLeft=Qn(sr)})),ye){if(F){var f=ie&&t.autoHeight?nt(t.speed):"";Ne(S,"#"+D+"-mw",f,xe(S))}f=ui(t.edgePadding,t.gutter,t.fixedWidth,t.speed,t.autoHeight),Ne(S,"#"+D+"-iw",f,xe(S)),c&&(f=M&&!y?"width:"+ci(t.fixedWidth,t.gutter,t.items)+";":"",F&&(f+=nt(de)),Ne(S,"#"+D,f,xe(S))),f=M&&!y?di(t.fixedWidth,t.gutter,t.items):"",t.gutter&&(f+=hi(t.gutter)),c||(F&&(f+=nt(de)),Zt&&(f+=qr(de))),f&&Ne(S,"#"+D+" > .tns-item",f,xe(S))}else{tf(),ee.style.cssText=ui(R,x,d,re),c&&M&&!y&&(m.style.width=ci(d,x,w));var f=M&&!y?di(d,x,w):"";x&&(f+=hi(x)),f&&Ne(S,"#"+D+" > .tns-item",f,xe(S))}if(O&&ye)for(var u in O){u=parseInt(u);var h=O[u],f="",b="",$="",V="",Q="",Ce=y?null:p("items",u),at=p("fixedWidth",u),ot=p("speed",u),ar=p("edgePadding",u),or=p("autoHeight",u),wt=p("gutter",u);F&&ie&&p("autoHeight",u)&&"speed"in h&&(b="#"+D+"-mw{"+nt(ot)+"}"),("edgePadding"in h||"gutter"in h)&&($="#"+D+"-iw{"+ui(ar,wt,at,ot,or)+"}"),c&&M&&!y&&("fixedWidth"in h||"items"in h||d&&"gutter"in h)&&(V="width:"+ci(at,wt,Ce)+";"),F&&"speed"in h&&(V+=nt(ot)),V&&(V="#"+D+"{"+V+"}"),("fixedWidth"in h||d&&"gutter"in h||!c&&"items"in h)&&(Q+=di(at,wt,Ce)),"gutter"in h&&(Q+=hi(wt)),!c&&"speed"in h&&(F&&(Q+=nt(ot)),Zt&&(Q+=qr(ot))),Q&&(Q="#"+D+" > .tns-item{"+Q+"}"),f=b+$+V+Q,f&&S.insertRule("@media (min-width: "+u/16+"em) {"+f+"}",S.cssRules.length)}}function _r(){if(er(),B.insertAdjacentHTML("afterbegin",'<div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">'+Gr()+"</span>  of "+v+"</div>"),Yi=B.querySelector(".tns-liveregion .current"),Vi){var e=G?"stop":"start";k?ae(k,{"data-action":e}):t.autoplayButtonOutput&&(B.insertAdjacentHTML(Xi(t.autoplayPosition),'<button type="button" data-action="'+e+'">'+Vt[0]+e+Vt[1]+Ve[0]+"</button>"),k=B.querySelector("[data-action]")),k&&z(k,{click:cn}),G&&(Ei(),_e&&z(m,Rt),Ke&&z(m,kt))}if(ji){var i=c?I:0;if(U)ae(U,{"aria-label":"Carousel Pagination"}),ue=U.children,ke(ue,function($,V){ae($,{"data-nav":V,tabindex:"-1","aria-label":pt+(V+1),"aria-controls":D})});else{for(var r="",f=Ft?"":'style="display:none"',u=0;u<v;u++)r+='<button type="button" data-nav="'+u+'" tabindex="-1" aria-controls="'+D+'" '+f+' aria-label="'+pt+(u+1)+'"></button>';r='<div class="tns-nav" aria-label="Carousel Pagination">'+r+"</div>",B.insertAdjacentHTML(Xi(t.navPosition),r),U=B.querySelector(".tns-nav"),ue=U.children}if(fr(),F){var h=F.substring(0,F.length-18).toLowerCase(),b="transition: all "+de/1e3+"s";h&&(b="-"+h+"-"+b),Ne(S,"[aria-controls^="+D+"-item]",b,xe(S))}ae(ue[ce],{"aria-label":pt+(ce+1)+Ii}),He(ue[ce],"tabindex"),W(ue[ce],ri),z(U,Pi)}ei&&(!j&&(!L||!C)&&(B.insertAdjacentHTML(Xi(t.controlsPosition),'<div class="tns-controls" aria-label="Carousel Navigation" tabindex="0"><button type="button" data-controls="prev" tabindex="-1" aria-controls="'+D+'">'+qe[0]+'</button><button type="button" data-controls="next" tabindex="-1" aria-controls="'+D+'">'+qe[1]+"</button></div>"),j=B.querySelector(".tns-controls")),(!L||!C)&&(L=j.children[0],C=j.children[1]),t.controlsContainer&&ae(j,{"aria-label":"Carousel Navigation",tabindex:"0"}),(t.controlsContainer||t.prevButton&&t.nextButton)&&ae([L,C],{"aria-controls":D,tabindex:"-1"}),(t.controlsContainer||t.prevButton&&t.nextButton)&&(ae(L,{"data-controls":"prev"}),ae(C,{"data-controls":"next"})),Pt=fn(L),jt=fn(C),on(),j?z(j,Dt):(z(L,Dt),z(C,Dt))),$i()}function Kr(){if(c&&Je){var e={};e[Je]=Le,z(m,e)}Pe&&z(m,Ht,t.preventScrollOnTouch),je&&z(m,Wt),Fe&&z(n,zt),ut==="inner"?K.on("outerResized",function(){Ir(),K.emit("innerLoaded",J())}):(O||d||y||re||!M)&&z(a,{resize:Yr}),re&&(ut==="outer"?K.on("innerLoaded",vi):ne||vi()),Gi(),ne?Ur():he&&Zr(),K.on("indexChanged",Br),ut==="inner"&&K.emit("innerLoaded",J()),typeof qi=="function"&&qi(J()),St=!0}function Un(){if(S.disabled=!0,S.ownerNode&&S.ownerNode.remove(),Y(a,{resize:Yr}),Fe&&Y(n,zt),j&&Y(j,Dt),U&&Y(U,Pi),Y(m,Rt),Y(m,kt),k&&Y(k,{click:cn}),G&&clearInterval(ni),c&&Je){var e={};e[Je]=Le,Y(m,e)}Pe&&Y(m,Ht),je&&Y(m,Wt);var i=[Er,Lr,jn,Vn,Cr,Or];Di.forEach(function(f,u){var h=f==="container"?B:t[f];if(typeof h=="object"&&h){var b=h.previousElementSibling?h.previousElementSibling:!1,$=h.parentNode;h.outerHTML=i[u],t[f]=b?b.nextElementSibling:$.firstElementChild}}),Di=We=Ut=ki=Ee=M=B=ee=m=zi=Er=E=v=Mt=$t=y=d=R=x=_=w=ct=Hi=Fe=de=At=Z=re=S=Lt=P=dt=I=T=Tr=ht=Fi=Be=Ye=mt=Ct=l=Ie=Se=se=Pn=Jt=Ae=Qe=qi=K=Xe=D=ne=Nt=Bt=he=Ot=Dt=Pi=Rt=kt=zt=Ht=Wt=ei=ji=Ft=Vi=Mr=Sr=_i=ti=ii=Ki=Te=qe=j=Lr=L=C=Pt=jt=Me=U=Cr=ue=me=et=tt=ce=vt=ri=pt=Ii=G=Wi=Nr=Ve=_e=k=Or=Ke=Vt=ni=fe=fi=gt=ai=it=be=oi=_n=Kn=rt=ve=Qi=Pe=je=null;for(var r in this)r!=="rebuild"&&(this[r]=null);St=!1}function Yr(e){Re(function(){Ir(De(e))})}function Ir(e){if(St){ut==="outer"&&K.emit("outerResized",J(e)),$t=zr();var i,r=Mt,f=!1;O&&(Qr(),i=r!==Mt,i&&K.emit("newBreakpointStart",J(e)));var u,h,b=w,$=ne,V=he,Q=Fe,Ce=Te,at=Me,ot=Pe,ar=je,or=G,wt=_e,lr=Ke,sr=l;if(i){var pf=d,gf=re,yf=qe,wf=X,ur=Ve;if(!ye)var bf=x,xf=R}if(Fe=p("arrowKeys"),Te=p("controls"),Me=p("nav"),Pe=p("touch"),X=p("center"),je=p("mouseDrag"),G=p("autoplay"),_e=p("autoplayHoverPause"),Ke=p("autoplayResetOnVisibility"),i&&(ne=p("disable"),d=p("fixedWidth"),de=p("speed"),re=p("autoHeight"),qe=p("controlsText"),Ve=p("autoplayText"),Wi=p("autoplayTimeout"),ye||(R=p("edgePadding"),x=p("gutter"))),li(ne),_=Wr(),(!M||y)&&!ne&&(rn(),M||(nr(),f=!0)),(d||y)&&(ht=tr(),se=Ct()),(i||d)&&(w=p("items"),ct=p("slideBy"),h=w!==b,h&&(!d&&!y&&(se=Ct()),Ui())),i&&ne!==$&&(ne?Ur():Gn()),Bt&&(i||d||y)&&(he=Zi(),he!==V&&(he?(ir(wi(Rr(0))),Zr()):($n(),f=!0))),li(ne||he),G||(_e=Ke=!1),Fe!==Q&&(Fe?z(n,zt):Y(n,zt)),Te!==Ce&&(Te?j?le(j):(L&&le(L),C&&le(C)):j?oe(j):(L&&oe(L),C&&oe(C))),Me!==at&&(Me?(le(U),fr()):oe(U)),Pe!==ot&&(Pe?z(m,Ht,t.preventScrollOnTouch):Y(m,Ht)),je!==ar&&(je?z(m,Wt):Y(m,Wt)),G!==or&&(G?(k&&le(k),!fe&&!gt&&Ei()):(k&&oe(k),fe&&It())),_e!==wt&&(_e?z(m,Rt):Y(m,Rt)),Ke!==lr&&(Ke?z(n,kt):Y(n,kt)),i){if((d!==pf||X!==wf)&&(f=!0),re!==gf&&(re||(ee.style.height="")),Te&&qe!==yf&&(L.innerHTML=qe[0],C.innerHTML=qe[1]),k&&Ve!==ur){var cr=G?1:0,dr=k.innerHTML,wn=dr.length-ur[cr].length;dr.substring(wn)===ur[cr]&&(k.innerHTML=dr.substring(0,wn)+Ve[cr])}}else X&&(d||y)&&(f=!0);if((h||d&&!y)&&(me=yn(),fr()),u=l!==sr,u?(K.emit("indexChanged",J()),f=!0):h?u||Br():(d||y)&&(Gi(),er(),$r()),h&&!c&&rf(),!ne&&!he){if(i&&!ye&&((R!==xf||x!==bf)&&(ee.style.cssText=ui(R,x,d,de,re)),M)){c&&(m.style.width=ci(d,x,w));var Ef=di(d,x,w)+hi(x);Ln(S,xe(S)-1),Ne(S,"#"+D+" > .tns-item",Ef,xe(S))}re&&vi(),f&&(Kt(),Ie=l)}i&&K.emit("newBreakpointEnd",J(e))}}function Zi(){if(!d&&!y){var e=X?w-(w-1)/2:w;return v<=e}var i=d?(d+x)*v:P[v],r=R?_+R*2:_+x;return X&&(r-=d?(_-d)/2:(_-(P[l+1]-P[l]-x))/2),i<=r}function Qr(){Mt=0;for(var e in O)e=parseInt(e),$t>=e&&(Mt=e)}var Ui=function(){return Z?c?function(){var e=Se,i=se;e+=ct,i-=ct,R?(e+=1,i-=1):d&&(_+x)%(d+x)&&(i-=1),I&&(l>i?l-=v:l<e&&(l+=v))}:function(){if(l>se)for(;l>=Se+v;)l-=v;else if(l<Se)for(;l<=se-v;)l+=v}:function(){l=Math.max(Se,Math.min(se,l))}}();function $i(){!G&&k&&oe(k),!Me&&U&&oe(U),Te||(j?oe(j):(L&&oe(L),C&&oe(C)))}function Xr(){G&&k&&le(k),Me&&U&&le(U),Te&&(j?le(j):(L&&le(L),C&&le(C)))}function Zr(){if(!Ot){if(R&&(ee.style.margin="0px"),I)for(var e="tns-transparent",i=I;i--;)c&&W(E[i],e),W(E[T-i-1],e);$i(),Ot=!0}}function $n(){if(Ot){if(R&&ye&&(ee.style.margin=""),I)for(var e="tns-transparent",i=I;i--;)c&&te(E[i],e),te(E[T-i-1],e);Xr(),Ot=!1}}function Ur(){if(!Nt){if(S.disabled=!0,m.className=m.className.replace(Xe.substring(1),""),He(m,["style"]),Z)for(var e=I;e--;)c&&oe(E[e]),oe(E[T-e-1]);if((!M||!c)&&He(ee,["style"]),!c)for(var i=l,r=l+v;i<r;i++){var f=E[i];He(f,["style"]),te(f,We),te(f,Ee)}$i(),Nt=!0}}function Gn(){if(Nt){if(S.disabled=!1,m.className+=Xe,Kt(),Z)for(var e=I;e--;)c&&le(E[e]),le(E[T-e-1]);if(!c)for(var i=l,r=l+v;i<r;i++){var f=E[i],u=i<l+w?We:Ee;f.style.left=(i-l)*100/w+"%",W(f,u)}Xr(),Nt=!1}}function $r(){var e=Gr();Yi.innerHTML!==e&&(Yi.innerHTML=e)}function Gr(){var e=mi(),i=e[0]+1,r=e[1]+1;return i===r?i+"":i+" to "+r}function mi(e){e==null&&(e=wi());var i=l,r,f,u;if(X||R?(y||d)&&(f=-(parseFloat(e)+R),u=f+_+R*2):y&&(f=P[l],u=f+_),y)P.forEach(function(V,Q){Q<T&&((X||R)&&V<=f+.5&&(i=Q),u-V>=.5&&(r=Q))});else{if(d){var h=d+x;X||R?(i=Math.floor(f/h),r=Math.ceil(u/h-1)):r=i+Math.ceil(_/h)-1}else if(X||R){var b=w-1;if(X?(i-=b/2,r=l+b/2):r=l+b,R){var $=R*w/_;i-=$,r+=$}i=Math.floor(i),r=Math.ceil(r)}else r=i+w-1;i=Math.max(i,0),r=Math.min(r,T-1)}return[i,r]}function Gi(){if(Lt&&!ne){var e=mi();e.push(qn),Bi.apply(null,e).forEach(function(i){if(!ze(i,ti)){var r={};r[Je]=function(u){u.stopPropagation()},z(i,r),z(i,ii),i.src=Qt(i,"data-src");var f=Qt(i,"data-srcset");f&&(i.srcset=f),W(i,"loading")}})}}function Jn(e){Jr(yt(e))}function Bn(e){ef(yt(e))}function Jr(e){W(e,"loaded"),Ji(e)}function ef(e){W(e,"failed"),Ji(e)}function Ji(e){W(e,ti),te(e,"loading"),Y(e,ii)}function Bi(e,i,r){var f=[];for(r||(r="img");e<=i;)ke(E[e].querySelectorAll(r),function(u){f.push(u)}),e++;return f}function vi(){var e=Bi.apply(null,mi());Re(function(){pi(e,tn)})}function pi(e,i){if(Ki||(e.forEach(function(r,f){!Lt&&r.complete&&Ji(r),ze(r,ti)&&e.splice(f,1)}),!e.length))return i();Re(function(){pi(e,i)})}function Br(){Gi(),er(),$r(),on(),nf()}function tf(){c&&re&&(ie.style[F]=de/1e3+"s")}function en(e,i){for(var r=[],f=e,u=Math.min(e+i,T);f<u;f++)r.push(E[f].offsetHeight);return Math.max.apply(null,r)}function tn(){var e=re?en(l,w):en(I,v),i=ie||ee;i.style.height!==e&&(i.style.height=e+"px")}function rn(){P=[0];var e=M?"left":"top",i=M?"right":"bottom",r=E[0].getBoundingClientRect()[e];ke(E,function(f,u){u&&P.push(f.getBoundingClientRect()[e]-r),u===T-1&&P.push(f.getBoundingClientRect()[i]-r)})}function er(){var e=mi(),i=e[0],r=e[1];ke(E,function(f,u){u>=i&&u<=r?xt(f,"aria-hidden")&&(He(f,["aria-hidden","tabindex"]),W(f,_i)):xt(f,"aria-hidden")||(ae(f,{"aria-hidden":"true",tabindex:"-1"}),te(f,_i))})}function rf(){for(var e=l+Math.min(v,w),i=T;i--;){var r=E[i];i>=l&&i<e?(W(r,"tns-moving"),r.style.left=(i-l)*100/w+"%",W(r,We),te(r,Ee)):r.style.left&&(r.style.left="",W(r,Ee),te(r,We)),te(r,Ut)}setTimeout(function(){ke(E,function(f){te(f,"tns-moving")})},300)}function nf(){if(Me&&(ce=tt>=0?tt:kr(),tt=-1,ce!==vt)){var e=ue[vt],i=ue[ce];ae(e,{tabindex:"-1","aria-label":pt+(vt+1)}),te(e,ri),ae(i,{"aria-label":pt+(ce+1)+Ii}),He(i,"tabindex"),W(i,ri),vt=ce}}function nn(e){return e.nodeName.toLowerCase()}function fn(e){return nn(e)==="button"}function an(e){return e.getAttribute("aria-disabled")==="true"}function gi(e,i,r){e?i.disabled=r:i.setAttribute("aria-disabled",r.toString())}function on(){if(!(!Te||At||Z)){var e=Pt?L.disabled:an(L),i=jt?C.disabled:an(C),r=l<=Se,f=!At&&l>=se;r&&!e&&gi(Pt,L,!0),!r&&e&&gi(Pt,L,!1),f&&!i&&gi(jt,C,!0),!f&&i&&gi(jt,C,!1)}}function yi(e,i){F&&(e.style[F]=i)}function ff(){return d?(d+x)*T:P[T]}function _t(e){e==null&&(e=l);var i=R?x:0;return y?(_-i-(P[e+1]-P[e]-x))/2:d?(_-d)/2:(w-1)/2}function tr(){var e=R?x:0,i=_+e-ff();return X&&!Z&&(i=d?-(d+x)*(T-1)-_t():_t(T-1)-P[T-1]),i>0&&(i=0),i}function wi(e){e==null&&(e=l);var i;if(M&&!y)if(d)i=-(d+x)*e,X&&(i+=_t());else{var r=we?T:w;X&&(e-=_t()),i=-e*100/r}else i=-P[e],X&&y&&(i+=_t());return Tr&&(i=Math.max(i,ht)),i+=M&&!y&&!d?"%":"px",i}function Kt(e){yi(m,"0s"),ir(e)}function ir(e){e==null&&(e=wi()),m.style[Be]=Ye+e+mt}function ln(e,i,r,f){var u=e+w;Z||(u=Math.min(u,T));for(var h=e;h<u;h++){var b=E[h];f||(b.style.left=(h-l)*100/w+"%"),ki&&st&&(b.style[st]=b.style[Oi]=ki*(h-e)/1e3+"s"),te(b,i),W(b,r),f&&dt.push(b)}}var af=function(){return c?function(){yi(m,""),F||!de?(ir(),(!de||!mr(m))&&Le()):zn(m,Be,Ye,mt,wi(),de,Le),M||nr()}:function(){dt=[];var e={};e[Je]=e[gr]=Le,Y(E[Ie],e),z(E[l],e),ln(Ie,We,Ut,!0),ln(l,Ee,We),(!Je||!gr||!de||!mr(m))&&Le()}}();function rr(e,i){Fi&&Ui(),(l!==Ie||i)&&(K.emit("indexChanged",J()),K.emit("transitionStart",J()),re&&vi(),fe&&e&&["click","keydown"].indexOf(e.type)>=0&&It(),Qe=!0,af())}function sn(e){return e.toLowerCase().replace(/-/g,"")}function Le(e){if(c||Qe){if(K.emit("transitionEnd",J(e)),!c&&dt.length>0)for(var i=0;i<dt.length;i++){var r=dt[i];r.style.left="",Oi&&st&&(r.style[Oi]="",r.style[st]=""),te(r,Ut),W(r,Ee)}if(!e||!c&&e.target.parentNode===m||e.target===m&&sn(e.propertyName)===sn(Be)){if(!Fi){var f=l;Ui(),l!==f&&(K.emit("indexChanged",J()),Kt())}ut==="inner"&&K.emit("innerLoaded",J()),Qe=!1,Ie=l}}}function Yt(e,i){if(!he)if(e==="prev")Ze(i,-1);else if(e==="next")Ze(i,1);else{if(Qe){if(Gt)return;Le()}var r=si(),f=0;if(e==="first"?f=-r:e==="last"?f=c?v-w-r:v-1-r:(typeof e!="number"&&(e=parseInt(e)),isNaN(e)||(i||(e=Math.max(0,Math.min(v-1,e))),f=e-r)),!c&&f&&Math.abs(f)<w){var u=f>0?1:-1;f+=l+f-v>=Se?v*u:v*2*u*-1}l+=f,c&&Z&&(l<Se&&(l+=v),l>se&&(l-=v)),si(l)!==si(Ie)&&rr(i)}}function Ze(e,i){if(Qe){if(Gt)return;Le()}var r;if(!i){e=De(e);for(var f=yt(e);f!==j&&[L,C].indexOf(f)<0;)f=f.parentNode;var u=[L,C].indexOf(f);u>=0&&(r=!0,i=u===0?-1:1)}if(At){if(l===Se&&i===-1){Yt("last",e);return}else if(l===se&&i===1){Yt("first",e);return}}i&&(l+=ct*i,y&&(l=Math.floor(l)),rr(r||e&&e.type==="keydown"?e:null))}function of(e){if(Qe){if(Gt)return;Le()}e=De(e);for(var i=yt(e),r;i!==U&&!xt(i,"data-nav");)i=i.parentNode;if(xt(i,"data-nav")){var r=tt=Number(Qt(i,"data-nav")),f=d||y?r*v/me:r*w,u=Ft?r:Math.min(Math.ceil(f),v-1);Yt(u,e),ce===r&&(fe&&It(),tt=-1)}}function bi(){ni=setInterval(function(){Ze(null,Nr)},Wi),fe=!0}function xi(){clearInterval(ni),fe=!1}function un(e,i){ae(k,{"data-action":e}),k.innerHTML=Vt[0]+e+Vt[1]+i}function Ei(){bi(),k&&un("stop",Ve[1])}function It(){xi(),k&&un("start",Ve[0])}function lf(){G&&!fe&&(Ei(),gt=!1)}function sf(){fe&&(It(),gt=!0)}function cn(){fe?(It(),gt=!0):(Ei(),gt=!1)}function uf(){n.hidden?fe&&(xi(),ai=!0):ai&&(bi(),ai=!1)}function cf(){fe&&(xi(),fi=!0)}function df(){fi&&(bi(),fi=!1)}function hf(e){e=De(e);var i=[s.LEFT,s.RIGHT].indexOf(e.keyCode);i>=0&&Ze(e,i===0?-1:1)}function mf(e){e=De(e);var i=[s.LEFT,s.RIGHT].indexOf(e.keyCode);i>=0&&(i===0?L.disabled||Ze(e,-1):C.disabled||Ze(e,1))}function dn(e){e.focus()}function vf(e){e=De(e);var i=n.activeElement;if(xt(i,"data-nav")){var r=[s.LEFT,s.RIGHT,s.ENTER,s.SPACE].indexOf(e.keyCode),f=Number(Qt(i,"data-nav"));r>=0&&(r===0?f>0&&dn(ue[f-1]):r===1?f<me-1&&dn(ue[f+1]):(tt=f,Yt(f,e)))}}function De(e){return e=e||a.event,ft(e)?e.changedTouches[0]:e}function yt(e){return e.target||a.event.srcElement}function ft(e){return e.type.indexOf("touch")>=0}function hn(e){e.preventDefault?e.preventDefault():e.returnValue=!1}function mn(){return Nn(Cn(be.y-it.y,be.x-it.x),Jt)===t.axis}function vn(e){if(Qe){if(Gt)return;Le()}G&&fe&&xi(),rt=!0,ve&&(Si(ve),ve=null);var i=De(e);K.emit(ft(e)?"touchStart":"dragStart",J(e)),!ft(e)&&["img","a"].indexOf(nn(yt(e)))>=0&&hn(e),be.x=it.x=i.clientX,be.y=it.y=i.clientY,c&&(oi=parseFloat(m.style[Be].replace(Ye,"")),yi(m,"0s"))}function pn(e){if(rt){var i=De(e);be.x=i.clientX,be.y=i.clientY,c?ve||(ve=Re(function(){gn(e)})):(Ae==="?"&&(Ae=mn()),Ae&&(qt=!0)),(typeof e.cancelable!="boolean"||e.cancelable)&&qt&&e.preventDefault()}}function gn(e){if(!Ae){rt=!1;return}if(Si(ve),rt&&(ve=Re(function(){gn(e)})),Ae==="?"&&(Ae=mn()),Ae){!qt&&ft(e)&&(qt=!0);try{e.type&&K.emit(ft(e)?"touchMove":"dragMove",J(e))}catch{}var i=oi,r=Qi(be,it);if(!M||d||y)i+=r,i+="px";else{var f=we?r*w*100/((_+x)*T):r*100/(_+x);i+=f,i+="%"}m.style[Be]=Ye+i+mt}}function Ti(e){if(rt){ve&&(Si(ve),ve=null),c&&yi(m,""),rt=!1;var i=De(e);be.x=i.clientX,be.y=i.clientY;var r=Qi(be,it);if(Math.abs(r)){if(!ft(e)){var f=yt(e);z(f,{click:function u(h){hn(h),Y(f,{click:u})}})}c?ve=Re(function(){if(M&&!y){var u=-r*w/(_+x);u=r>0?Math.floor(u):Math.ceil(u),l+=u}else{var h=-(oi+r);if(h<=0)l=Se;else if(h>=P[T-1])l=se;else for(var b=0;b<T&&h>=P[b];)l=b,h>P[b]&&r<0&&(l+=1),b++}rr(e,r),K.emit(ft(e)?"touchEnd":"dragEnd",J(e))}):Ae&&Ze(e,r>0?-1:1)}}t.preventScrollOnTouch==="auto"&&(qt=!1),Jt&&(Ae="?"),G&&!fe&&bi()}function nr(){var e=ie||ee;e.style.height=P[l+w]-P[l]+"px"}function yn(){var e=d?(d+x)*v/_:v/w;return Math.min(Math.ceil(e),v)}function fr(){if(!(!Me||Ft)&&me!==et){var e=et,i=me,r=le;for(et>me&&(e=me,i=et,r=oe);e<i;)r(ue[e]),e++;et=me}}function J(e){return{container:m,slideItems:E,navContainer:U,navItems:ue,controlsContainer:j,hasControls:ei,prevButton:L,nextButton:C,items:w,slideBy:ct,cloneCount:I,slideCount:v,slideCountNew:T,index:l,indexCached:Ie,displayIndex:Dr(),navCurrentIndex:ce,navCurrentIndexCached:vt,pages:me,pagesCached:et,sheet:S,isOn:St,event:e||{}}}return{version:"2.9.4",getInfo:J,events:K,goTo:Yt,play:lf,pause:sf,isOn:St,updateSliderHeight:tn,refresh:Pr,destroy:Un,rebuild:function(){return Ni(Ai(t,wr))}}};var Fn=Of(Wn());document.addEventListener("DOMContentLoaded",async()=>{if(window.location.pathname==="/"){let t=Ni({container:".js-slider-singles",items:1,nav:!1,autoplayButtonOutput:!1,controlsText:[`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+(() => {
+  var __create = Object.create;
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getProtoOf = Object.getPrototypeOf;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __commonJS = (cb, mod) => function __require() {
+    return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+    // If the importer is in node compatibility mode or this is not an ESM
+    // file that has been converted to a CommonJS file using a Babel-
+    // compatible transform (i.e. "__esModule" has not been set), then set
+    // "default" to the CommonJS "module.exports" for node compatibility.
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    mod
+  ));
+
+  // _js/Fetch.js
+  var require_Fetch = __commonJS({
+    "_js/Fetch.js"(exports, module) {
+      var Fetch2 = class {
+        async get(url) {
+          return await (await fetch(url)).json();
+        }
+        async post(url, data) {
+          return await (await fetch(url, {
+            method: "POST",
+            body: data
+          })).json();
+        }
+      };
+      module.exports = new Fetch2();
+    }
+  });
+
+  // node_modules/tiny-slider/src/helpers/raf.js
+  var win = window;
+  var raf = win.requestAnimationFrame || win.webkitRequestAnimationFrame || win.mozRequestAnimationFrame || win.msRequestAnimationFrame || function(cb) {
+    return setTimeout(cb, 16);
+  };
+
+  // node_modules/tiny-slider/src/helpers/caf.js
+  var win2 = window;
+  var caf = win2.cancelAnimationFrame || win2.mozCancelAnimationFrame || function(id) {
+    clearTimeout(id);
+  };
+
+  // node_modules/tiny-slider/src/helpers/extend.js
+  function extend() {
+    var obj, name, copy, target = arguments[0] || {}, i = 1, length = arguments.length;
+    for (; i < length; i++) {
+      if ((obj = arguments[i]) !== null) {
+        for (name in obj) {
+          copy = obj[name];
+          if (target === copy) {
+            continue;
+          } else if (copy !== void 0) {
+            target[name] = copy;
+          }
+        }
+      }
+    }
+    return target;
+  }
+
+  // node_modules/tiny-slider/src/helpers/checkStorageValue.js
+  function checkStorageValue(value) {
+    return ["true", "false"].indexOf(value) >= 0 ? JSON.parse(value) : value;
+  }
+
+  // node_modules/tiny-slider/src/helpers/setLocalStorage.js
+  function setLocalStorage(storage, key, value, access) {
+    if (access) {
+      try {
+        storage.setItem(key, value);
+      } catch (e) {
+      }
+    }
+    return value;
+  }
+
+  // node_modules/tiny-slider/src/helpers/getSlideId.js
+  function getSlideId() {
+    var id = window.tnsId;
+    window.tnsId = !id ? 1 : id + 1;
+    return "tns" + window.tnsId;
+  }
+
+  // node_modules/tiny-slider/src/helpers/getBody.js
+  function getBody() {
+    var doc = document, body = doc.body;
+    if (!body) {
+      body = doc.createElement("body");
+      body.fake = true;
+    }
+    return body;
+  }
+
+  // node_modules/tiny-slider/src/helpers/docElement.js
+  var docElement = document.documentElement;
+
+  // node_modules/tiny-slider/src/helpers/setFakeBody.js
+  function setFakeBody(body) {
+    var docOverflow = "";
+    if (body.fake) {
+      docOverflow = docElement.style.overflow;
+      body.style.background = "";
+      body.style.overflow = docElement.style.overflow = "hidden";
+      docElement.appendChild(body);
+    }
+    return docOverflow;
+  }
+
+  // node_modules/tiny-slider/src/helpers/resetFakeBody.js
+  function resetFakeBody(body, docOverflow) {
+    if (body.fake) {
+      body.remove();
+      docElement.style.overflow = docOverflow;
+      docElement.offsetHeight;
+    }
+  }
+
+  // node_modules/tiny-slider/src/helpers/calc.js
+  function calc() {
+    var doc = document, body = getBody(), docOverflow = setFakeBody(body), div = doc.createElement("div"), result = false;
+    body.appendChild(div);
+    try {
+      var str = "(10px * 10)", vals = ["calc" + str, "-moz-calc" + str, "-webkit-calc" + str], val;
+      for (var i = 0; i < 3; i++) {
+        val = vals[i];
+        div.style.width = val;
+        if (div.offsetWidth === 100) {
+          result = val.replace(str, "");
+          break;
+        }
+      }
+    } catch (e) {
+    }
+    body.fake ? resetFakeBody(body, docOverflow) : div.remove();
+    return result;
+  }
+
+  // node_modules/tiny-slider/src/helpers/percentageLayout.js
+  function percentageLayout() {
+    var doc = document, body = getBody(), docOverflow = setFakeBody(body), wrapper = doc.createElement("div"), outer = doc.createElement("div"), str = "", count = 70, perPage = 3, supported = false;
+    wrapper.className = "tns-t-subp2";
+    outer.className = "tns-t-ct";
+    for (var i = 0; i < count; i++) {
+      str += "<div></div>";
+    }
+    outer.innerHTML = str;
+    wrapper.appendChild(outer);
+    body.appendChild(wrapper);
+    supported = Math.abs(wrapper.getBoundingClientRect().left - outer.children[count - perPage].getBoundingClientRect().left) < 2;
+    body.fake ? resetFakeBody(body, docOverflow) : wrapper.remove();
+    return supported;
+  }
+
+  // node_modules/tiny-slider/src/helpers/mediaquerySupport.js
+  function mediaquerySupport() {
+    if (window.matchMedia || window.msMatchMedia) {
+      return true;
+    }
+    var doc = document, body = getBody(), docOverflow = setFakeBody(body), div = doc.createElement("div"), style = doc.createElement("style"), rule = "@media all and (min-width:1px){.tns-mq-test{position:absolute}}", position;
+    style.type = "text/css";
+    div.className = "tns-mq-test";
+    body.appendChild(style);
+    body.appendChild(div);
+    if (style.styleSheet) {
+      style.styleSheet.cssText = rule;
+    } else {
+      style.appendChild(doc.createTextNode(rule));
+    }
+    position = window.getComputedStyle ? window.getComputedStyle(div).position : div.currentStyle["position"];
+    body.fake ? resetFakeBody(body, docOverflow) : div.remove();
+    return position === "absolute";
+  }
+
+  // node_modules/tiny-slider/src/helpers/createStyleSheet.js
+  function createStyleSheet(media, nonce) {
+    var style = document.createElement("style");
+    if (media) {
+      style.setAttribute("media", media);
+    }
+    if (nonce) {
+      style.setAttribute("nonce", nonce);
+    }
+    document.querySelector("head").appendChild(style);
+    return style.sheet ? style.sheet : style.styleSheet;
+  }
+
+  // node_modules/tiny-slider/src/helpers/addCSSRule.js
+  function addCSSRule(sheet, selector, rules, index) {
+    "insertRule" in sheet ? sheet.insertRule(selector + "{" + rules + "}", index) : sheet.addRule(selector, rules, index);
+  }
+
+  // node_modules/tiny-slider/src/helpers/removeCSSRule.js
+  function removeCSSRule(sheet, index) {
+    "deleteRule" in sheet ? sheet.deleteRule(index) : sheet.removeRule(index);
+  }
+
+  // node_modules/tiny-slider/src/helpers/getCssRulesLength.js
+  function getCssRulesLength(sheet) {
+    var rule = "insertRule" in sheet ? sheet.cssRules : sheet.rules;
+    return rule.length;
+  }
+
+  // node_modules/tiny-slider/src/helpers/toDegree.js
+  function toDegree(y, x) {
+    return Math.atan2(y, x) * (180 / Math.PI);
+  }
+
+  // node_modules/tiny-slider/src/helpers/getTouchDirection.js
+  function getTouchDirection(angle, range) {
+    var direction = false, gap = Math.abs(90 - Math.abs(angle));
+    if (gap >= 90 - range) {
+      direction = "horizontal";
+    } else if (gap <= range) {
+      direction = "vertical";
+    }
+    return direction;
+  }
+
+  // node_modules/tiny-slider/src/helpers/forEach.js
+  function forEach(arr, callback, scope) {
+    for (var i = 0, l = arr.length; i < l; i++) {
+      callback.call(scope, arr[i], i);
+    }
+  }
+
+  // node_modules/tiny-slider/src/helpers/classListSupport.js
+  var classListSupport = "classList" in document.createElement("_");
+
+  // node_modules/tiny-slider/src/helpers/hasClass.js
+  var hasClass = classListSupport ? function(el, str) {
+    return el.classList.contains(str);
+  } : function(el, str) {
+    return el.className.indexOf(str) >= 0;
+  };
+
+  // node_modules/tiny-slider/src/helpers/addClass.js
+  var addClass = classListSupport ? function(el, str) {
+    if (!hasClass(el, str)) {
+      el.classList.add(str);
+    }
+  } : function(el, str) {
+    if (!hasClass(el, str)) {
+      el.className += " " + str;
+    }
+  };
+
+  // node_modules/tiny-slider/src/helpers/removeClass.js
+  var removeClass = classListSupport ? function(el, str) {
+    if (hasClass(el, str)) {
+      el.classList.remove(str);
+    }
+  } : function(el, str) {
+    if (hasClass(el, str)) {
+      el.className = el.className.replace(str, "");
+    }
+  };
+
+  // node_modules/tiny-slider/src/helpers/hasAttr.js
+  function hasAttr(el, attr) {
+    return el.hasAttribute(attr);
+  }
+
+  // node_modules/tiny-slider/src/helpers/getAttr.js
+  function getAttr(el, attr) {
+    return el.getAttribute(attr);
+  }
+
+  // node_modules/tiny-slider/src/helpers/isNodeList.js
+  function isNodeList(el) {
+    return typeof el.item !== "undefined";
+  }
+
+  // node_modules/tiny-slider/src/helpers/setAttrs.js
+  function setAttrs(els, attrs) {
+    els = isNodeList(els) || els instanceof Array ? els : [els];
+    if (Object.prototype.toString.call(attrs) !== "[object Object]") {
+      return;
+    }
+    for (var i = els.length; i--; ) {
+      for (var key in attrs) {
+        els[i].setAttribute(key, attrs[key]);
+      }
+    }
+  }
+
+  // node_modules/tiny-slider/src/helpers/removeAttrs.js
+  function removeAttrs(els, attrs) {
+    els = isNodeList(els) || els instanceof Array ? els : [els];
+    attrs = attrs instanceof Array ? attrs : [attrs];
+    var attrLength = attrs.length;
+    for (var i = els.length; i--; ) {
+      for (var j = attrLength; j--; ) {
+        els[i].removeAttribute(attrs[j]);
+      }
+    }
+  }
+
+  // node_modules/tiny-slider/src/helpers/arrayFromNodeList.js
+  function arrayFromNodeList(nl) {
+    var arr = [];
+    for (var i = 0, l = nl.length; i < l; i++) {
+      arr.push(nl[i]);
+    }
+    return arr;
+  }
+
+  // node_modules/tiny-slider/src/helpers/hideElement.js
+  function hideElement(el, forceHide) {
+    if (el.style.display !== "none") {
+      el.style.display = "none";
+    }
+  }
+
+  // node_modules/tiny-slider/src/helpers/showElement.js
+  function showElement(el, forceHide) {
+    if (el.style.display === "none") {
+      el.style.display = "";
+    }
+  }
+
+  // node_modules/tiny-slider/src/helpers/isVisible.js
+  function isVisible(el) {
+    return window.getComputedStyle(el).display !== "none";
+  }
+
+  // node_modules/tiny-slider/src/helpers/whichProperty.js
+  function whichProperty(props) {
+    if (typeof props === "string") {
+      var arr = [props], Props = props.charAt(0).toUpperCase() + props.substr(1), prefixes = ["Webkit", "Moz", "ms", "O"];
+      prefixes.forEach(function(prefix) {
+        if (prefix !== "ms" || props === "transform") {
+          arr.push(prefix + Props);
+        }
+      });
+      props = arr;
+    }
+    var el = document.createElement("fakeelement"), len = props.length;
+    for (var i = 0; i < props.length; i++) {
+      var prop = props[i];
+      if (el.style[prop] !== void 0) {
+        return prop;
+      }
+    }
+    return false;
+  }
+
+  // node_modules/tiny-slider/src/helpers/has3DTransforms.js
+  function has3DTransforms(tf) {
+    if (!tf) {
+      return false;
+    }
+    if (!window.getComputedStyle) {
+      return false;
+    }
+    var doc = document, body = getBody(), docOverflow = setFakeBody(body), el = doc.createElement("p"), has3d, cssTF = tf.length > 9 ? "-" + tf.slice(0, -9).toLowerCase() + "-" : "";
+    cssTF += "transform";
+    body.insertBefore(el, null);
+    el.style[tf] = "translate3d(1px,1px,1px)";
+    has3d = window.getComputedStyle(el).getPropertyValue(cssTF);
+    body.fake ? resetFakeBody(body, docOverflow) : el.remove();
+    return has3d !== void 0 && has3d.length > 0 && has3d !== "none";
+  }
+
+  // node_modules/tiny-slider/src/helpers/getEndProperty.js
+  function getEndProperty(propIn, propOut) {
+    var endProp = false;
+    if (/^Webkit/.test(propIn)) {
+      endProp = "webkit" + propOut + "End";
+    } else if (/^O/.test(propIn)) {
+      endProp = "o" + propOut + "End";
+    } else if (propIn) {
+      endProp = propOut.toLowerCase() + "end";
+    }
+    return endProp;
+  }
+
+  // node_modules/tiny-slider/src/helpers/passiveOption.js
+  var supportsPassive = false;
+  try {
+    opts = Object.defineProperty({}, "passive", {
+      get: function() {
+        supportsPassive = true;
+      }
+    });
+    window.addEventListener("test", null, opts);
+  } catch (e) {
+  }
+  var opts;
+  var passiveOption = supportsPassive ? { passive: true } : false;
+
+  // node_modules/tiny-slider/src/helpers/addEvents.js
+  function addEvents(el, obj, preventScrolling) {
+    for (var prop in obj) {
+      var option = ["touchstart", "touchmove"].indexOf(prop) >= 0 && !preventScrolling ? passiveOption : false;
+      el.addEventListener(prop, obj[prop], option);
+    }
+  }
+
+  // node_modules/tiny-slider/src/helpers/removeEvents.js
+  function removeEvents(el, obj) {
+    for (var prop in obj) {
+      var option = ["touchstart", "touchmove"].indexOf(prop) >= 0 ? passiveOption : false;
+      el.removeEventListener(prop, obj[prop], option);
+    }
+  }
+
+  // node_modules/tiny-slider/src/helpers/events.js
+  function Events() {
+    return {
+      topics: {},
+      on: function(eventName, fn) {
+        this.topics[eventName] = this.topics[eventName] || [];
+        this.topics[eventName].push(fn);
+      },
+      off: function(eventName, fn) {
+        if (this.topics[eventName]) {
+          for (var i = 0; i < this.topics[eventName].length; i++) {
+            if (this.topics[eventName][i] === fn) {
+              this.topics[eventName].splice(i, 1);
+              break;
+            }
+          }
+        }
+      },
+      emit: function(eventName, data) {
+        data.type = eventName;
+        if (this.topics[eventName]) {
+          this.topics[eventName].forEach(function(fn) {
+            fn(data, eventName);
+          });
+        }
+      }
+    };
+  }
+
+  // node_modules/tiny-slider/src/helpers/jsTransform.js
+  function jsTransform(element, attr, prefix, postfix, to, duration, callback) {
+    var tick = Math.min(duration, 10), unit = to.indexOf("%") >= 0 ? "%" : "px", to = to.replace(unit, ""), from = Number(element.style[attr].replace(prefix, "").replace(postfix, "").replace(unit, "")), positionTick = (to - from) / duration * tick, running;
+    setTimeout(moveElement, tick);
+    function moveElement() {
+      duration -= tick;
+      from += positionTick;
+      element.style[attr] = prefix + from + unit + postfix;
+      if (duration > 0) {
+        setTimeout(moveElement, tick);
+      } else {
+        callback();
+      }
+    }
+  }
+
+  // node_modules/tiny-slider/src/tiny-slider.module.js
+  if (!Object.keys) {
+    Object.keys = function(object) {
+      var keys = [];
+      for (var name in object) {
+        if (Object.prototype.hasOwnProperty.call(object, name)) {
+          keys.push(name);
+        }
+      }
+      return keys;
+    };
+  }
+  if (!("remove" in Element.prototype)) {
+    Element.prototype.remove = function() {
+      if (this.parentNode) {
+        this.parentNode.removeChild(this);
+      }
+    };
+  }
+  var tns = function(options) {
+    options = extend({
+      container: ".slider",
+      mode: "carousel",
+      axis: "horizontal",
+      items: 1,
+      gutter: 0,
+      edgePadding: 0,
+      fixedWidth: false,
+      autoWidth: false,
+      viewportMax: false,
+      slideBy: 1,
+      center: false,
+      controls: true,
+      controlsPosition: "top",
+      controlsText: ["prev", "next"],
+      controlsContainer: false,
+      prevButton: false,
+      nextButton: false,
+      nav: true,
+      navPosition: "top",
+      navContainer: false,
+      navAsThumbnails: false,
+      arrowKeys: false,
+      speed: 300,
+      autoplay: false,
+      autoplayPosition: "top",
+      autoplayTimeout: 5e3,
+      autoplayDirection: "forward",
+      autoplayText: ["start", "stop"],
+      autoplayHoverPause: false,
+      autoplayButton: false,
+      autoplayButtonOutput: true,
+      autoplayResetOnVisibility: true,
+      animateIn: "tns-fadeIn",
+      animateOut: "tns-fadeOut",
+      animateNormal: "tns-normal",
+      animateDelay: false,
+      loop: true,
+      rewind: false,
+      autoHeight: false,
+      responsive: false,
+      lazyload: false,
+      lazyloadSelector: ".tns-lazy-img",
+      touch: true,
+      mouseDrag: false,
+      swipeAngle: 15,
+      nested: false,
+      preventActionWhenRunning: false,
+      preventScrollOnTouch: false,
+      freezable: true,
+      onInit: false,
+      useLocalStorage: true,
+      nonce: false
+    }, options || {});
+    var doc = document, win3 = window, KEYS = {
+      ENTER: 13,
+      SPACE: 32,
+      LEFT: 37,
+      RIGHT: 39
+    }, tnsStorage = {}, localStorageAccess = options.useLocalStorage;
+    if (localStorageAccess) {
+      var browserInfo = navigator.userAgent;
+      var uid = /* @__PURE__ */ new Date();
+      try {
+        tnsStorage = win3.localStorage;
+        if (tnsStorage) {
+          tnsStorage.setItem(uid, uid);
+          localStorageAccess = tnsStorage.getItem(uid) == uid;
+          tnsStorage.removeItem(uid);
+        } else {
+          localStorageAccess = false;
+        }
+        if (!localStorageAccess) {
+          tnsStorage = {};
+        }
+      } catch (e) {
+        localStorageAccess = false;
+      }
+      if (localStorageAccess) {
+        if (tnsStorage["tnsApp"] && tnsStorage["tnsApp"] !== browserInfo) {
+          ["tC", "tPL", "tMQ", "tTf", "t3D", "tTDu", "tTDe", "tADu", "tADe", "tTE", "tAE"].forEach(function(item) {
+            tnsStorage.removeItem(item);
+          });
+        }
+        localStorage["tnsApp"] = browserInfo;
+      }
+    }
+    var CALC = tnsStorage["tC"] ? checkStorageValue(tnsStorage["tC"]) : setLocalStorage(tnsStorage, "tC", calc(), localStorageAccess), PERCENTAGELAYOUT = tnsStorage["tPL"] ? checkStorageValue(tnsStorage["tPL"]) : setLocalStorage(tnsStorage, "tPL", percentageLayout(), localStorageAccess), CSSMQ = tnsStorage["tMQ"] ? checkStorageValue(tnsStorage["tMQ"]) : setLocalStorage(tnsStorage, "tMQ", mediaquerySupport(), localStorageAccess), TRANSFORM = tnsStorage["tTf"] ? checkStorageValue(tnsStorage["tTf"]) : setLocalStorage(tnsStorage, "tTf", whichProperty("transform"), localStorageAccess), HAS3DTRANSFORMS = tnsStorage["t3D"] ? checkStorageValue(tnsStorage["t3D"]) : setLocalStorage(tnsStorage, "t3D", has3DTransforms(TRANSFORM), localStorageAccess), TRANSITIONDURATION = tnsStorage["tTDu"] ? checkStorageValue(tnsStorage["tTDu"]) : setLocalStorage(tnsStorage, "tTDu", whichProperty("transitionDuration"), localStorageAccess), TRANSITIONDELAY = tnsStorage["tTDe"] ? checkStorageValue(tnsStorage["tTDe"]) : setLocalStorage(tnsStorage, "tTDe", whichProperty("transitionDelay"), localStorageAccess), ANIMATIONDURATION = tnsStorage["tADu"] ? checkStorageValue(tnsStorage["tADu"]) : setLocalStorage(tnsStorage, "tADu", whichProperty("animationDuration"), localStorageAccess), ANIMATIONDELAY = tnsStorage["tADe"] ? checkStorageValue(tnsStorage["tADe"]) : setLocalStorage(tnsStorage, "tADe", whichProperty("animationDelay"), localStorageAccess), TRANSITIONEND = tnsStorage["tTE"] ? checkStorageValue(tnsStorage["tTE"]) : setLocalStorage(tnsStorage, "tTE", getEndProperty(TRANSITIONDURATION, "Transition"), localStorageAccess), ANIMATIONEND = tnsStorage["tAE"] ? checkStorageValue(tnsStorage["tAE"]) : setLocalStorage(tnsStorage, "tAE", getEndProperty(ANIMATIONDURATION, "Animation"), localStorageAccess);
+    var supportConsoleWarn = win3.console && typeof win3.console.warn === "function", tnsList = ["container", "controlsContainer", "prevButton", "nextButton", "navContainer", "autoplayButton"], optionsElements = {};
+    tnsList.forEach(function(item) {
+      if (typeof options[item] === "string") {
+        var str = options[item], el = doc.querySelector(str);
+        optionsElements[item] = str;
+        if (el && el.nodeName) {
+          options[item] = el;
+        } else {
+          if (supportConsoleWarn) {
+            console.warn("Can't find", options[item]);
+          }
+          return;
+        }
+      }
+    });
+    if (options.container.children.length < 1) {
+      if (supportConsoleWarn) {
+        console.warn("No slides found in", options.container);
+      }
+      return;
+    }
+    var responsive = options.responsive, nested = options.nested, carousel = options.mode === "carousel" ? true : false;
+    if (responsive) {
+      if (0 in responsive) {
+        options = extend(options, responsive[0]);
+        delete responsive[0];
+      }
+      var responsiveTem = {};
+      for (var key in responsive) {
+        var val = responsive[key];
+        val = typeof val === "number" ? { items: val } : val;
+        responsiveTem[key] = val;
+      }
+      responsive = responsiveTem;
+      responsiveTem = null;
+    }
+    function updateOptions(obj) {
+      for (var key2 in obj) {
+        if (!carousel) {
+          if (key2 === "slideBy") {
+            obj[key2] = "page";
+          }
+          if (key2 === "edgePadding") {
+            obj[key2] = false;
+          }
+          if (key2 === "autoHeight") {
+            obj[key2] = false;
+          }
+        }
+        if (key2 === "responsive") {
+          updateOptions(obj[key2]);
+        }
+      }
+    }
+    if (!carousel) {
+      updateOptions(options);
+    }
+    if (!carousel) {
+      options.axis = "horizontal";
+      options.slideBy = "page";
+      options.edgePadding = false;
+      var animateIn = options.animateIn, animateOut = options.animateOut, animateDelay = options.animateDelay, animateNormal = options.animateNormal;
+    }
+    var horizontal = options.axis === "horizontal" ? true : false, outerWrapper = doc.createElement("div"), innerWrapper = doc.createElement("div"), middleWrapper, container = options.container, containerParent = container.parentNode, containerHTML = container.outerHTML, slideItems = container.children, slideCount = slideItems.length, breakpointZone, windowWidth = getWindowWidth(), isOn = false;
+    if (responsive) {
+      setBreakpointZone();
+    }
+    if (carousel) {
+      container.className += " tns-vpfix";
+    }
+    var autoWidth = options.autoWidth, fixedWidth = getOption("fixedWidth"), edgePadding = getOption("edgePadding"), gutter = getOption("gutter"), viewport = getViewportWidth(), center = getOption("center"), items = !autoWidth ? Math.floor(getOption("items")) : 1, slideBy = getOption("slideBy"), viewportMax = options.viewportMax || options.fixedWidthViewportWidth, arrowKeys = getOption("arrowKeys"), speed = getOption("speed"), rewind = options.rewind, loop = rewind ? false : options.loop, autoHeight = getOption("autoHeight"), controls = getOption("controls"), controlsText = getOption("controlsText"), nav = getOption("nav"), touch = getOption("touch"), mouseDrag = getOption("mouseDrag"), autoplay = getOption("autoplay"), autoplayTimeout = getOption("autoplayTimeout"), autoplayText = getOption("autoplayText"), autoplayHoverPause = getOption("autoplayHoverPause"), autoplayResetOnVisibility = getOption("autoplayResetOnVisibility"), sheet = createStyleSheet(null, getOption("nonce")), lazyload = options.lazyload, lazyloadSelector = options.lazyloadSelector, slidePositions, slideItemsOut = [], cloneCount = loop ? getCloneCountForLoop() : 0, slideCountNew = !carousel ? slideCount + cloneCount : slideCount + cloneCount * 2, hasRightDeadZone = (fixedWidth || autoWidth) && !loop ? true : false, rightBoundary = fixedWidth ? getRightBoundary() : null, updateIndexBeforeTransform = !carousel || !loop ? true : false, transformAttr = horizontal ? "left" : "top", transformPrefix = "", transformPostfix = "", getIndexMax = function() {
+      if (fixedWidth) {
+        return function() {
+          return center && !loop ? slideCount - 1 : Math.ceil(-rightBoundary / (fixedWidth + gutter));
+        };
+      } else if (autoWidth) {
+        return function() {
+          for (var i = 0; i < slideCountNew; i++) {
+            if (slidePositions[i] >= -rightBoundary) {
+              return i;
+            }
+          }
+        };
+      } else {
+        return function() {
+          if (center && carousel && !loop) {
+            return slideCount - 1;
+          } else {
+            return loop || carousel ? Math.max(0, slideCountNew - Math.ceil(items)) : slideCountNew - 1;
+          }
+        };
+      }
+    }(), index = getStartIndex(getOption("startIndex")), indexCached = index, displayIndex = getCurrentSlide(), indexMin = 0, indexMax = !autoWidth ? getIndexMax() : null, resizeTimer, preventActionWhenRunning = options.preventActionWhenRunning, swipeAngle = options.swipeAngle, moveDirectionExpected = swipeAngle ? "?" : true, running = false, onInit = options.onInit, events = new Events(), newContainerClasses = " tns-slider tns-" + options.mode, slideId = container.id || getSlideId(), disable = getOption("disable"), disabled = false, freezable = options.freezable, freeze = freezable && !autoWidth ? getFreeze() : false, frozen = false, controlsEvents = {
+      "click": onControlsClick,
+      "keydown": onControlsKeydown
+    }, navEvents = {
+      "click": onNavClick,
+      "keydown": onNavKeydown
+    }, hoverEvents = {
+      "mouseover": mouseoverPause,
+      "mouseout": mouseoutRestart
+    }, visibilityEvent = { "visibilitychange": onVisibilityChange }, docmentKeydownEvent = { "keydown": onDocumentKeydown }, touchEvents = {
+      "touchstart": onPanStart,
+      "touchmove": onPanMove,
+      "touchend": onPanEnd,
+      "touchcancel": onPanEnd
+    }, dragEvents = {
+      "mousedown": onPanStart,
+      "mousemove": onPanMove,
+      "mouseup": onPanEnd,
+      "mouseleave": onPanEnd
+    }, hasControls = hasOption("controls"), hasNav = hasOption("nav"), navAsThumbnails = autoWidth ? true : options.navAsThumbnails, hasAutoplay = hasOption("autoplay"), hasTouch = hasOption("touch"), hasMouseDrag = hasOption("mouseDrag"), slideActiveClass = "tns-slide-active", slideClonedClass = "tns-slide-cloned", imgCompleteClass = "tns-complete", imgEvents = {
+      "load": onImgLoaded,
+      "error": onImgFailed
+    }, imgsComplete, liveregionCurrent, preventScroll = options.preventScrollOnTouch === "force" ? true : false;
+    if (hasControls) {
+      var controlsContainer = options.controlsContainer, controlsContainerHTML = options.controlsContainer ? options.controlsContainer.outerHTML : "", prevButton = options.prevButton, nextButton = options.nextButton, prevButtonHTML = options.prevButton ? options.prevButton.outerHTML : "", nextButtonHTML = options.nextButton ? options.nextButton.outerHTML : "", prevIsButton, nextIsButton;
+    }
+    if (hasNav) {
+      var navContainer = options.navContainer, navContainerHTML = options.navContainer ? options.navContainer.outerHTML : "", navItems, pages = autoWidth ? slideCount : getPages(), pagesCached = 0, navClicked = -1, navCurrentIndex = getCurrentNavIndex(), navCurrentIndexCached = navCurrentIndex, navActiveClass = "tns-nav-active", navStr = "Carousel Page ", navStrCurrent = " (Current Slide)";
+    }
+    if (hasAutoplay) {
+      var autoplayDirection = options.autoplayDirection === "forward" ? 1 : -1, autoplayButton = options.autoplayButton, autoplayButtonHTML = options.autoplayButton ? options.autoplayButton.outerHTML : "", autoplayHtmlStrings = ["<span class='tns-visually-hidden'>", " animation</span>"], autoplayTimer, animating, autoplayHoverPaused, autoplayUserPaused, autoplayVisibilityPaused;
+    }
+    if (hasTouch || hasMouseDrag) {
+      var initPosition = {}, lastPosition = {}, translateInit, disX, disY, panStart = false, rafIndex, getDist = horizontal ? function(a, b) {
+        return a.x - b.x;
+      } : function(a, b) {
+        return a.y - b.y;
+      };
+    }
+    if (!autoWidth) {
+      resetVariblesWhenDisable(disable || freeze);
+    }
+    if (TRANSFORM) {
+      transformAttr = TRANSFORM;
+      transformPrefix = "translate";
+      if (HAS3DTRANSFORMS) {
+        transformPrefix += horizontal ? "3d(" : "3d(0px, ";
+        transformPostfix = horizontal ? ", 0px, 0px)" : ", 0px)";
+      } else {
+        transformPrefix += horizontal ? "X(" : "Y(";
+        transformPostfix = ")";
+      }
+    }
+    if (carousel) {
+      container.className = container.className.replace("tns-vpfix", "");
+    }
+    initStructure();
+    initSheet();
+    initSliderTransform();
+    function resetVariblesWhenDisable(condition) {
+      if (condition) {
+        controls = nav = touch = mouseDrag = arrowKeys = autoplay = autoplayHoverPause = autoplayResetOnVisibility = false;
+      }
+    }
+    function getCurrentSlide() {
+      var tem = carousel ? index - cloneCount : index;
+      while (tem < 0) {
+        tem += slideCount;
+      }
+      return tem % slideCount + 1;
+    }
+    function getStartIndex(ind) {
+      ind = ind ? Math.max(0, Math.min(loop ? slideCount - 1 : slideCount - items, ind)) : 0;
+      return carousel ? ind + cloneCount : ind;
+    }
+    function getAbsIndex(i) {
+      if (i == null) {
+        i = index;
+      }
+      if (carousel) {
+        i -= cloneCount;
+      }
+      while (i < 0) {
+        i += slideCount;
+      }
+      return Math.floor(i % slideCount);
+    }
+    function getCurrentNavIndex() {
+      var absIndex = getAbsIndex(), result;
+      result = navAsThumbnails ? absIndex : fixedWidth || autoWidth ? Math.ceil((absIndex + 1) * pages / slideCount - 1) : Math.floor(absIndex / items);
+      if (!loop && carousel && index === indexMax) {
+        result = pages - 1;
+      }
+      return result;
+    }
+    function getItemsMax() {
+      if (autoWidth || fixedWidth && !viewportMax) {
+        return slideCount - 1;
+      } else {
+        var str = fixedWidth ? "fixedWidth" : "items", arr = [];
+        if (fixedWidth || options[str] < slideCount) {
+          arr.push(options[str]);
+        }
+        if (responsive) {
+          for (var bp in responsive) {
+            var tem = responsive[bp][str];
+            if (tem && (fixedWidth || tem < slideCount)) {
+              arr.push(tem);
+            }
+          }
+        }
+        if (!arr.length) {
+          arr.push(0);
+        }
+        return Math.ceil(fixedWidth ? viewportMax / Math.min.apply(null, arr) : Math.max.apply(null, arr));
+      }
+    }
+    function getCloneCountForLoop() {
+      var itemsMax = getItemsMax(), result = carousel ? Math.ceil((itemsMax * 5 - slideCount) / 2) : itemsMax * 4 - slideCount;
+      result = Math.max(itemsMax, result);
+      return hasOption("edgePadding") ? result + 1 : result;
+    }
+    function getWindowWidth() {
+      return win3.innerWidth || doc.documentElement.clientWidth || doc.body.clientWidth;
+    }
+    function getInsertPosition(pos) {
+      return pos === "top" ? "afterbegin" : "beforeend";
+    }
+    function getClientWidth(el) {
+      if (el == null) {
+        return;
+      }
+      var div = doc.createElement("div"), rect, width;
+      el.appendChild(div);
+      rect = div.getBoundingClientRect();
+      width = rect.right - rect.left;
+      div.remove();
+      return width || getClientWidth(el.parentNode);
+    }
+    function getViewportWidth() {
+      var gap = edgePadding ? edgePadding * 2 - gutter : 0;
+      return getClientWidth(containerParent) - gap;
+    }
+    function hasOption(item) {
+      if (options[item]) {
+        return true;
+      } else {
+        if (responsive) {
+          for (var bp in responsive) {
+            if (responsive[bp][item]) {
+              return true;
+            }
+          }
+        }
+        return false;
+      }
+    }
+    function getOption(item, ww) {
+      if (ww == null) {
+        ww = windowWidth;
+      }
+      if (item === "items" && fixedWidth) {
+        return Math.floor((viewport + gutter) / (fixedWidth + gutter)) || 1;
+      } else {
+        var result = options[item];
+        if (responsive) {
+          for (var bp in responsive) {
+            if (ww >= parseInt(bp)) {
+              if (item in responsive[bp]) {
+                result = responsive[bp][item];
+              }
+            }
+          }
+        }
+        if (item === "slideBy" && result === "page") {
+          result = getOption("items");
+        }
+        if (!carousel && (item === "slideBy" || item === "items")) {
+          result = Math.floor(result);
+        }
+        return result;
+      }
+    }
+    function getSlideMarginLeft(i) {
+      return CALC ? CALC + "(" + i * 100 + "% / " + slideCountNew + ")" : i * 100 / slideCountNew + "%";
+    }
+    function getInnerWrapperStyles(edgePaddingTem, gutterTem, fixedWidthTem, speedTem, autoHeightBP) {
+      var str = "";
+      if (edgePaddingTem !== void 0) {
+        var gap = edgePaddingTem;
+        if (gutterTem) {
+          gap -= gutterTem;
+        }
+        str = horizontal ? "margin: 0 " + gap + "px 0 " + edgePaddingTem + "px;" : "margin: " + edgePaddingTem + "px 0 " + gap + "px 0;";
+      } else if (gutterTem && !fixedWidthTem) {
+        var gutterTemUnit = "-" + gutterTem + "px", dir = horizontal ? gutterTemUnit + " 0 0" : "0 " + gutterTemUnit + " 0";
+        str = "margin: 0 " + dir + ";";
+      }
+      if (!carousel && autoHeightBP && TRANSITIONDURATION && speedTem) {
+        str += getTransitionDurationStyle(speedTem);
+      }
+      return str;
+    }
+    function getContainerWidth(fixedWidthTem, gutterTem, itemsTem) {
+      if (fixedWidthTem) {
+        return (fixedWidthTem + gutterTem) * slideCountNew + "px";
+      } else {
+        return CALC ? CALC + "(" + slideCountNew * 100 + "% / " + itemsTem + ")" : slideCountNew * 100 / itemsTem + "%";
+      }
+    }
+    function getSlideWidthStyle(fixedWidthTem, gutterTem, itemsTem) {
+      var width;
+      if (fixedWidthTem) {
+        width = fixedWidthTem + gutterTem + "px";
+      } else {
+        if (!carousel) {
+          itemsTem = Math.floor(itemsTem);
+        }
+        var dividend = carousel ? slideCountNew : itemsTem;
+        width = CALC ? CALC + "(100% / " + dividend + ")" : 100 / dividend + "%";
+      }
+      width = "width:" + width;
+      return nested !== "inner" ? width + ";" : width + " !important;";
+    }
+    function getSlideGutterStyle(gutterTem) {
+      var str = "";
+      if (gutterTem !== false) {
+        var prop = horizontal ? "padding-" : "margin-", dir = horizontal ? "right" : "bottom";
+        str = prop + dir + ": " + gutterTem + "px;";
+      }
+      return str;
+    }
+    function getCSSPrefix(name, num) {
+      var prefix = name.substring(0, name.length - num).toLowerCase();
+      if (prefix) {
+        prefix = "-" + prefix + "-";
+      }
+      return prefix;
+    }
+    function getTransitionDurationStyle(speed2) {
+      return getCSSPrefix(TRANSITIONDURATION, 18) + "transition-duration:" + speed2 / 1e3 + "s;";
+    }
+    function getAnimationDurationStyle(speed2) {
+      return getCSSPrefix(ANIMATIONDURATION, 17) + "animation-duration:" + speed2 / 1e3 + "s;";
+    }
+    function initStructure() {
+      var classOuter = "tns-outer", classInner = "tns-inner", hasGutter = hasOption("gutter");
+      outerWrapper.className = classOuter;
+      innerWrapper.className = classInner;
+      outerWrapper.id = slideId + "-ow";
+      innerWrapper.id = slideId + "-iw";
+      if (container.id === "") {
+        container.id = slideId;
+      }
+      newContainerClasses += PERCENTAGELAYOUT || autoWidth ? " tns-subpixel" : " tns-no-subpixel";
+      newContainerClasses += CALC ? " tns-calc" : " tns-no-calc";
+      if (autoWidth) {
+        newContainerClasses += " tns-autowidth";
+      }
+      newContainerClasses += " tns-" + options.axis;
+      container.className += newContainerClasses;
+      if (carousel) {
+        middleWrapper = doc.createElement("div");
+        middleWrapper.id = slideId + "-mw";
+        middleWrapper.className = "tns-ovh";
+        outerWrapper.appendChild(middleWrapper);
+        middleWrapper.appendChild(innerWrapper);
+      } else {
+        outerWrapper.appendChild(innerWrapper);
+      }
+      if (autoHeight) {
+        var wp = middleWrapper ? middleWrapper : innerWrapper;
+        wp.className += " tns-ah";
+      }
+      containerParent.insertBefore(outerWrapper, container);
+      innerWrapper.appendChild(container);
+      forEach(slideItems, function(item, i) {
+        addClass(item, "tns-item");
+        if (!item.id) {
+          item.id = slideId + "-item" + i;
+        }
+        if (!carousel && animateNormal) {
+          addClass(item, animateNormal);
+        }
+        setAttrs(item, {
+          "aria-hidden": "true",
+          "tabindex": "-1"
+        });
+      });
+      if (cloneCount) {
+        var fragmentBefore = doc.createDocumentFragment(), fragmentAfter = doc.createDocumentFragment();
+        for (var j = cloneCount; j--; ) {
+          var num = j % slideCount, cloneFirst = slideItems[num].cloneNode(true);
+          addClass(cloneFirst, slideClonedClass);
+          removeAttrs(cloneFirst, "id");
+          fragmentAfter.insertBefore(cloneFirst, fragmentAfter.firstChild);
+          if (carousel) {
+            var cloneLast = slideItems[slideCount - 1 - num].cloneNode(true);
+            addClass(cloneLast, slideClonedClass);
+            removeAttrs(cloneLast, "id");
+            fragmentBefore.appendChild(cloneLast);
+          }
+        }
+        container.insertBefore(fragmentBefore, container.firstChild);
+        container.appendChild(fragmentAfter);
+        slideItems = container.children;
+      }
+    }
+    function initSliderTransform() {
+      if (hasOption("autoHeight") || autoWidth || !horizontal) {
+        var imgs = container.querySelectorAll("img");
+        forEach(imgs, function(img) {
+          var src = img.src;
+          if (!lazyload) {
+            if (src && src.indexOf("data:image") < 0) {
+              img.src = "";
+              addEvents(img, imgEvents);
+              addClass(img, "loading");
+              img.src = src;
+            } else {
+              imgLoaded(img);
+            }
+          }
+        });
+        raf(function() {
+          imgsLoadedCheck(arrayFromNodeList(imgs), function() {
+            imgsComplete = true;
+          });
+        });
+        if (hasOption("autoHeight")) {
+          imgs = getImageArray(index, Math.min(index + items - 1, slideCountNew - 1));
+        }
+        lazyload ? initSliderTransformStyleCheck() : raf(function() {
+          imgsLoadedCheck(arrayFromNodeList(imgs), initSliderTransformStyleCheck);
+        });
+      } else {
+        if (carousel) {
+          doContainerTransformSilent();
+        }
+        initTools();
+        initEvents();
+      }
+    }
+    function initSliderTransformStyleCheck() {
+      if (autoWidth && slideCount > 1) {
+        var num = loop ? index : slideCount - 1;
+        (function stylesApplicationCheck() {
+          var left = slideItems[num].getBoundingClientRect().left;
+          var right = slideItems[num - 1].getBoundingClientRect().right;
+          Math.abs(left - right) <= 1 ? initSliderTransformCore() : setTimeout(function() {
+            stylesApplicationCheck();
+          }, 16);
+        })();
+      } else {
+        initSliderTransformCore();
+      }
+    }
+    function initSliderTransformCore() {
+      if (!horizontal || autoWidth) {
+        setSlidePositions();
+        if (autoWidth) {
+          rightBoundary = getRightBoundary();
+          if (freezable) {
+            freeze = getFreeze();
+          }
+          indexMax = getIndexMax();
+          resetVariblesWhenDisable(disable || freeze);
+        } else {
+          updateContentWrapperHeight();
+        }
+      }
+      if (carousel) {
+        doContainerTransformSilent();
+      }
+      initTools();
+      initEvents();
+    }
+    function initSheet() {
+      if (!carousel) {
+        for (var i = index, l = index + Math.min(slideCount, items); i < l; i++) {
+          var item = slideItems[i];
+          item.style.left = (i - index) * 100 / items + "%";
+          addClass(item, animateIn);
+          removeClass(item, animateNormal);
+        }
+      }
+      if (horizontal) {
+        if (PERCENTAGELAYOUT || autoWidth) {
+          addCSSRule(sheet, "#" + slideId + " > .tns-item", "font-size:" + win3.getComputedStyle(slideItems[0]).fontSize + ";", getCssRulesLength(sheet));
+          addCSSRule(sheet, "#" + slideId, "font-size:0;", getCssRulesLength(sheet));
+        } else if (carousel) {
+          forEach(slideItems, function(slide, i2) {
+            slide.style.marginLeft = getSlideMarginLeft(i2);
+          });
+        }
+      }
+      if (CSSMQ) {
+        if (TRANSITIONDURATION) {
+          var str = middleWrapper && options.autoHeight ? getTransitionDurationStyle(options.speed) : "";
+          addCSSRule(sheet, "#" + slideId + "-mw", str, getCssRulesLength(sheet));
+        }
+        str = getInnerWrapperStyles(options.edgePadding, options.gutter, options.fixedWidth, options.speed, options.autoHeight);
+        addCSSRule(sheet, "#" + slideId + "-iw", str, getCssRulesLength(sheet));
+        if (carousel) {
+          str = horizontal && !autoWidth ? "width:" + getContainerWidth(options.fixedWidth, options.gutter, options.items) + ";" : "";
+          if (TRANSITIONDURATION) {
+            str += getTransitionDurationStyle(speed);
+          }
+          addCSSRule(sheet, "#" + slideId, str, getCssRulesLength(sheet));
+        }
+        str = horizontal && !autoWidth ? getSlideWidthStyle(options.fixedWidth, options.gutter, options.items) : "";
+        if (options.gutter) {
+          str += getSlideGutterStyle(options.gutter);
+        }
+        if (!carousel) {
+          if (TRANSITIONDURATION) {
+            str += getTransitionDurationStyle(speed);
+          }
+          if (ANIMATIONDURATION) {
+            str += getAnimationDurationStyle(speed);
+          }
+        }
+        if (str) {
+          addCSSRule(sheet, "#" + slideId + " > .tns-item", str, getCssRulesLength(sheet));
+        }
+      } else {
+        update_carousel_transition_duration();
+        innerWrapper.style.cssText = getInnerWrapperStyles(edgePadding, gutter, fixedWidth, autoHeight);
+        if (carousel && horizontal && !autoWidth) {
+          container.style.width = getContainerWidth(fixedWidth, gutter, items);
+        }
+        var str = horizontal && !autoWidth ? getSlideWidthStyle(fixedWidth, gutter, items) : "";
+        if (gutter) {
+          str += getSlideGutterStyle(gutter);
+        }
+        if (str) {
+          addCSSRule(sheet, "#" + slideId + " > .tns-item", str, getCssRulesLength(sheet));
+        }
+      }
+      if (responsive && CSSMQ) {
+        for (var bp in responsive) {
+          bp = parseInt(bp);
+          var opts = responsive[bp], str = "", middleWrapperStr = "", innerWrapperStr = "", containerStr = "", slideStr = "", itemsBP = !autoWidth ? getOption("items", bp) : null, fixedWidthBP = getOption("fixedWidth", bp), speedBP = getOption("speed", bp), edgePaddingBP = getOption("edgePadding", bp), autoHeightBP = getOption("autoHeight", bp), gutterBP = getOption("gutter", bp);
+          if (TRANSITIONDURATION && middleWrapper && getOption("autoHeight", bp) && "speed" in opts) {
+            middleWrapperStr = "#" + slideId + "-mw{" + getTransitionDurationStyle(speedBP) + "}";
+          }
+          if ("edgePadding" in opts || "gutter" in opts) {
+            innerWrapperStr = "#" + slideId + "-iw{" + getInnerWrapperStyles(edgePaddingBP, gutterBP, fixedWidthBP, speedBP, autoHeightBP) + "}";
+          }
+          if (carousel && horizontal && !autoWidth && ("fixedWidth" in opts || "items" in opts || fixedWidth && "gutter" in opts)) {
+            containerStr = "width:" + getContainerWidth(fixedWidthBP, gutterBP, itemsBP) + ";";
+          }
+          if (TRANSITIONDURATION && "speed" in opts) {
+            containerStr += getTransitionDurationStyle(speedBP);
+          }
+          if (containerStr) {
+            containerStr = "#" + slideId + "{" + containerStr + "}";
+          }
+          if ("fixedWidth" in opts || fixedWidth && "gutter" in opts || !carousel && "items" in opts) {
+            slideStr += getSlideWidthStyle(fixedWidthBP, gutterBP, itemsBP);
+          }
+          if ("gutter" in opts) {
+            slideStr += getSlideGutterStyle(gutterBP);
+          }
+          if (!carousel && "speed" in opts) {
+            if (TRANSITIONDURATION) {
+              slideStr += getTransitionDurationStyle(speedBP);
+            }
+            if (ANIMATIONDURATION) {
+              slideStr += getAnimationDurationStyle(speedBP);
+            }
+          }
+          if (slideStr) {
+            slideStr = "#" + slideId + " > .tns-item{" + slideStr + "}";
+          }
+          str = middleWrapperStr + innerWrapperStr + containerStr + slideStr;
+          if (str) {
+            sheet.insertRule("@media (min-width: " + bp / 16 + "em) {" + str + "}", sheet.cssRules.length);
+          }
+        }
+      }
+    }
+    function initTools() {
+      updateSlideStatus();
+      outerWrapper.insertAdjacentHTML("afterbegin", '<div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">' + getLiveRegionStr() + "</span>  of " + slideCount + "</div>");
+      liveregionCurrent = outerWrapper.querySelector(".tns-liveregion .current");
+      if (hasAutoplay) {
+        var txt = autoplay ? "stop" : "start";
+        if (autoplayButton) {
+          setAttrs(autoplayButton, { "data-action": txt });
+        } else if (options.autoplayButtonOutput) {
+          outerWrapper.insertAdjacentHTML(getInsertPosition(options.autoplayPosition), '<button type="button" data-action="' + txt + '">' + autoplayHtmlStrings[0] + txt + autoplayHtmlStrings[1] + autoplayText[0] + "</button>");
+          autoplayButton = outerWrapper.querySelector("[data-action]");
+        }
+        if (autoplayButton) {
+          addEvents(autoplayButton, { "click": toggleAutoplay });
+        }
+        if (autoplay) {
+          startAutoplay();
+          if (autoplayHoverPause) {
+            addEvents(container, hoverEvents);
+          }
+          if (autoplayResetOnVisibility) {
+            addEvents(container, visibilityEvent);
+          }
+        }
+      }
+      if (hasNav) {
+        var initIndex = !carousel ? 0 : cloneCount;
+        if (navContainer) {
+          setAttrs(navContainer, { "aria-label": "Carousel Pagination" });
+          navItems = navContainer.children;
+          forEach(navItems, function(item, i2) {
+            setAttrs(item, {
+              "data-nav": i2,
+              "tabindex": "-1",
+              "aria-label": navStr + (i2 + 1),
+              "aria-controls": slideId
+            });
+          });
+        } else {
+          var navHtml = "", hiddenStr = navAsThumbnails ? "" : 'style="display:none"';
+          for (var i = 0; i < slideCount; i++) {
+            navHtml += '<button type="button" data-nav="' + i + '" tabindex="-1" aria-controls="' + slideId + '" ' + hiddenStr + ' aria-label="' + navStr + (i + 1) + '"></button>';
+          }
+          navHtml = '<div class="tns-nav" aria-label="Carousel Pagination">' + navHtml + "</div>";
+          outerWrapper.insertAdjacentHTML(getInsertPosition(options.navPosition), navHtml);
+          navContainer = outerWrapper.querySelector(".tns-nav");
+          navItems = navContainer.children;
+        }
+        updateNavVisibility();
+        if (TRANSITIONDURATION) {
+          var prefix = TRANSITIONDURATION.substring(0, TRANSITIONDURATION.length - 18).toLowerCase(), str = "transition: all " + speed / 1e3 + "s";
+          if (prefix) {
+            str = "-" + prefix + "-" + str;
+          }
+          addCSSRule(sheet, "[aria-controls^=" + slideId + "-item]", str, getCssRulesLength(sheet));
+        }
+        setAttrs(navItems[navCurrentIndex], { "aria-label": navStr + (navCurrentIndex + 1) + navStrCurrent });
+        removeAttrs(navItems[navCurrentIndex], "tabindex");
+        addClass(navItems[navCurrentIndex], navActiveClass);
+        addEvents(navContainer, navEvents);
+      }
+      if (hasControls) {
+        if (!controlsContainer && (!prevButton || !nextButton)) {
+          outerWrapper.insertAdjacentHTML(getInsertPosition(options.controlsPosition), '<div class="tns-controls" aria-label="Carousel Navigation" tabindex="0"><button type="button" data-controls="prev" tabindex="-1" aria-controls="' + slideId + '">' + controlsText[0] + '</button><button type="button" data-controls="next" tabindex="-1" aria-controls="' + slideId + '">' + controlsText[1] + "</button></div>");
+          controlsContainer = outerWrapper.querySelector(".tns-controls");
+        }
+        if (!prevButton || !nextButton) {
+          prevButton = controlsContainer.children[0];
+          nextButton = controlsContainer.children[1];
+        }
+        if (options.controlsContainer) {
+          setAttrs(controlsContainer, {
+            "aria-label": "Carousel Navigation",
+            "tabindex": "0"
+          });
+        }
+        if (options.controlsContainer || options.prevButton && options.nextButton) {
+          setAttrs([prevButton, nextButton], {
+            "aria-controls": slideId,
+            "tabindex": "-1"
+          });
+        }
+        if (options.controlsContainer || options.prevButton && options.nextButton) {
+          setAttrs(prevButton, { "data-controls": "prev" });
+          setAttrs(nextButton, { "data-controls": "next" });
+        }
+        prevIsButton = isButton(prevButton);
+        nextIsButton = isButton(nextButton);
+        updateControlsStatus();
+        if (controlsContainer) {
+          addEvents(controlsContainer, controlsEvents);
+        } else {
+          addEvents(prevButton, controlsEvents);
+          addEvents(nextButton, controlsEvents);
+        }
+      }
+      disableUI();
+    }
+    function initEvents() {
+      if (carousel && TRANSITIONEND) {
+        var eve = {};
+        eve[TRANSITIONEND] = onTransitionEnd;
+        addEvents(container, eve);
+      }
+      if (touch) {
+        addEvents(container, touchEvents, options.preventScrollOnTouch);
+      }
+      if (mouseDrag) {
+        addEvents(container, dragEvents);
+      }
+      if (arrowKeys) {
+        addEvents(doc, docmentKeydownEvent);
+      }
+      if (nested === "inner") {
+        events.on("outerResized", function() {
+          resizeTasks();
+          events.emit("innerLoaded", info());
+        });
+      } else if (responsive || fixedWidth || autoWidth || autoHeight || !horizontal) {
+        addEvents(win3, { "resize": onResize });
+      }
+      if (autoHeight) {
+        if (nested === "outer") {
+          events.on("innerLoaded", doAutoHeight);
+        } else if (!disable) {
+          doAutoHeight();
+        }
+      }
+      doLazyLoad();
+      if (disable) {
+        disableSlider();
+      } else if (freeze) {
+        freezeSlider();
+      }
+      events.on("indexChanged", additionalUpdates);
+      if (nested === "inner") {
+        events.emit("innerLoaded", info());
+      }
+      if (typeof onInit === "function") {
+        onInit(info());
+      }
+      isOn = true;
+    }
+    function destroy() {
+      sheet.disabled = true;
+      if (sheet.ownerNode) {
+        sheet.ownerNode.remove();
+      }
+      removeEvents(win3, { "resize": onResize });
+      if (arrowKeys) {
+        removeEvents(doc, docmentKeydownEvent);
+      }
+      if (controlsContainer) {
+        removeEvents(controlsContainer, controlsEvents);
+      }
+      if (navContainer) {
+        removeEvents(navContainer, navEvents);
+      }
+      removeEvents(container, hoverEvents);
+      removeEvents(container, visibilityEvent);
+      if (autoplayButton) {
+        removeEvents(autoplayButton, { "click": toggleAutoplay });
+      }
+      if (autoplay) {
+        clearInterval(autoplayTimer);
+      }
+      if (carousel && TRANSITIONEND) {
+        var eve = {};
+        eve[TRANSITIONEND] = onTransitionEnd;
+        removeEvents(container, eve);
+      }
+      if (touch) {
+        removeEvents(container, touchEvents);
+      }
+      if (mouseDrag) {
+        removeEvents(container, dragEvents);
+      }
+      var htmlList = [containerHTML, controlsContainerHTML, prevButtonHTML, nextButtonHTML, navContainerHTML, autoplayButtonHTML];
+      tnsList.forEach(function(item, i) {
+        var el = item === "container" ? outerWrapper : options[item];
+        if (typeof el === "object" && el) {
+          var prevEl = el.previousElementSibling ? el.previousElementSibling : false, parentEl = el.parentNode;
+          el.outerHTML = htmlList[i];
+          options[item] = prevEl ? prevEl.nextElementSibling : parentEl.firstElementChild;
+        }
+      });
+      tnsList = animateIn = animateOut = animateDelay = animateNormal = horizontal = outerWrapper = innerWrapper = container = containerParent = containerHTML = slideItems = slideCount = breakpointZone = windowWidth = autoWidth = fixedWidth = edgePadding = gutter = viewport = items = slideBy = viewportMax = arrowKeys = speed = rewind = loop = autoHeight = sheet = lazyload = slidePositions = slideItemsOut = cloneCount = slideCountNew = hasRightDeadZone = rightBoundary = updateIndexBeforeTransform = transformAttr = transformPrefix = transformPostfix = getIndexMax = index = indexCached = indexMin = indexMax = resizeTimer = swipeAngle = moveDirectionExpected = running = onInit = events = newContainerClasses = slideId = disable = disabled = freezable = freeze = frozen = controlsEvents = navEvents = hoverEvents = visibilityEvent = docmentKeydownEvent = touchEvents = dragEvents = hasControls = hasNav = navAsThumbnails = hasAutoplay = hasTouch = hasMouseDrag = slideActiveClass = imgCompleteClass = imgEvents = imgsComplete = controls = controlsText = controlsContainer = controlsContainerHTML = prevButton = nextButton = prevIsButton = nextIsButton = nav = navContainer = navContainerHTML = navItems = pages = pagesCached = navClicked = navCurrentIndex = navCurrentIndexCached = navActiveClass = navStr = navStrCurrent = autoplay = autoplayTimeout = autoplayDirection = autoplayText = autoplayHoverPause = autoplayButton = autoplayButtonHTML = autoplayResetOnVisibility = autoplayHtmlStrings = autoplayTimer = animating = autoplayHoverPaused = autoplayUserPaused = autoplayVisibilityPaused = initPosition = lastPosition = translateInit = disX = disY = panStart = rafIndex = getDist = touch = mouseDrag = null;
+      for (var a in this) {
+        if (a !== "rebuild") {
+          this[a] = null;
+        }
+      }
+      isOn = false;
+    }
+    function onResize(e) {
+      raf(function() {
+        resizeTasks(getEvent(e));
+      });
+    }
+    function resizeTasks(e) {
+      if (!isOn) {
+        return;
+      }
+      if (nested === "outer") {
+        events.emit("outerResized", info(e));
+      }
+      windowWidth = getWindowWidth();
+      var bpChanged, breakpointZoneTem = breakpointZone, needContainerTransform = false;
+      if (responsive) {
+        setBreakpointZone();
+        bpChanged = breakpointZoneTem !== breakpointZone;
+        if (bpChanged) {
+          events.emit("newBreakpointStart", info(e));
+        }
+      }
+      var indChanged, itemsChanged, itemsTem = items, disableTem = disable, freezeTem = freeze, arrowKeysTem = arrowKeys, controlsTem = controls, navTem = nav, touchTem = touch, mouseDragTem = mouseDrag, autoplayTem = autoplay, autoplayHoverPauseTem = autoplayHoverPause, autoplayResetOnVisibilityTem = autoplayResetOnVisibility, indexTem = index;
+      if (bpChanged) {
+        var fixedWidthTem = fixedWidth, autoHeightTem = autoHeight, controlsTextTem = controlsText, centerTem = center, autoplayTextTem = autoplayText;
+        if (!CSSMQ) {
+          var gutterTem = gutter, edgePaddingTem = edgePadding;
+        }
+      }
+      arrowKeys = getOption("arrowKeys");
+      controls = getOption("controls");
+      nav = getOption("nav");
+      touch = getOption("touch");
+      center = getOption("center");
+      mouseDrag = getOption("mouseDrag");
+      autoplay = getOption("autoplay");
+      autoplayHoverPause = getOption("autoplayHoverPause");
+      autoplayResetOnVisibility = getOption("autoplayResetOnVisibility");
+      if (bpChanged) {
+        disable = getOption("disable");
+        fixedWidth = getOption("fixedWidth");
+        speed = getOption("speed");
+        autoHeight = getOption("autoHeight");
+        controlsText = getOption("controlsText");
+        autoplayText = getOption("autoplayText");
+        autoplayTimeout = getOption("autoplayTimeout");
+        if (!CSSMQ) {
+          edgePadding = getOption("edgePadding");
+          gutter = getOption("gutter");
+        }
+      }
+      resetVariblesWhenDisable(disable);
+      viewport = getViewportWidth();
+      if ((!horizontal || autoWidth) && !disable) {
+        setSlidePositions();
+        if (!horizontal) {
+          updateContentWrapperHeight();
+          needContainerTransform = true;
+        }
+      }
+      if (fixedWidth || autoWidth) {
+        rightBoundary = getRightBoundary();
+        indexMax = getIndexMax();
+      }
+      if (bpChanged || fixedWidth) {
+        items = getOption("items");
+        slideBy = getOption("slideBy");
+        itemsChanged = items !== itemsTem;
+        if (itemsChanged) {
+          if (!fixedWidth && !autoWidth) {
+            indexMax = getIndexMax();
+          }
+          updateIndex();
+        }
+      }
+      if (bpChanged) {
+        if (disable !== disableTem) {
+          if (disable) {
+            disableSlider();
+          } else {
+            enableSlider();
+          }
+        }
+      }
+      if (freezable && (bpChanged || fixedWidth || autoWidth)) {
+        freeze = getFreeze();
+        if (freeze !== freezeTem) {
+          if (freeze) {
+            doContainerTransform(getContainerTransformValue(getStartIndex(0)));
+            freezeSlider();
+          } else {
+            unfreezeSlider();
+            needContainerTransform = true;
+          }
+        }
+      }
+      resetVariblesWhenDisable(disable || freeze);
+      if (!autoplay) {
+        autoplayHoverPause = autoplayResetOnVisibility = false;
+      }
+      if (arrowKeys !== arrowKeysTem) {
+        arrowKeys ? addEvents(doc, docmentKeydownEvent) : removeEvents(doc, docmentKeydownEvent);
+      }
+      if (controls !== controlsTem) {
+        if (controls) {
+          if (controlsContainer) {
+            showElement(controlsContainer);
+          } else {
+            if (prevButton) {
+              showElement(prevButton);
+            }
+            if (nextButton) {
+              showElement(nextButton);
+            }
+          }
+        } else {
+          if (controlsContainer) {
+            hideElement(controlsContainer);
+          } else {
+            if (prevButton) {
+              hideElement(prevButton);
+            }
+            if (nextButton) {
+              hideElement(nextButton);
+            }
+          }
+        }
+      }
+      if (nav !== navTem) {
+        if (nav) {
+          showElement(navContainer);
+          updateNavVisibility();
+        } else {
+          hideElement(navContainer);
+        }
+      }
+      if (touch !== touchTem) {
+        touch ? addEvents(container, touchEvents, options.preventScrollOnTouch) : removeEvents(container, touchEvents);
+      }
+      if (mouseDrag !== mouseDragTem) {
+        mouseDrag ? addEvents(container, dragEvents) : removeEvents(container, dragEvents);
+      }
+      if (autoplay !== autoplayTem) {
+        if (autoplay) {
+          if (autoplayButton) {
+            showElement(autoplayButton);
+          }
+          if (!animating && !autoplayUserPaused) {
+            startAutoplay();
+          }
+        } else {
+          if (autoplayButton) {
+            hideElement(autoplayButton);
+          }
+          if (animating) {
+            stopAutoplay();
+          }
+        }
+      }
+      if (autoplayHoverPause !== autoplayHoverPauseTem) {
+        autoplayHoverPause ? addEvents(container, hoverEvents) : removeEvents(container, hoverEvents);
+      }
+      if (autoplayResetOnVisibility !== autoplayResetOnVisibilityTem) {
+        autoplayResetOnVisibility ? addEvents(doc, visibilityEvent) : removeEvents(doc, visibilityEvent);
+      }
+      if (bpChanged) {
+        if (fixedWidth !== fixedWidthTem || center !== centerTem) {
+          needContainerTransform = true;
+        }
+        if (autoHeight !== autoHeightTem) {
+          if (!autoHeight) {
+            innerWrapper.style.height = "";
+          }
+        }
+        if (controls && controlsText !== controlsTextTem) {
+          prevButton.innerHTML = controlsText[0];
+          nextButton.innerHTML = controlsText[1];
+        }
+        if (autoplayButton && autoplayText !== autoplayTextTem) {
+          var i = autoplay ? 1 : 0, html = autoplayButton.innerHTML, len = html.length - autoplayTextTem[i].length;
+          if (html.substring(len) === autoplayTextTem[i]) {
+            autoplayButton.innerHTML = html.substring(0, len) + autoplayText[i];
+          }
+        }
+      } else {
+        if (center && (fixedWidth || autoWidth)) {
+          needContainerTransform = true;
+        }
+      }
+      if (itemsChanged || fixedWidth && !autoWidth) {
+        pages = getPages();
+        updateNavVisibility();
+      }
+      indChanged = index !== indexTem;
+      if (indChanged) {
+        events.emit("indexChanged", info());
+        needContainerTransform = true;
+      } else if (itemsChanged) {
+        if (!indChanged) {
+          additionalUpdates();
+        }
+      } else if (fixedWidth || autoWidth) {
+        doLazyLoad();
+        updateSlideStatus();
+        updateLiveRegion();
+      }
+      if (itemsChanged && !carousel) {
+        updateGallerySlidePositions();
+      }
+      if (!disable && !freeze) {
+        if (bpChanged && !CSSMQ) {
+          if (edgePadding !== edgePaddingTem || gutter !== gutterTem) {
+            innerWrapper.style.cssText = getInnerWrapperStyles(edgePadding, gutter, fixedWidth, speed, autoHeight);
+          }
+          if (horizontal) {
+            if (carousel) {
+              container.style.width = getContainerWidth(fixedWidth, gutter, items);
+            }
+            var str = getSlideWidthStyle(fixedWidth, gutter, items) + getSlideGutterStyle(gutter);
+            removeCSSRule(sheet, getCssRulesLength(sheet) - 1);
+            addCSSRule(sheet, "#" + slideId + " > .tns-item", str, getCssRulesLength(sheet));
+          }
+        }
+        if (autoHeight) {
+          doAutoHeight();
+        }
+        if (needContainerTransform) {
+          doContainerTransformSilent();
+          indexCached = index;
+        }
+      }
+      if (bpChanged) {
+        events.emit("newBreakpointEnd", info(e));
+      }
+    }
+    function getFreeze() {
+      if (!fixedWidth && !autoWidth) {
+        var a = center ? items - (items - 1) / 2 : items;
+        return slideCount <= a;
+      }
+      var width = fixedWidth ? (fixedWidth + gutter) * slideCount : slidePositions[slideCount], vp = edgePadding ? viewport + edgePadding * 2 : viewport + gutter;
+      if (center) {
+        vp -= fixedWidth ? (viewport - fixedWidth) / 2 : (viewport - (slidePositions[index + 1] - slidePositions[index] - gutter)) / 2;
+      }
+      return width <= vp;
+    }
+    function setBreakpointZone() {
+      breakpointZone = 0;
+      for (var bp in responsive) {
+        bp = parseInt(bp);
+        if (windowWidth >= bp) {
+          breakpointZone = bp;
+        }
+      }
+    }
+    var updateIndex = /* @__PURE__ */ function() {
+      return loop ? carousel ? (
+        // loop + carousel
+        function() {
+          var leftEdge = indexMin, rightEdge = indexMax;
+          leftEdge += slideBy;
+          rightEdge -= slideBy;
+          if (edgePadding) {
+            leftEdge += 1;
+            rightEdge -= 1;
+          } else if (fixedWidth) {
+            if ((viewport + gutter) % (fixedWidth + gutter)) {
+              rightEdge -= 1;
+            }
+          }
+          if (cloneCount) {
+            if (index > rightEdge) {
+              index -= slideCount;
+            } else if (index < leftEdge) {
+              index += slideCount;
+            }
+          }
+        }
+      ) : (
+        // loop + gallery
+        function() {
+          if (index > indexMax) {
+            while (index >= indexMin + slideCount) {
+              index -= slideCount;
+            }
+          } else if (index < indexMin) {
+            while (index <= indexMax - slideCount) {
+              index += slideCount;
+            }
+          }
+        }
+      ) : (
+        // non-loop
+        function() {
+          index = Math.max(indexMin, Math.min(indexMax, index));
+        }
+      );
+    }();
+    function disableUI() {
+      if (!autoplay && autoplayButton) {
+        hideElement(autoplayButton);
+      }
+      if (!nav && navContainer) {
+        hideElement(navContainer);
+      }
+      if (!controls) {
+        if (controlsContainer) {
+          hideElement(controlsContainer);
+        } else {
+          if (prevButton) {
+            hideElement(prevButton);
+          }
+          if (nextButton) {
+            hideElement(nextButton);
+          }
+        }
+      }
+    }
+    function enableUI() {
+      if (autoplay && autoplayButton) {
+        showElement(autoplayButton);
+      }
+      if (nav && navContainer) {
+        showElement(navContainer);
+      }
+      if (controls) {
+        if (controlsContainer) {
+          showElement(controlsContainer);
+        } else {
+          if (prevButton) {
+            showElement(prevButton);
+          }
+          if (nextButton) {
+            showElement(nextButton);
+          }
+        }
+      }
+    }
+    function freezeSlider() {
+      if (frozen) {
+        return;
+      }
+      if (edgePadding) {
+        innerWrapper.style.margin = "0px";
+      }
+      if (cloneCount) {
+        var str = "tns-transparent";
+        for (var i = cloneCount; i--; ) {
+          if (carousel) {
+            addClass(slideItems[i], str);
+          }
+          addClass(slideItems[slideCountNew - i - 1], str);
+        }
+      }
+      disableUI();
+      frozen = true;
+    }
+    function unfreezeSlider() {
+      if (!frozen) {
+        return;
+      }
+      if (edgePadding && CSSMQ) {
+        innerWrapper.style.margin = "";
+      }
+      if (cloneCount) {
+        var str = "tns-transparent";
+        for (var i = cloneCount; i--; ) {
+          if (carousel) {
+            removeClass(slideItems[i], str);
+          }
+          removeClass(slideItems[slideCountNew - i - 1], str);
+        }
+      }
+      enableUI();
+      frozen = false;
+    }
+    function disableSlider() {
+      if (disabled) {
+        return;
+      }
+      sheet.disabled = true;
+      container.className = container.className.replace(newContainerClasses.substring(1), "");
+      removeAttrs(container, ["style"]);
+      if (loop) {
+        for (var j = cloneCount; j--; ) {
+          if (carousel) {
+            hideElement(slideItems[j]);
+          }
+          hideElement(slideItems[slideCountNew - j - 1]);
+        }
+      }
+      if (!horizontal || !carousel) {
+        removeAttrs(innerWrapper, ["style"]);
+      }
+      if (!carousel) {
+        for (var i = index, l = index + slideCount; i < l; i++) {
+          var item = slideItems[i];
+          removeAttrs(item, ["style"]);
+          removeClass(item, animateIn);
+          removeClass(item, animateNormal);
+        }
+      }
+      disableUI();
+      disabled = true;
+    }
+    function enableSlider() {
+      if (!disabled) {
+        return;
+      }
+      sheet.disabled = false;
+      container.className += newContainerClasses;
+      doContainerTransformSilent();
+      if (loop) {
+        for (var j = cloneCount; j--; ) {
+          if (carousel) {
+            showElement(slideItems[j]);
+          }
+          showElement(slideItems[slideCountNew - j - 1]);
+        }
+      }
+      if (!carousel) {
+        for (var i = index, l = index + slideCount; i < l; i++) {
+          var item = slideItems[i], classN = i < index + items ? animateIn : animateNormal;
+          item.style.left = (i - index) * 100 / items + "%";
+          addClass(item, classN);
+        }
+      }
+      enableUI();
+      disabled = false;
+    }
+    function updateLiveRegion() {
+      var str = getLiveRegionStr();
+      if (liveregionCurrent.innerHTML !== str) {
+        liveregionCurrent.innerHTML = str;
+      }
+    }
+    function getLiveRegionStr() {
+      var arr = getVisibleSlideRange(), start = arr[0] + 1, end = arr[1] + 1;
+      return start === end ? start + "" : start + " to " + end;
+    }
+    function getVisibleSlideRange(val2) {
+      if (val2 == null) {
+        val2 = getContainerTransformValue();
+      }
+      var start = index, end, rangestart, rangeend;
+      if (center || edgePadding) {
+        if (autoWidth || fixedWidth) {
+          rangestart = -(parseFloat(val2) + edgePadding);
+          rangeend = rangestart + viewport + edgePadding * 2;
+        }
+      } else {
+        if (autoWidth) {
+          rangestart = slidePositions[index];
+          rangeend = rangestart + viewport;
+        }
+      }
+      if (autoWidth) {
+        slidePositions.forEach(function(point, i) {
+          if (i < slideCountNew) {
+            if ((center || edgePadding) && point <= rangestart + 0.5) {
+              start = i;
+            }
+            if (rangeend - point >= 0.5) {
+              end = i;
+            }
+          }
+        });
+      } else {
+        if (fixedWidth) {
+          var cell = fixedWidth + gutter;
+          if (center || edgePadding) {
+            start = Math.floor(rangestart / cell);
+            end = Math.ceil(rangeend / cell - 1);
+          } else {
+            end = start + Math.ceil(viewport / cell) - 1;
+          }
+        } else {
+          if (center || edgePadding) {
+            var a = items - 1;
+            if (center) {
+              start -= a / 2;
+              end = index + a / 2;
+            } else {
+              end = index + a;
+            }
+            if (edgePadding) {
+              var b = edgePadding * items / viewport;
+              start -= b;
+              end += b;
+            }
+            start = Math.floor(start);
+            end = Math.ceil(end);
+          } else {
+            end = start + items - 1;
+          }
+        }
+        start = Math.max(start, 0);
+        end = Math.min(end, slideCountNew - 1);
+      }
+      return [start, end];
+    }
+    function doLazyLoad() {
+      if (lazyload && !disable) {
+        var arg = getVisibleSlideRange();
+        arg.push(lazyloadSelector);
+        getImageArray.apply(null, arg).forEach(function(img) {
+          if (!hasClass(img, imgCompleteClass)) {
+            var eve = {};
+            eve[TRANSITIONEND] = function(e) {
+              e.stopPropagation();
+            };
+            addEvents(img, eve);
+            addEvents(img, imgEvents);
+            img.src = getAttr(img, "data-src");
+            var srcset = getAttr(img, "data-srcset");
+            if (srcset) {
+              img.srcset = srcset;
+            }
+            addClass(img, "loading");
+          }
+        });
+      }
+    }
+    function onImgLoaded(e) {
+      imgLoaded(getTarget(e));
+    }
+    function onImgFailed(e) {
+      imgFailed(getTarget(e));
+    }
+    function imgLoaded(img) {
+      addClass(img, "loaded");
+      imgCompleted(img);
+    }
+    function imgFailed(img) {
+      addClass(img, "failed");
+      imgCompleted(img);
+    }
+    function imgCompleted(img) {
+      addClass(img, imgCompleteClass);
+      removeClass(img, "loading");
+      removeEvents(img, imgEvents);
+    }
+    function getImageArray(start, end, imgSelector) {
+      var imgs = [];
+      if (!imgSelector) {
+        imgSelector = "img";
+      }
+      while (start <= end) {
+        forEach(slideItems[start].querySelectorAll(imgSelector), function(img) {
+          imgs.push(img);
+        });
+        start++;
+      }
+      return imgs;
+    }
+    function doAutoHeight() {
+      var imgs = getImageArray.apply(null, getVisibleSlideRange());
+      raf(function() {
+        imgsLoadedCheck(imgs, updateInnerWrapperHeight);
+      });
+    }
+    function imgsLoadedCheck(imgs, cb) {
+      if (imgsComplete) {
+        return cb();
+      }
+      imgs.forEach(function(img, index2) {
+        if (!lazyload && img.complete) {
+          imgCompleted(img);
+        }
+        if (hasClass(img, imgCompleteClass)) {
+          imgs.splice(index2, 1);
+        }
+      });
+      if (!imgs.length) {
+        return cb();
+      }
+      raf(function() {
+        imgsLoadedCheck(imgs, cb);
+      });
+    }
+    function additionalUpdates() {
+      doLazyLoad();
+      updateSlideStatus();
+      updateLiveRegion();
+      updateControlsStatus();
+      updateNavStatus();
+    }
+    function update_carousel_transition_duration() {
+      if (carousel && autoHeight) {
+        middleWrapper.style[TRANSITIONDURATION] = speed / 1e3 + "s";
+      }
+    }
+    function getMaxSlideHeight(slideStart, slideRange) {
+      var heights = [];
+      for (var i = slideStart, l = Math.min(slideStart + slideRange, slideCountNew); i < l; i++) {
+        heights.push(slideItems[i].offsetHeight);
+      }
+      return Math.max.apply(null, heights);
+    }
+    function updateInnerWrapperHeight() {
+      var maxHeight = autoHeight ? getMaxSlideHeight(index, items) : getMaxSlideHeight(cloneCount, slideCount), wp = middleWrapper ? middleWrapper : innerWrapper;
+      if (wp.style.height !== maxHeight) {
+        wp.style.height = maxHeight + "px";
+      }
+    }
+    function setSlidePositions() {
+      slidePositions = [0];
+      var attr = horizontal ? "left" : "top", attr2 = horizontal ? "right" : "bottom", base = slideItems[0].getBoundingClientRect()[attr];
+      forEach(slideItems, function(item, i) {
+        if (i) {
+          slidePositions.push(item.getBoundingClientRect()[attr] - base);
+        }
+        if (i === slideCountNew - 1) {
+          slidePositions.push(item.getBoundingClientRect()[attr2] - base);
+        }
+      });
+    }
+    function updateSlideStatus() {
+      var range = getVisibleSlideRange(), start = range[0], end = range[1];
+      forEach(slideItems, function(item, i) {
+        if (i >= start && i <= end) {
+          if (hasAttr(item, "aria-hidden")) {
+            removeAttrs(item, ["aria-hidden", "tabindex"]);
+            addClass(item, slideActiveClass);
+          }
+        } else {
+          if (!hasAttr(item, "aria-hidden")) {
+            setAttrs(item, {
+              "aria-hidden": "true",
+              "tabindex": "-1"
+            });
+            removeClass(item, slideActiveClass);
+          }
+        }
+      });
+    }
+    function updateGallerySlidePositions() {
+      var l = index + Math.min(slideCount, items);
+      for (var i = slideCountNew; i--; ) {
+        var item = slideItems[i];
+        if (i >= index && i < l) {
+          addClass(item, "tns-moving");
+          item.style.left = (i - index) * 100 / items + "%";
+          addClass(item, animateIn);
+          removeClass(item, animateNormal);
+        } else if (item.style.left) {
+          item.style.left = "";
+          addClass(item, animateNormal);
+          removeClass(item, animateIn);
+        }
+        removeClass(item, animateOut);
+      }
+      setTimeout(function() {
+        forEach(slideItems, function(el) {
+          removeClass(el, "tns-moving");
+        });
+      }, 300);
+    }
+    function updateNavStatus() {
+      if (nav) {
+        navCurrentIndex = navClicked >= 0 ? navClicked : getCurrentNavIndex();
+        navClicked = -1;
+        if (navCurrentIndex !== navCurrentIndexCached) {
+          var navPrev = navItems[navCurrentIndexCached], navCurrent = navItems[navCurrentIndex];
+          setAttrs(navPrev, {
+            "tabindex": "-1",
+            "aria-label": navStr + (navCurrentIndexCached + 1)
+          });
+          removeClass(navPrev, navActiveClass);
+          setAttrs(navCurrent, { "aria-label": navStr + (navCurrentIndex + 1) + navStrCurrent });
+          removeAttrs(navCurrent, "tabindex");
+          addClass(navCurrent, navActiveClass);
+          navCurrentIndexCached = navCurrentIndex;
+        }
+      }
+    }
+    function getLowerCaseNodeName(el) {
+      return el.nodeName.toLowerCase();
+    }
+    function isButton(el) {
+      return getLowerCaseNodeName(el) === "button";
+    }
+    function isAriaDisabled(el) {
+      return el.getAttribute("aria-disabled") === "true";
+    }
+    function disEnableElement(isButton2, el, val2) {
+      if (isButton2) {
+        el.disabled = val2;
+      } else {
+        el.setAttribute("aria-disabled", val2.toString());
+      }
+    }
+    function updateControlsStatus() {
+      if (!controls || rewind || loop) {
+        return;
+      }
+      var prevDisabled = prevIsButton ? prevButton.disabled : isAriaDisabled(prevButton), nextDisabled = nextIsButton ? nextButton.disabled : isAriaDisabled(nextButton), disablePrev = index <= indexMin ? true : false, disableNext = !rewind && index >= indexMax ? true : false;
+      if (disablePrev && !prevDisabled) {
+        disEnableElement(prevIsButton, prevButton, true);
+      }
+      if (!disablePrev && prevDisabled) {
+        disEnableElement(prevIsButton, prevButton, false);
+      }
+      if (disableNext && !nextDisabled) {
+        disEnableElement(nextIsButton, nextButton, true);
+      }
+      if (!disableNext && nextDisabled) {
+        disEnableElement(nextIsButton, nextButton, false);
+      }
+    }
+    function resetDuration(el, str) {
+      if (TRANSITIONDURATION) {
+        el.style[TRANSITIONDURATION] = str;
+      }
+    }
+    function getSliderWidth() {
+      return fixedWidth ? (fixedWidth + gutter) * slideCountNew : slidePositions[slideCountNew];
+    }
+    function getCenterGap(num) {
+      if (num == null) {
+        num = index;
+      }
+      var gap = edgePadding ? gutter : 0;
+      return autoWidth ? (viewport - gap - (slidePositions[num + 1] - slidePositions[num] - gutter)) / 2 : fixedWidth ? (viewport - fixedWidth) / 2 : (items - 1) / 2;
+    }
+    function getRightBoundary() {
+      var gap = edgePadding ? gutter : 0, result = viewport + gap - getSliderWidth();
+      if (center && !loop) {
+        result = fixedWidth ? -(fixedWidth + gutter) * (slideCountNew - 1) - getCenterGap() : getCenterGap(slideCountNew - 1) - slidePositions[slideCountNew - 1];
+      }
+      if (result > 0) {
+        result = 0;
+      }
+      return result;
+    }
+    function getContainerTransformValue(num) {
+      if (num == null) {
+        num = index;
+      }
+      var val2;
+      if (horizontal && !autoWidth) {
+        if (fixedWidth) {
+          val2 = -(fixedWidth + gutter) * num;
+          if (center) {
+            val2 += getCenterGap();
+          }
+        } else {
+          var denominator = TRANSFORM ? slideCountNew : items;
+          if (center) {
+            num -= getCenterGap();
+          }
+          val2 = -num * 100 / denominator;
+        }
+      } else {
+        val2 = -slidePositions[num];
+        if (center && autoWidth) {
+          val2 += getCenterGap();
+        }
+      }
+      if (hasRightDeadZone) {
+        val2 = Math.max(val2, rightBoundary);
+      }
+      val2 += horizontal && !autoWidth && !fixedWidth ? "%" : "px";
+      return val2;
+    }
+    function doContainerTransformSilent(val2) {
+      resetDuration(container, "0s");
+      doContainerTransform(val2);
+    }
+    function doContainerTransform(val2) {
+      if (val2 == null) {
+        val2 = getContainerTransformValue();
+      }
+      container.style[transformAttr] = transformPrefix + val2 + transformPostfix;
+    }
+    function animateSlide(number, classOut, classIn, isOut) {
+      var l = number + items;
+      if (!loop) {
+        l = Math.min(l, slideCountNew);
+      }
+      for (var i = number; i < l; i++) {
+        var item = slideItems[i];
+        if (!isOut) {
+          item.style.left = (i - index) * 100 / items + "%";
+        }
+        if (animateDelay && TRANSITIONDELAY) {
+          item.style[TRANSITIONDELAY] = item.style[ANIMATIONDELAY] = animateDelay * (i - number) / 1e3 + "s";
+        }
+        removeClass(item, classOut);
+        addClass(item, classIn);
+        if (isOut) {
+          slideItemsOut.push(item);
+        }
+      }
+    }
+    var transformCore = /* @__PURE__ */ function() {
+      return carousel ? function() {
+        resetDuration(container, "");
+        if (TRANSITIONDURATION || !speed) {
+          doContainerTransform();
+          if (!speed || !isVisible(container)) {
+            onTransitionEnd();
+          }
+        } else {
+          jsTransform(container, transformAttr, transformPrefix, transformPostfix, getContainerTransformValue(), speed, onTransitionEnd);
+        }
+        if (!horizontal) {
+          updateContentWrapperHeight();
+        }
+      } : function() {
+        slideItemsOut = [];
+        var eve = {};
+        eve[TRANSITIONEND] = eve[ANIMATIONEND] = onTransitionEnd;
+        removeEvents(slideItems[indexCached], eve);
+        addEvents(slideItems[index], eve);
+        animateSlide(indexCached, animateIn, animateOut, true);
+        animateSlide(index, animateNormal, animateIn);
+        if (!TRANSITIONEND || !ANIMATIONEND || !speed || !isVisible(container)) {
+          onTransitionEnd();
+        }
+      };
+    }();
+    function render(e, sliderMoved) {
+      if (updateIndexBeforeTransform) {
+        updateIndex();
+      }
+      if (index !== indexCached || sliderMoved) {
+        events.emit("indexChanged", info());
+        events.emit("transitionStart", info());
+        if (autoHeight) {
+          doAutoHeight();
+        }
+        if (animating && e && ["click", "keydown"].indexOf(e.type) >= 0) {
+          stopAutoplay();
+        }
+        running = true;
+        transformCore();
+      }
+    }
+    function strTrans(str) {
+      return str.toLowerCase().replace(/-/g, "");
+    }
+    function onTransitionEnd(event) {
+      if (carousel || running) {
+        events.emit("transitionEnd", info(event));
+        if (!carousel && slideItemsOut.length > 0) {
+          for (var i = 0; i < slideItemsOut.length; i++) {
+            var item = slideItemsOut[i];
+            item.style.left = "";
+            if (ANIMATIONDELAY && TRANSITIONDELAY) {
+              item.style[ANIMATIONDELAY] = "";
+              item.style[TRANSITIONDELAY] = "";
+            }
+            removeClass(item, animateOut);
+            addClass(item, animateNormal);
+          }
+        }
+        if (!event || !carousel && event.target.parentNode === container || event.target === container && strTrans(event.propertyName) === strTrans(transformAttr)) {
+          if (!updateIndexBeforeTransform) {
+            var indexTem = index;
+            updateIndex();
+            if (index !== indexTem) {
+              events.emit("indexChanged", info());
+              doContainerTransformSilent();
+            }
+          }
+          if (nested === "inner") {
+            events.emit("innerLoaded", info());
+          }
+          running = false;
+          indexCached = index;
+        }
+      }
+    }
+    function goTo(targetIndex, e) {
+      if (freeze) {
+        return;
+      }
+      if (targetIndex === "prev") {
+        onControlsClick(e, -1);
+      } else if (targetIndex === "next") {
+        onControlsClick(e, 1);
+      } else {
+        if (running) {
+          if (preventActionWhenRunning) {
+            return;
+          } else {
+            onTransitionEnd();
+          }
+        }
+        var absIndex = getAbsIndex(), indexGap = 0;
+        if (targetIndex === "first") {
+          indexGap = -absIndex;
+        } else if (targetIndex === "last") {
+          indexGap = carousel ? slideCount - items - absIndex : slideCount - 1 - absIndex;
+        } else {
+          if (typeof targetIndex !== "number") {
+            targetIndex = parseInt(targetIndex);
+          }
+          if (!isNaN(targetIndex)) {
+            if (!e) {
+              targetIndex = Math.max(0, Math.min(slideCount - 1, targetIndex));
+            }
+            indexGap = targetIndex - absIndex;
+          }
+        }
+        if (!carousel && indexGap && Math.abs(indexGap) < items) {
+          var factor = indexGap > 0 ? 1 : -1;
+          indexGap += index + indexGap - slideCount >= indexMin ? slideCount * factor : slideCount * 2 * factor * -1;
+        }
+        index += indexGap;
+        if (carousel && loop) {
+          if (index < indexMin) {
+            index += slideCount;
+          }
+          if (index > indexMax) {
+            index -= slideCount;
+          }
+        }
+        if (getAbsIndex(index) !== getAbsIndex(indexCached)) {
+          render(e);
+        }
+      }
+    }
+    function onControlsClick(e, dir) {
+      if (running) {
+        if (preventActionWhenRunning) {
+          return;
+        } else {
+          onTransitionEnd();
+        }
+      }
+      var passEventObject;
+      if (!dir) {
+        e = getEvent(e);
+        var target = getTarget(e);
+        while (target !== controlsContainer && [prevButton, nextButton].indexOf(target) < 0) {
+          target = target.parentNode;
+        }
+        var targetIn = [prevButton, nextButton].indexOf(target);
+        if (targetIn >= 0) {
+          passEventObject = true;
+          dir = targetIn === 0 ? -1 : 1;
+        }
+      }
+      if (rewind) {
+        if (index === indexMin && dir === -1) {
+          goTo("last", e);
+          return;
+        } else if (index === indexMax && dir === 1) {
+          goTo("first", e);
+          return;
+        }
+      }
+      if (dir) {
+        index += slideBy * dir;
+        if (autoWidth) {
+          index = Math.floor(index);
+        }
+        render(passEventObject || e && e.type === "keydown" ? e : null);
+      }
+    }
+    function onNavClick(e) {
+      if (running) {
+        if (preventActionWhenRunning) {
+          return;
+        } else {
+          onTransitionEnd();
+        }
+      }
+      e = getEvent(e);
+      var target = getTarget(e), navIndex;
+      while (target !== navContainer && !hasAttr(target, "data-nav")) {
+        target = target.parentNode;
+      }
+      if (hasAttr(target, "data-nav")) {
+        var navIndex = navClicked = Number(getAttr(target, "data-nav")), targetIndexBase = fixedWidth || autoWidth ? navIndex * slideCount / pages : navIndex * items, targetIndex = navAsThumbnails ? navIndex : Math.min(Math.ceil(targetIndexBase), slideCount - 1);
+        goTo(targetIndex, e);
+        if (navCurrentIndex === navIndex) {
+          if (animating) {
+            stopAutoplay();
+          }
+          navClicked = -1;
+        }
+      }
+    }
+    function setAutoplayTimer() {
+      autoplayTimer = setInterval(function() {
+        onControlsClick(null, autoplayDirection);
+      }, autoplayTimeout);
+      animating = true;
+    }
+    function stopAutoplayTimer() {
+      clearInterval(autoplayTimer);
+      animating = false;
+    }
+    function updateAutoplayButton(action, txt) {
+      setAttrs(autoplayButton, { "data-action": action });
+      autoplayButton.innerHTML = autoplayHtmlStrings[0] + action + autoplayHtmlStrings[1] + txt;
+    }
+    function startAutoplay() {
+      setAutoplayTimer();
+      if (autoplayButton) {
+        updateAutoplayButton("stop", autoplayText[1]);
+      }
+    }
+    function stopAutoplay() {
+      stopAutoplayTimer();
+      if (autoplayButton) {
+        updateAutoplayButton("start", autoplayText[0]);
+      }
+    }
+    function play() {
+      if (autoplay && !animating) {
+        startAutoplay();
+        autoplayUserPaused = false;
+      }
+    }
+    function pause() {
+      if (animating) {
+        stopAutoplay();
+        autoplayUserPaused = true;
+      }
+    }
+    function toggleAutoplay() {
+      if (animating) {
+        stopAutoplay();
+        autoplayUserPaused = true;
+      } else {
+        startAutoplay();
+        autoplayUserPaused = false;
+      }
+    }
+    function onVisibilityChange() {
+      if (doc.hidden) {
+        if (animating) {
+          stopAutoplayTimer();
+          autoplayVisibilityPaused = true;
+        }
+      } else if (autoplayVisibilityPaused) {
+        setAutoplayTimer();
+        autoplayVisibilityPaused = false;
+      }
+    }
+    function mouseoverPause() {
+      if (animating) {
+        stopAutoplayTimer();
+        autoplayHoverPaused = true;
+      }
+    }
+    function mouseoutRestart() {
+      if (autoplayHoverPaused) {
+        setAutoplayTimer();
+        autoplayHoverPaused = false;
+      }
+    }
+    function onDocumentKeydown(e) {
+      e = getEvent(e);
+      var keyIndex = [KEYS.LEFT, KEYS.RIGHT].indexOf(e.keyCode);
+      if (keyIndex >= 0) {
+        onControlsClick(e, keyIndex === 0 ? -1 : 1);
+      }
+    }
+    function onControlsKeydown(e) {
+      e = getEvent(e);
+      var keyIndex = [KEYS.LEFT, KEYS.RIGHT].indexOf(e.keyCode);
+      if (keyIndex >= 0) {
+        if (keyIndex === 0) {
+          if (!prevButton.disabled) {
+            onControlsClick(e, -1);
+          }
+        } else if (!nextButton.disabled) {
+          onControlsClick(e, 1);
+        }
+      }
+    }
+    function setFocus(el) {
+      el.focus();
+    }
+    function onNavKeydown(e) {
+      e = getEvent(e);
+      var curElement = doc.activeElement;
+      if (!hasAttr(curElement, "data-nav")) {
+        return;
+      }
+      var keyIndex = [KEYS.LEFT, KEYS.RIGHT, KEYS.ENTER, KEYS.SPACE].indexOf(e.keyCode), navIndex = Number(getAttr(curElement, "data-nav"));
+      if (keyIndex >= 0) {
+        if (keyIndex === 0) {
+          if (navIndex > 0) {
+            setFocus(navItems[navIndex - 1]);
+          }
+        } else if (keyIndex === 1) {
+          if (navIndex < pages - 1) {
+            setFocus(navItems[navIndex + 1]);
+          }
+        } else {
+          navClicked = navIndex;
+          goTo(navIndex, e);
+        }
+      }
+    }
+    function getEvent(e) {
+      e = e || win3.event;
+      return isTouchEvent(e) ? e.changedTouches[0] : e;
+    }
+    function getTarget(e) {
+      return e.target || win3.event.srcElement;
+    }
+    function isTouchEvent(e) {
+      return e.type.indexOf("touch") >= 0;
+    }
+    function preventDefaultBehavior(e) {
+      e.preventDefault ? e.preventDefault() : e.returnValue = false;
+    }
+    function getMoveDirectionExpected() {
+      return getTouchDirection(toDegree(lastPosition.y - initPosition.y, lastPosition.x - initPosition.x), swipeAngle) === options.axis;
+    }
+    function onPanStart(e) {
+      if (running) {
+        if (preventActionWhenRunning) {
+          return;
+        } else {
+          onTransitionEnd();
+        }
+      }
+      if (autoplay && animating) {
+        stopAutoplayTimer();
+      }
+      panStart = true;
+      if (rafIndex) {
+        caf(rafIndex);
+        rafIndex = null;
+      }
+      var $ = getEvent(e);
+      events.emit(isTouchEvent(e) ? "touchStart" : "dragStart", info(e));
+      if (!isTouchEvent(e) && ["img", "a"].indexOf(getLowerCaseNodeName(getTarget(e))) >= 0) {
+        preventDefaultBehavior(e);
+      }
+      lastPosition.x = initPosition.x = $.clientX;
+      lastPosition.y = initPosition.y = $.clientY;
+      if (carousel) {
+        translateInit = parseFloat(container.style[transformAttr].replace(transformPrefix, ""));
+        resetDuration(container, "0s");
+      }
+    }
+    function onPanMove(e) {
+      if (panStart) {
+        var $ = getEvent(e);
+        lastPosition.x = $.clientX;
+        lastPosition.y = $.clientY;
+        if (carousel) {
+          if (!rafIndex) {
+            rafIndex = raf(function() {
+              panUpdate(e);
+            });
+          }
+        } else {
+          if (moveDirectionExpected === "?") {
+            moveDirectionExpected = getMoveDirectionExpected();
+          }
+          if (moveDirectionExpected) {
+            preventScroll = true;
+          }
+        }
+        if ((typeof e.cancelable !== "boolean" || e.cancelable) && preventScroll) {
+          e.preventDefault();
+        }
+      }
+    }
+    function panUpdate(e) {
+      if (!moveDirectionExpected) {
+        panStart = false;
+        return;
+      }
+      caf(rafIndex);
+      if (panStart) {
+        rafIndex = raf(function() {
+          panUpdate(e);
+        });
+      }
+      if (moveDirectionExpected === "?") {
+        moveDirectionExpected = getMoveDirectionExpected();
+      }
+      if (moveDirectionExpected) {
+        if (!preventScroll && isTouchEvent(e)) {
+          preventScroll = true;
+        }
+        try {
+          if (e.type) {
+            events.emit(isTouchEvent(e) ? "touchMove" : "dragMove", info(e));
+          }
+        } catch (err) {
+        }
+        var x = translateInit, dist = getDist(lastPosition, initPosition);
+        if (!horizontal || fixedWidth || autoWidth) {
+          x += dist;
+          x += "px";
+        } else {
+          var percentageX = TRANSFORM ? dist * items * 100 / ((viewport + gutter) * slideCountNew) : dist * 100 / (viewport + gutter);
+          x += percentageX;
+          x += "%";
+        }
+        container.style[transformAttr] = transformPrefix + x + transformPostfix;
+      }
+    }
+    function onPanEnd(e) {
+      if (panStart) {
+        if (rafIndex) {
+          caf(rafIndex);
+          rafIndex = null;
+        }
+        if (carousel) {
+          resetDuration(container, "");
+        }
+        panStart = false;
+        var $ = getEvent(e);
+        lastPosition.x = $.clientX;
+        lastPosition.y = $.clientY;
+        var dist = getDist(lastPosition, initPosition);
+        if (Math.abs(dist)) {
+          if (!isTouchEvent(e)) {
+            var target = getTarget(e);
+            addEvents(target, { "click": function preventClick(e2) {
+              preventDefaultBehavior(e2);
+              removeEvents(target, { "click": preventClick });
+            } });
+          }
+          if (carousel) {
+            rafIndex = raf(function() {
+              if (horizontal && !autoWidth) {
+                var indexMoved = -dist * items / (viewport + gutter);
+                indexMoved = dist > 0 ? Math.floor(indexMoved) : Math.ceil(indexMoved);
+                index += indexMoved;
+              } else {
+                var moved = -(translateInit + dist);
+                if (moved <= 0) {
+                  index = indexMin;
+                } else if (moved >= slidePositions[slideCountNew - 1]) {
+                  index = indexMax;
+                } else {
+                  var i = 0;
+                  while (i < slideCountNew && moved >= slidePositions[i]) {
+                    index = i;
+                    if (moved > slidePositions[i] && dist < 0) {
+                      index += 1;
+                    }
+                    i++;
+                  }
+                }
+              }
+              render(e, dist);
+              events.emit(isTouchEvent(e) ? "touchEnd" : "dragEnd", info(e));
+            });
+          } else {
+            if (moveDirectionExpected) {
+              onControlsClick(e, dist > 0 ? -1 : 1);
+            }
+          }
+        }
+      }
+      if (options.preventScrollOnTouch === "auto") {
+        preventScroll = false;
+      }
+      if (swipeAngle) {
+        moveDirectionExpected = "?";
+      }
+      if (autoplay && !animating) {
+        setAutoplayTimer();
+      }
+    }
+    function updateContentWrapperHeight() {
+      var wp = middleWrapper ? middleWrapper : innerWrapper;
+      wp.style.height = slidePositions[index + items] - slidePositions[index] + "px";
+    }
+    function getPages() {
+      var rough = fixedWidth ? (fixedWidth + gutter) * slideCount / viewport : slideCount / items;
+      return Math.min(Math.ceil(rough), slideCount);
+    }
+    function updateNavVisibility() {
+      if (!nav || navAsThumbnails) {
+        return;
+      }
+      if (pages !== pagesCached) {
+        var min = pagesCached, max = pages, fn = showElement;
+        if (pagesCached > pages) {
+          min = pages;
+          max = pagesCached;
+          fn = hideElement;
+        }
+        while (min < max) {
+          fn(navItems[min]);
+          min++;
+        }
+        pagesCached = pages;
+      }
+    }
+    function info(e) {
+      return {
+        container,
+        slideItems,
+        navContainer,
+        navItems,
+        controlsContainer,
+        hasControls,
+        prevButton,
+        nextButton,
+        items,
+        slideBy,
+        cloneCount,
+        slideCount,
+        slideCountNew,
+        index,
+        indexCached,
+        displayIndex: getCurrentSlide(),
+        navCurrentIndex,
+        navCurrentIndexCached,
+        pages,
+        pagesCached,
+        sheet,
+        isOn,
+        event: e || {}
+      };
+    }
+    return {
+      version: "2.9.4",
+      getInfo: info,
+      events,
+      goTo,
+      play,
+      pause,
+      isOn,
+      updateSliderHeight: updateInnerWrapperHeight,
+      refresh: initSliderTransform,
+      destroy,
+      rebuild: function() {
+        return tns(extend(options, optionsElements));
+      }
+    };
+  };
+
+  // _js/main.js
+  var import_Fetch = __toESM(require_Fetch());
+  document.addEventListener("DOMContentLoaded", async () => {
+    if (window.location.pathname === "/") {
+      const slider = tns({
+        container: ".js-slider-singles",
+        items: 1,
+        nav: false,
+        autoplayButtonOutput: false,
+        controlsText: [
+          `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 			    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-			</svg>`,`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			</svg>`,
+          `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 			    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-			</svg>`],lazyload:!0})}else if(window.location.pathname==="/portfolio.html"){let t=Ni({container:".js-slider-triples",items:1,nav:!1,autoplayButtonOutput:!1,controlsText:[`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			</svg>`
+        ],
+        lazyload: true
+      });
+    } else if (window.location.pathname === "/portfolio.html") {
+      const slider = tns({
+        container: ".js-slider-triples",
+        items: 1,
+        nav: false,
+        autoplayButtonOutput: false,
+        controlsText: [
+          `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 			    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-			</svg>`,`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			</svg>`,
+          `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 			    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-			</svg>`],lazyload:!0,gutter:8,responsive:{592:{fixedWidth:592}}})}else window.location.pathname==="/contact.html"&&(document.querySelectorAll(".js-text-input").forEach(a=>{a.addEventListener("focus",()=>a.parentElement.classList.add("input-field--active")),a.addEventListener("blur",()=>{a.value||a.parentElement.classList.remove("input-field--active")})}),document.querySelector(".js-send-btn").addEventListener("click",async a=>{a.preventDefault();let s=document.querySelector(".js-contact-form"),o=document.querySelectorAll(".js-required-input"),g=document.querySelector('input[name="email"]');document.querySelectorAll(".js-input-error").forEach(H=>H.remove());let A={};/.+@.+/.test(g.value)||(A.email={text:"Please enter a valid email",input:g}),o.forEach(H=>{H.value||(A[H.name]={text:"Please fill out the required field",input:H})});let N=Object.keys(A);if(N.length===0){let H=new URLSearchParams(new FormData(s)).toString();(await Fn.default.get(`${s.getAttribute("action")}&${H}`)).success&&document.body.insertAdjacentHTML("beforeend",`
+			</svg>`
+        ],
+        lazyload: true,
+        gutter: 8,
+        responsive: {
+          592: {
+            fixedWidth: 592
+          }
+        }
+      });
+    } else if (window.location.pathname === "/contact.html") {
+      const elTextInputs = document.querySelectorAll(".js-text-input");
+      elTextInputs.forEach((input) => {
+        input.addEventListener(
+          "focus",
+          () => input.parentElement.classList.add("input-field--active")
+        );
+        input.addEventListener("blur", () => {
+          if (!input.value)
+            input.parentElement.classList.remove("input-field--active");
+        });
+      });
+      const elSendBtn = document.querySelector(".js-send-btn");
+      elSendBtn.addEventListener("click", async (e) => {
+        e.preventDefault();
+        const elForm = document.querySelector(".js-contact-form");
+        const elRequiredInputs = document.querySelectorAll(".js-required-input");
+        const elEmailInput = document.querySelector('input[name="email"]');
+        const elErrors = document.querySelectorAll(".js-input-error");
+        elErrors.forEach((error) => error.remove());
+        let errors = {};
+        if (!/.+@.+/.test(elEmailInput.value)) {
+          errors.email = {
+            text: "Please enter a valid email",
+            input: elEmailInput
+          };
+        }
+        elRequiredInputs.forEach((input) => {
+          if (!input.value) {
+            errors[input.name] = {
+              text: "Please fill out the required field",
+              input
+            };
+          }
+        });
+        const errorNames = Object.keys(errors);
+        if (errorNames.length === 0) {
+          const queryString = new URLSearchParams(
+            new FormData(elForm)
+          ).toString();
+          const res = await import_Fetch.default.get(
+            `${elForm.getAttribute("action")}&${queryString}`
+          );
+          if (res.success) {
+            document.body.insertAdjacentHTML(
+              "beforeend",
+              `
 					<div class="modal">
 						<div class="modal__inner">
 							<span>Thank you for your email :)</span>
 							<span class="modal__close">X</span>
 						</div>
-					</div>`);let we=document.querySelector(".modal"),Xt=document.querySelector(".modal__inner"),F=document.querySelector(".modal__close");we.addEventListener("click",st=>{st.target!==Xt&&we.remove()}),F.addEventListener("click",()=>we.remove())}else N.forEach(H=>A[H].input.insertAdjacentHTML("afterend",`<span class="input-field__error js-input-error">${A[H].text}</span>`))}))});})();
+					</div>`
+            );
+          }
+          const elModal = document.querySelector(".modal");
+          const elModalInner = document.querySelector(".modal__inner");
+          const elModalClose = document.querySelector(".modal__close");
+          elModal.addEventListener("click", (e2) => {
+            if (e2.target !== elModalInner) elModal.remove();
+          });
+          elModalClose.addEventListener("click", () => elModal.remove());
+        } else {
+          errorNames.forEach(
+            (name) => errors[name].input.insertAdjacentHTML(
+              "afterend",
+              `<span class="input-field__error js-input-error">${errors[name].text}</span>`
+            )
+          );
+        }
+      });
+    }
+  });
+})();
+//# sourceMappingURL=main.js.map

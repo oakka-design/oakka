@@ -4,8 +4,8 @@ layout: default
 
 <section class="primary-section">
   <div class="wrapper">
-    <p class="mission-statement">
-      {{ page.mission-statement | newline_to_br }}
+    <p class="text-center text-2xl max-w-3xl mx-auto">
+      {{ page.strap-line | newline_to_br }}
     </p>
   </div>
 </section>
@@ -21,6 +21,14 @@ layout: default
       />
       {% endfor %}
     </div>
+  </div>
+</section>
+
+<section class="primary-section">
+  <div class="wrapper">
+    <p class="mission-statement">
+      {{ page.mission-statement | newline_to_br }}
+    </p>
   </div>
 </section>
 
