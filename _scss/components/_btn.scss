@@ -5,11 +5,11 @@
 .btn {
   color: variables.$main-theme-color;
   border: 3px solid variables.$main-theme-color;
-  @include mixins.font-size(24px);
+  @include mixins.font-size(18px);
   text-align: center;
   display: block;
-  padding: 0.667em 2.083em;
-  max-width: functions.calculate-rem(164px);
+  padding: 0.5em 1.56em;
+  max-width: functions.calculate-rem(123px);
   cursor: pointer;
   margin: 0 auto;
 }

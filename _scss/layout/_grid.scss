@@ -37,7 +37,7 @@
   $grid-template-columns: 'repeat(2, [col-start] 1fr)';
   grid-template-columns: #{$grid-template-columns};
   grid-gap: functions.calculate-rem(64px) functions.calculate-rem(36px);
-  @extend %spacer;
+  margin: 32px 0;
   @media (max-width: variables.$small) {
     grid-gap: functions.calculate-rem(24px);
     .contact-form-grid__item {

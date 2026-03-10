@@ -27,7 +27,6 @@ h6 {
 
 h2 {
   @include mixins.font-size(42px);
-  margin: functions.calculate-rem(32px) 0;
   @media (max-width: variables.$small) {
     @include mixins.font-size(36px);
   }
