@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<section class="primary-section">
+  <div class="wrapper">
+    <h2 class="title">{{ page.services-section.title }}</h2>
+    <div class="services-grid">
+      {% for service in page.services-section.services %}
+      <div
+        class="card card--bg-image"
+        style="background-image: url('{{ service.bg-image }}');"
+      >
+        <div class="card__content">
+          <h2 class="card__title">{{ service.title }}</h2>
+          <p class="card__text">{{ service.text-box }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="my-8">
+      {{ page.services-section.intro-text | strip | newline_to_br }}
+    </p>
+  </div>
+</section>
+
+<section class="primary-section">
+  <div class="wrapper">
+    <h2 class="title">{{ page.time-to-sell-section.title }}</h2>
+    <p class="mb-16">
+      {{ page.time-to-sell-section.text-box | strip | newline_to_br }}
+    </p>
+  </div>
+
+  <section class="primary-section">
+    <div class="wrapper">
+      <h2 class="title">{{ page.pricing-section.title }}</h2>
+      <p class="mb-16">
+        {{ page.pricing-section.text-box | strip | newline_to_br }}
+      </p>
+    </div>
+  </section>
+
+  <section class="primary-section">
+    <div class="wrapper">
+      <h2 class="title">{{ page.charity-section.title }}</h2>
+      <p class="mb-16">
+        {{ page.charity-section.text-box | strip | newline_to_br }}
+      </p>
+    </div>
+  </section>
+</section>

@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<section class="primary-section">
+  <div class="wrapper">
+    <div class="slider js-slider-singles">
+      {% for image-obj in page.slider-images %}
+      <img
+        class="slider__image"
+        src="{{ image-obj.image }}"
+        alt="{{ image-obj.alt }}"
+      />
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="primary-section">
+  <div class="wrapper">
+    <p class="mission-statement">
+      {{ page.mission-statement | strip | newline_to_br }}
+    </p>
+  </div>
+</section>
+
+<section class="primary-section">
+  <div class="wrapper">
+    <h2 class="title">{{ page.testimonials-section.title }}</h2>
+    <div class="columns-1 sm:columns-2 md:columns-3 gap-8">
+      {% for testimonial in page.testimonials-section.testimonials %}
+      <div class="break-inside-avoid mb-8">
+        <p class="italic mb-4">
+          "{{ testimonial.quote | strip | newline_to_br }}"
+        </p>
+        <h3>- {{ testimonial.name }}</h3>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
