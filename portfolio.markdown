@@ -24,6 +24,12 @@ slider-images:
   alt: 
 - image: "/uploads/DSC_2445.jpg"
   alt: 
+- image: "/uploads/13.jpg"
+  alt: 
+- image: "/uploads/image3-2385e9.jpg"
+  alt: 
+- image: "/uploads/8IMG_1265.jpg"
+  alt: 
 layout: portfolio
 ---
 
