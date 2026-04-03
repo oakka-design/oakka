@@ -4,15 +4,15 @@ date: 2018-06-04 22:59:00 Z
 position: 0
 page-title: Oakka Design
 slider-images:
-- image: "/uploads/brighton%20interior%20design.jpg"
+- image: "/uploads/image0.jpg"
   alt: 
 - image: "/uploads/hallway%20design.jpg"
   alt: 
-- image: "/uploads/stylish%20kitchen%20brighton.jpg"
+- image: "/uploads/7h_DSC6970-910e79.jpg"
   alt: 
-- image: "/uploads/bespoke%20joinery%20brighton.jpg"
+- image: "/uploads/image3.jpg"
   alt: 
-- image: "/uploads/retro%20styled%20room%20brighton.jpg"
+- image: "/uploads/2IMG_2482.jpg"
   alt: 
 - image: "/uploads/brighton%20interiors.jpg"
   alt: c
