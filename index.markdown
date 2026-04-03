@@ -10,13 +10,13 @@ slider-images:
   alt: 
 - image: "/uploads/7h_DSC6970-910e79.jpg"
   alt: 
-- image: "/uploads/image3.jpg"
+- image: "/uploads/image7.jpg"
   alt: 
-- image: "/uploads/2IMG_2482.jpg"
+- image: "/uploads/2IMG_2482-4981b8.jpg"
   alt: 
 - image: "/uploads/brighton%20interiors.jpg"
   alt: c
-- image: "/uploads/office%20styling.jpg"
+- image: "/uploads/1IMG_4168.jpg"
   alt: 
 mission-statement: |+
   We are a Sussex based interior design studio working across homes, hospitality spaces and wellbeing environments such as yoga studios, therapy rooms and retreats.
