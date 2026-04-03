@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       pagination: false,
       isNavigation: true,
       arrows: false,
+      updateOnMove: true,
       breakpoints: {
         600: {
           fixedWidth: 73,
