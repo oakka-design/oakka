@@ -1,55 +1,70 @@
-import { tns } from '../node_modules/tiny-slider/src/tiny-slider.module';
-
-const sendEmail = (body) =>
-  fetch('https://formsubmit.co/ajax/hello@oakkadesign.co.uk', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify(body),
-  });
+import Splide from '@splidejs/splide';
 
 document.addEventListener('DOMContentLoaded', async () => {
-  if (window.location.pathname === '/') {
-    const slider = tns({
-      container: '.js-slider-singles',
-      items: 1,
-      nav: false,
-      autoplayButtonOutput: false,
-      controlsText: [
-        `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-			    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-			</svg>`,
-        `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-			    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-			</svg>`,
-      ],
-      lazyload: true,
+  const { pathname } = window.location;
+  if (pathname === '/') {
+    new Splide('#image-carousel', {
+      heightRatio: 0.5,
+      type: 'fade',
+      rewind: true,
+    }).mount();
+  } else if (pathname === '/portfolio.html') {
+    const imageCarousel = new Splide('#image-carousel', {
+      heightRatio: 0.5,
+      type: 'fade',
+      rewind: true,
     });
-  } else if (window.location.pathname === '/portfolio.html') {
-    const slider = tns({
-      container: '.js-slider-triples',
-      items: 1,
-      nav: false,
-      autoplayButtonOutput: false,
-      controlsText: [
-        `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-			    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-			</svg>`,
-        `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-			    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-			</svg>`,
-      ],
-      lazyload: true,
-      gutter: 8,
-      responsive: {
-        592: {
-          fixedWidth: 592,
+    const thumbnailCarousel = new Splide('#thumbnail-carousel', {
+      fixedWidth: 100,
+      fixedHeight: 60,
+      gap: 10,
+      rewind: true,
+      pagination: false,
+      isNavigation: true,
+      arrows: false,
+      breakpoints: {
+        600: {
+          fixedWidth: 73,
+          fixedHeight: 44,
         },
       },
     });
-  } else if (window.location.pathname === '/contact.html') {
+    imageCarousel.sync(thumbnailCarousel);
+    imageCarousel.mount();
+    thumbnailCarousel.mount();
+
+    // const slider = tns({
+    //   container: '.js-slider-triples',
+    //   items: 1,
+    //   nav: false,
+    //   autoplayButtonOutput: false,
+    //   controlsText: [
+    //     `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    // 	    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    // 	</svg>`,
+    //     `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    // 	    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+    // 	</svg>`,
+    //   ],
+    //   lazyload: true,
+    //   gutter: 8,
+    //   responsive: {
+    //     592: {
+    //       fixedWidth: 592,
+    //     },
+    //   },
+    // });
+  } else if (pathname === '/contact.html') {
+    const sendEmail = (body) =>
+      fetch('https://formsubmit.co/ajax/hello@oakkadesign.co.uk', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(body),
+      });
+
     const elTextInputs = document.querySelectorAll('.js-text-input');
     elTextInputs.forEach((input) => {
       input.addEventListener('focus', () =>
