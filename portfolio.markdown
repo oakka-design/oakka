@@ -6,23 +6,23 @@ page-title: Portfolio
 slider-images:
 - image: "/uploads/interior%20design%20brighton.jpg"
   alt: 
-- image: "/uploads/bespoke%20kitchens.jpg"
+- image: "/uploads/image10.jpg"
   alt: 
 - image: "/uploads/bespoke%20storage%20brighton-e8e550.jpg"
   alt: 
-- image: "/uploads/brighton_interiors-f0ddf4.jpg"
+- image: "/uploads/image9.jpg"
   alt: 
 - image: "/uploads/small%20garden%20design%20brighton.jpg"
   alt: 
 - image: "/uploads/Hallway_interiors.jpg"
   alt: 
-- image: "/uploads/creative%20childs%20bedroom%20design.jpg"
+- image: "/uploads/image2.jpg"
   alt: 
-- image: "/uploads/indian%20insipred%20design.jpg"
+- image: "/uploads/image6.jpg"
   alt: 
 - image: "/uploads/brighton%20kitchen%20interiors.jpg"
   alt: 
-- image: "/uploads/small_garden_design.jpg"
+- image: "/uploads/DSC_2445.jpg"
   alt: 
 layout: portfolio
 ---
