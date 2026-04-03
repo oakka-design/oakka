@@ -165,14 +165,11 @@
   }
 }
 @layer utilities {
+  .\!visible {
+    visibility: visible !important;
+  }
   .visible {
     visibility: visible;
-  }
-  .absolute {
-    position: absolute;
-  }
-  .fixed {
-    position: fixed;
   }
   .start {
     inset-inline-start: var(--spacing);
@@ -198,6 +195,9 @@
       max-width: 96rem;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .my-8 {
     margin-block: calc(var(--spacing) * 8);
   }
@@ -206,6 +206,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -216,6 +219,9 @@
   .block {
     display: block;
   }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
   }
@@ -225,8 +231,11 @@
   .inline {
     display: inline;
   }
-  .inline-block {
-    display: inline-block;
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .max-w-\[768px\] {
+    max-width: 768px;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -243,10 +252,6 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .text-center {
     text-align: center;
   }
@@ -260,15 +265,8 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .uppercase {
-    text-transform: uppercase;
-  }
   .italic {
     font-style: italic;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -306,6 +304,31 @@
     }
   }
 }
+@layer components {
+  @media (max-width: 450px) {
+    .splide__arrows {
+      font-size: 12px;
+    }
+  }
+  .splide__slide {
+    display: flex;
+    justify-content: center;
+  }
+  .splide__slide img {
+    height: 100%;
+    object-fit: cover;
+  }
+  #thumbnail-carousel .splide__slide img {
+    width: 100%;
+  }
+  #thumbnail-carousel .splide__slide {
+    opacity: 0.8;
+  }
+  #thumbnail-carousel .splide__slide.is-active {
+    opacity: 1;
+    border: none !important;
+  }
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -325,16 +348,6 @@
 @property --tw-skew-y {
   syntax: "*";
   inherits: false;
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -397,8 +410,6 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
