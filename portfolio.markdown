@@ -22,7 +22,7 @@ slider-images:
   alt: 
 - image: "/uploads/brighton%20kitchen%20interiors.jpg"
   alt: 
-- image: "/uploads/DSC_2445.jpg"
+- image: "/uploads/WhatsApp%20Image%202026-06-28%20at%2017.29.00.jpeg"
   alt: 
 - image: "/uploads/WhatsApp%20Image%202026-06-28%20at%2017.17.58.jpeg"
   alt: 
