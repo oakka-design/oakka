@@ -63,13 +63,6 @@ pricing-section:
 
     Bespoke joinery is quoted individually depending on the scope of the project.
 
-charity-section:
-  title: Charity
-  text-box: |+
-    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
-
-    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. Lorem ipsum dolor sit amet consectetur adipiscing elit.
-
 layout: services
 ---
 
