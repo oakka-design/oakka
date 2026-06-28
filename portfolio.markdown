@@ -4,7 +4,7 @@ date: 2018-06-05 16:21:00 Z
 position: 2
 page-title: Portfolio
 slider-images:
-- image: "/uploads/image10.jpg"
+- image: "/uploads/WhatsApp%20Image%202026-06-28%20at%2017.32.00.jpeg"
   alt: 
 - image: "/uploads/bespoke%20storage%20brighton-e8e550.jpg"
   alt: 
