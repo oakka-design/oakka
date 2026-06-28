@@ -8,7 +8,7 @@ slider-images:
   alt: 
 - image: "/uploads/WhatsApp%20Image%202026-06-28%20at%2017.32.00.jpeg"
   alt: 
-- image: "/uploads/bespoke%20storage%20brighton-e8e550.jpg"
+- image: "/uploads/WhatsApp%20Image%205.jpeg"
   alt: 
 - image: "/uploads/WhatsApp%20Image%202026-06-28%20at%2017.18.15.jpeg"
   alt: 
@@ -18,9 +18,9 @@ slider-images:
   alt: 
 - image: "/uploads/image2.jpg"
   alt: 
-- image: "/uploads/image6.jpg"
+- image: "/uploads/WhatsApp%20Image%202026-06-28%20at%2019.39.36.jpeg"
   alt: 
-- image: "/uploads/brighton%20kitchen%20interiors.jpg"
+- image: "/uploads/WhatsApp%20Image%202026-06-28%20at%2019.39.36%20(1).jpeg"
   alt: 
 - image: "/uploads/WhatsApp%20Image%202026-06-28%20at%2017.29.00.jpeg"
   alt: 
