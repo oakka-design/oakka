@@ -1,0 +1,29 @@
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:string';
+@use 'abstracts/functions';
+
+@mixin font-size($size) {
+  font-size: $size; //Fallback in px
+  font-size: functions.calculate-rem($size);
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  width: 100%;
+  &:after {
+    content: '';
+    display: block;
+    padding-bottom: ($height / $width) * 100%;
+  }
+}
+
+@mixin centered-letter-spaced-text($letter-spacing) {
+  letter-spacing: $letter-spacing;
+  padding-left: $letter-spacing;
+}

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="primary-section">
+  <div class="w-[80%] mx-auto max-w-[768px]">
+    <section id="image-carousel" class="splide mb-6">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for image-obj in page.slider-images %}
+          <li class="splide__slide">
+            <img src="{{ image-obj.image }}" alt="{{ image-obj.alt }}" />
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section
+      id="thumbnail-carousel"
+      class="splide"
+      aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+    >
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for image-obj in page.slider-images %}
+          <li class="splide__slide">
+            <img src="{{ image-obj.image }}" alt="{{ image-obj.alt }}" />
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+  </div>
+</section>

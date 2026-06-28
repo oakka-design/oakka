@@ -1,0 +1,21 @@
+@use 'abstracts/functions';
+
+@use 'sass:color';
+
+/* Colors */
+$white: #fff;
+$black: #000;
+$light-gray: rgba($black, 0.31);
+$mid-gray: rgba($black, 0.7);
+$dark-gray: rgba($black, 0.53);
+$main-theme-color: #d6a94a;
+$error-color: #d0021b;
+
+/* Dimensions */
+
+/* Breakpoints */
+$x-small: functions.calculate-rem(320px);
+$small: functions.calculate-rem(510px);
+$medium: functions.calculate-rem(670px);
+$large: functions.calculate-rem(900px);
+$x-large: functions.calculate-rem(1140px);
