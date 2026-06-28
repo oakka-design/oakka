@@ -14,7 +14,7 @@ slider-images:
   alt: 
 - image: "/uploads/2IMG_2482-4981b8.jpg"
   alt: 
-- image: "/uploads/brighton%20interiors.jpg"
+- image: "/uploads/bass.jpeg"
   alt: c
 - image: "/uploads/1IMG_4168.jpg"
   alt: 
