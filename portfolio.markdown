@@ -4,8 +4,6 @@ date: 2018-06-05 16:21:00 Z
 position: 2
 page-title: Portfolio
 slider-images:
-- image: "/uploads/interior%20design%20brighton.jpg"
-  alt: 
 - image: "/uploads/image10.jpg"
   alt: 
 - image: "/uploads/bespoke%20storage%20brighton-e8e550.jpg"
