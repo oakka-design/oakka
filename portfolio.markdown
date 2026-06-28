@@ -28,6 +28,10 @@ slider-images:
   alt: 
 - image: "/uploads/image3-2385e9.jpg"
   alt: 
+- image: "/uploads/WhatsApp%20Image%202026-06-28%20at%2019.39.36-c1c61f.jpeg"
+  alt: 
+- image: 
+  alt: 
 layout: portfolio
 ---
 
