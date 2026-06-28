@@ -18,11 +18,12 @@ slider-images:
   alt: c
 - image: "/uploads/1IMG_4168.jpg"
   alt: 
-mission-statement: |+
-  We are a Sussex based interior design studio working across homes, hospitality spaces and wellbeing environments such as yoga studios, therapy rooms and retreats.
+mission-statement: |-
+  We are a Sussex-based interior design studio creating thoughtful spaces for homes, hospitality and wellbeing.
 
-  Our work focuses on creating interiors that feel calm, personal and considered, combining thoughtful design with bespoke craftsmanship from our workshop in Pyecombe.
+  Whether designing a family home, a yoga studio, a therapy room or a boutique retreat, we believe our surroundings shape the way we feel. Every project begins by understanding how a space needs to function, the atmosphere it should create and the people who will spend time there.
 
+  Working alongside our workshop in Pyecombe, we combine thoughtful design with bespoke craftsmanship to create interiors that feel timeless, personal and quietly beautiful.
 testimonials-section:
   title: Testimonials
   testimonials:
